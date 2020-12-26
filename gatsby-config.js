@@ -11,7 +11,7 @@ module.exports = {
       twitter: `chakrit_chris`,
     },
   },
-  pathPrexifx: "chris-blog",
+  pathPrefix: "chris-blog",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
