@@ -2,6 +2,8 @@
 
 Powered by [Gatsby](https://www.gatsbyjs.com/)
 
+Host at: https://chrisza.me
+
 ## Start working
 
 - Fetch dependencies
