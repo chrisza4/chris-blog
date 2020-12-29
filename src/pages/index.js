@@ -5,6 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import DevTo from "../components/devTo"
+import PodCasts from "../components/podCasts"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -62,6 +63,8 @@ const BlogIndex = ({ data, location }) => {
       </ol>
       <hr />
       <DevTo />
+      <hr />
+      <PodCasts />
     </Layout>
   )
 }
