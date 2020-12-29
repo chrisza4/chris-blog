@@ -6,8 +6,22 @@
  */
 
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
+
+const WhereIWorkSection = ({ children }) => (
+  <div style={{ marginTop: 20 }}>{children}</div>
+)
+
+const AuthorSection = ({ children }) => (
+  <div style={{ marginLeft: 50, display: "flex", flexDirection: "column" }}>
+    {children}
+  </div>
+)
+
+const AuthorNameSection = ({ children }) => (
+  <h2 style={{ display: "block", marginTop: 0 }}>{children}</h2>
+)
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -35,7 +49,6 @@ const Bio = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
 
   const avatar = data?.avatar?.childImageSharp?.fixed
 
@@ -52,16 +65,18 @@ const Bio = () => {
         />
       )}
       {author?.name && (
-        <div
+        <AuthorSection
           style={{ marginLeft: 50, display: "flex", flexDirection: "column" }}
         >
-          <div style={{}}>
-            <h2 style={{ display: "block", marginTop: 0 }}>
-              Hi. I'm {author.name}.
-            </h2>
+          <div>
+            <AuthorNameSection>Hi. I'm {author.name}.</AuthorNameSection>
           </div>
           <div>{author?.summary || null}</div>
-        </div>
+          <WhereIWorkSection>
+            I am currently working at{" "}
+            <Link to="https://www.thoughtworks.com/">ThoughtWorks</Link>
+          </WhereIWorkSection>
+        </AuthorSection>
       )}
     </div>
   )

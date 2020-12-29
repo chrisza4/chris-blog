@@ -1,5 +1,5 @@
 ---
-title: Starting the Blog
+title: Why I blog here.
 ---
 
 Hi. I have been blogging in both [Medium](https://medium.com/@chrisza) and [dev.to](https://dev.to/chrisza4) for a really long time.
