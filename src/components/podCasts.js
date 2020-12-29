@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const DevToPost = ({ children }) => (
+const PodCastPost = ({ children }) => (
   <div
     style={{
       display: "inline",
@@ -33,9 +33,9 @@ const Podcasts = () => {
         {podcasts.map(podcast => {
           return (
             <li key={podcast.id}>
-              <DevToPost>
+              <PodCastPost>
                 <a href={podcast.url}>{podcast.title}</a>
-              </DevToPost>
+              </PodCastPost>
             </li>
           )
         })}
