@@ -23,12 +23,27 @@ async function scrapContentToJson() {
   return result
 }
 
-function combineContent(old, new) {}
+function combineContent(older, newer) {
+  const result = [...newer]
+  for (const old of older) {
+    if (result.find(r => r.url === old.url)) {
+      continue
+    }
+    result.push(old)
+  }
+  return result
+}
 
 async function refreshContent() {
-  const content = await scrapContentToJson()
-  const writeToPath = path.join(__dirname, "podcast-content.json")
-  fs.writeFileSync(writeToPath, JSON.stringify(content, null, 2), {
+  const newContent = await scrapContentToJson()
+  const filePath = path.join(__dirname, "podcast-content.json")
+  const oldContent = JSON.parse(
+    fs.readFileSync(filePath, {
+      encoding: "utf8",
+    })
+  )
+  const content = combineContent(oldContent, newContent)
+  fs.writeFileSync(filePath, JSON.stringify(content, null, 2), {
     encoding: "utf8",
   })
 }
