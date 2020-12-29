@@ -36,6 +36,7 @@ const DevTo = () => {
   return (
     <div>
       <h2>Blogs in dev.to</h2>
+      <p>I wrote an engineering focus article here</p>
       <ul>
         {devToPosts.map(devToPost => {
           return (
