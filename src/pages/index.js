@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
+  const devToPosts = data.allDevtoContentJson.nodes
 
   if (posts.length === 0) {
     return (
@@ -59,6 +60,17 @@ const BlogIndex = ({ data, location }) => {
           )
         })}
       </ol>
+      <hr />
+      <h2>Blogs in dev.to</h2>
+      <ul>
+        {devToPosts.map(devToPost => {
+          return (
+            <li>
+              <a href={devToPost.canonical_url}>{devToPost.title}</a>
+            </li>
+          )
+        })}
+      </ul>
     </Layout>
   )
 }
@@ -83,6 +95,13 @@ export const pageQuery = graphql`
           title
           description
         }
+      }
+    }
+    allDevtoContentJson {
+      nodes {
+        title
+        canonical_url
+        id
       }
     }
   }
