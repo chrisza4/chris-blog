@@ -7,18 +7,23 @@ async function scrapContentToJson() {
   const content = await (
     await axios.default.get("https://soundcloud.com/chakrit-lj")
   ).data
+  fs.writeFileSync("/tmp/tmp_sc.html", content, { encoding: "utf-8" })
   const $ = cheerio.load(content)
   const result = []
+
   $("noscript").each((_, ele) => {
     const inner = cheerio.load($(ele).html())
-    inner('.audible > h2[itemprop="name"] > a[itemprop="url"]').each(
-      (_, ele) => {
-        result.push({
-          title: $(ele).text(),
-          url: `https://soundcloud.com${$(ele).attr("href")}`,
-        })
-      }
-    )
+    inner(".audible").each((_, ele) => {
+      const titleElement = $(ele).find(
+        'h2[itemprop="name"] > a[itemprop="url"]'
+      )
+      const publishedDate = $(ele).find("time").text()
+      result.push({
+        title: $(titleElement).text(),
+        url: `https://soundcloud.com${$(titleElement).attr("href")}`,
+        publishedDate,
+      })
+    })
   })
   return result
 }

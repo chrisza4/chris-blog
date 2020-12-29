@@ -1,54 +1,67 @@
 [
   {
     "title": "Episode 13 - Intro To Domain Driven Design",
-    "url": "https://soundcloud.com/chakrit-lj/episode-13-intro-to-domain-driven-design"
+    "url": "https://soundcloud.com/chakrit-lj/episode-13-intro-to-domain-driven-design",
+    "publishedDate": "2020-08-08T08:33:19Z"
   },
   {
     "title": "Episode 12 - เป็นโปรแกรมเมอร์ทักษะสูงด้วยการจำกัดความลังเล",
-    "url": "https://soundcloud.com/chakrit-lj/episode-12"
+    "url": "https://soundcloud.com/chakrit-lj/episode-12",
+    "publishedDate": "2020-05-03T04:03:48Z"
   },
   {
     "title": "Episode 11 - คู่หู Event Storming  CQRS",
-    "url": "https://soundcloud.com/chakrit-lj/episode-11-event-storming-cqrs"
+    "url": "https://soundcloud.com/chakrit-lj/episode-11-event-storming-cqrs",
+    "publishedDate": "2020-03-18T14:46:10Z"
   },
   {
     "title": "Episode 10 - ทำไมถึงชื่อ Mindful Coder",
-    "url": "https://soundcloud.com/chakrit-lj/episode-10-mindful-coder"
+    "url": "https://soundcloud.com/chakrit-lj/episode-10-mindful-coder",
+    "publishedDate": "2020-02-19T15:43:25Z"
   },
   {
     "title": "Episode 9 - การเลือก Framework ที่ใช้ใน Project",
-    "url": "https://soundcloud.com/chakrit-lj/episode-9-framework"
+    "url": "https://soundcloud.com/chakrit-lj/episode-9-framework",
+    "publishedDate": "2019-11-07T15:51:50Z"
   },
   {
     "title": "Episore 8 - Planning ใน Software engineering หน้าตาเป็นยังไงนะ",
-    "url": "https://soundcloud.com/chakrit-lj/episore-8-planning-software-engineering"
+    "url": "https://soundcloud.com/chakrit-lj/episore-8-planning-software-engineering",
+    "publishedDate": "2019-09-29T06:02:44Z"
   },
   {
     "title": "Episode 7 - Sharding, Scalability And Business Context",
-    "url": "https://soundcloud.com/chakrit-lj/episode-7-sharding-scalability-and-business-context"
+    "url": "https://soundcloud.com/chakrit-lj/episode-7-sharding-scalability-and-business-context",
+    "publishedDate": "2019-09-21T02:42:01Z"
   },
   {
     "title": "Episode 6 - Tech Politics and Weight of PO",
-    "url": "https://soundcloud.com/chakrit-lj/episode-6-tech-politics-and-weight-of-po"
+    "url": "https://soundcloud.com/chakrit-lj/episode-6-tech-politics-and-weight-of-po",
+    "publishedDate": "2019-09-15T10:46:43Z"
   },
   {
     "title": "Episode 5 - เมาท์มอยสถานการณ์เงินเดือนโปรแกรมเมอร์ไทย",
-    "url": "https://soundcloud.com/chakrit-lj/episode-5"
+    "url": "https://soundcloud.com/chakrit-lj/episode-5",
+    "publishedDate": "2019-07-27T03:01:06Z"
   },
   {
     "title": "Episode 4 - อธิบาย Event-driven architecture แบบง่ายๆ",
-    "url": "https://soundcloud.com/chakrit-lj/episode-4-event-driven-architecture"
+    "url": "https://soundcloud.com/chakrit-lj/episode-4-event-driven-architecture",
+    "publishedDate": "2019-05-19T14:13:22Z"
   },
   {
     "title": "Episode 3 - Agile And Middle - Man",
-    "url": "https://soundcloud.com/chakrit-lj/episode-3-agile-and-middle-man"
+    "url": "https://soundcloud.com/chakrit-lj/episode-3-agile-and-middle-man",
+    "publishedDate": "2019-05-19T14:13:22Z"
   },
   {
     "title": "Episode 2 - Think harder misconception",
-    "url": "https://soundcloud.com/chakrit-lj/episode-2-thinking-harder-misconception"
+    "url": "https://soundcloud.com/chakrit-lj/episode-2-thinking-harder-misconception",
+    "publishedDate": "2019-05-19T14:13:22Z"
   },
   {
     "title": "Episode 1 - Bikeshedding",
-    "url": "https://soundcloud.com/chakrit-lj/mindful-coding-episode-1-bikeshedding"
+    "url": "https://soundcloud.com/chakrit-lj/mindful-coding-episode-1-bikeshedding",
+    "publishedDate": "2019-05-19T14:13:22Z"
   }
 ]
