@@ -58,7 +58,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-json`,
     {
-      resolve: `gatsby-source-filesy stem`,
+      resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/devto`,
       },
