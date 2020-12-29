@@ -4,11 +4,11 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import DevTo from "../components/devTo"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
-  const devToPosts = data.allDevtoContentJson.nodes
 
   if (posts.length === 0) {
     return (
@@ -61,16 +61,7 @@ const BlogIndex = ({ data, location }) => {
         })}
       </ol>
       <hr />
-      <h2>Blogs in dev.to</h2>
-      <ul>
-        {devToPosts.map(devToPost => {
-          return (
-            <li>
-              <a href={devToPost.canonical_url}>{devToPost.title}</a>
-            </li>
-          )
-        })}
-      </ul>
+      <DevTo />
     </Layout>
   )
 }
@@ -95,13 +86,6 @@ export const pageQuery = graphql`
           title
           description
         }
-      }
-    }
-    allDevtoContentJson {
-      nodes {
-        title
-        canonical_url
-        id
       }
     }
   }
