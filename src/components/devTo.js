@@ -3,6 +3,20 @@ import dayJs from "../lib/dayJs"
 import { useStaticQuery, graphql } from "gatsby"
 import SmallLabel from "../components/uikit/smallLabel"
 
+const DevToPost = ({ children }) => (
+  <div
+    style={{
+      display: "inline",
+    }}
+  >
+    {children}
+  </div>
+)
+
+const PublishedDate = ({ children }) => (
+  <SmallLabel style={{ marginLeft: 10 }}>{children}</SmallLabel>
+)
+
 const DevTo = () => {
   const data = useStaticQuery(graphql`
     query DevToQuery {
@@ -26,18 +40,12 @@ const DevTo = () => {
         {devToPosts.map(devToPost => {
           return (
             <li key={devToPost.id}>
-              <div
-                style={{
-                  display: "inline",
-                  alignContent: "baseline",
-                  alignItems: "baseline",
-                }}
-              >
+              <DevToPost>
                 <a href={devToPost.canonical_url}>{devToPost.title}</a>
-                <SmallLabel style={{ marginLeft: 10 }}>
+                <PublishedDate>
                   {dayJs(devToPost.published_at).fromNow()}
-                </SmallLabel>
-              </div>
+                </PublishedDate>
+              </DevToPost>
             </li>
           )
         })}
