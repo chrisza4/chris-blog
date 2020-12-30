@@ -8,4 +8,6 @@ My main motivation is to show the root of SOLID. I believe we can gain deeper un
 
 Looking back, I still love the content, but I could work more on presentation esp. the tone of voice and body language.
 
-`video: https://www.youtube.com/embed/R3fv__odSbI`
+`youtube:https://www.youtube.com/watch?v=R3fv__odSbI`
+
+Feedback are welcomed in [email](mailto:chakrit.lj@gmail.com)
