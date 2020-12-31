@@ -1,0 +1,17 @@
+.navBar {
+  background-color: green;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 60px;
+  padding-right: 40px;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+
+.navBarMenus {
+  margin: 0px;
+}
