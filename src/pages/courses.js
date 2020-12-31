@@ -7,8 +7,8 @@ import { StyledDiv } from "../components/tools/styled"
 const CoursesCard = StyledDiv({
   style: {
     border: "1px solid #E5E5E5",
-    width: 200,
-    height: 250,
+    width: 320,
+    height: 320,
     marginRight: 20,
     marginTop: 10,
   },
@@ -17,7 +17,7 @@ const CoursesCard = StyledDiv({
 const CourseImage = () => (
   <img
     style={{
-      width: 200,
+      width: 320,
       height: 100,
       borderBottom: "#E5E5E5 solid 1px",
       objectFit: "contain",
@@ -33,18 +33,26 @@ const Courses = () => {
       <NavBar />
       <SEO title="My Courses" />
       <div style={{ margin: "0px 100px", padding: "40px 20px" }}>
-        <h1>Courses</h1>
+        <center>
+          <h1>Courses</h1>
+        </center>
         <div
           style={{
             display: "flex",
             flexWrap: "wrap",
+            justifyContent: "center",
           }}
         >
           <CoursesCard>
             <CourseImage />
-            <div style={{ padding: 10 }}>
-              <strong>React Courses</strong>
-              <p>สวัสดีครับ</p>
+            <div style={{ padding: 10, fontSize: 12 }}>
+              <strong style={{ fontSize: 14 }}>
+                Test-driven architecture with React and TypeScript
+              </strong>
+              <p style={{ marginTop: 5 }}>
+                สอนการวางโครงสร้างใน React ให้ดูแลง่ายทำงานเป็นทีมได้
+                และการเขียนชุดทดสอบ
+              </p>
             </div>
           </CoursesCard>
           <CoursesCard>
