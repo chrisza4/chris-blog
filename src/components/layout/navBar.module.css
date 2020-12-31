@@ -14,4 +14,12 @@
 
 .navBarMenus {
   margin: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.navBarMenu {
+  list-style: none;
+  margin: 0px 10px;
+  min-width: 50px;
 }
