@@ -23,3 +23,18 @@
   margin: 0px 10px;
   min-width: 50px;
 }
+
+.navBarLink {
+  text-decoration: none;
+  color: white;
+  opacity: 0.85;
+}
+
+.navBarLink:hover {
+  opacity: 1;
+}
+
+.navBarLinkActive {
+  font-weight: bolder;
+  opacity: 1;
+}
