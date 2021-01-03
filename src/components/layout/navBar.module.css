@@ -1,0 +1,42 @@
+.navBar {
+  background-color: green;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 60px;
+  padding-right: 40px;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+
+.navBarMenus {
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.navBarMenu {
+  list-style: none;
+  margin: 0px 1px;
+  min-width: 80px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.navBarLink {
+  text-decoration: none;
+  color: white;
+  opacity: 0.85;
+}
+
+.navBarLink:hover {
+  opacity: 1;
+}
+
+.navBarLinkActive {
+  font-weight: bolder;
+  opacity: 1;
+}
