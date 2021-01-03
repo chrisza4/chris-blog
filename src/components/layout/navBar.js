@@ -23,7 +23,7 @@ export default function NavBar() {
     <NavBarPlaceHolder>
       <NavBarMenu>
         <NavBarMenuLink to="/">Home</NavBarMenuLink>
-        <NavBarMenuLink to="/courses">Courses</NavBarMenuLink>
+        <NavBarMenuLink to="/talks">My Talks</NavBarMenuLink>
       </NavBarMenu>
     </NavBarPlaceHolder>
   )
