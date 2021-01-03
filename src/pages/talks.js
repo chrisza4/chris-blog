@@ -74,6 +74,16 @@ const Talks = () => {
             detail="Redux, MobX or Pure React? Explain how various types of applications fit can fit into each state management libraries. And why does it can feel overkill or inadequate when you choose the unfit one"
             src="https://www.youtube.com/embed/qC-uad_ZBtA"
           />
+          <Talk
+            title="[TH] Testable React: Patterns and comparison - React Bangkok 2.0.0"
+            detail="Share a code pattern that help React application to become more testable"
+            src="https://www.youtube.com/embed/Y4b9-oMSCyc"
+          />
+          <Talk
+            title="[TH] Software Architect Meetup"
+            detail="Host an software architect meetup and talked about how each programming paradigm offer different kind of code tracability"
+            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F168054637378916%2Fvideos%2F196516527866060%2F&show_text=false&width=500"
+          />
         </div>
       </div>
     </div>
