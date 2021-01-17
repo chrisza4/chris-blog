@@ -2,6 +2,7 @@ import React from "react"
 import { StyledDiv, StyledUl, StyledLi } from "../tools/styled"
 import { Link } from "gatsby"
 import styles from "./navBar.module.css"
+import WebRing from "../webRing"
 
 const NavBarPlaceHolder = StyledDiv({ className: styles.navBar })
 const NavBarMenu = StyledUl({ className: styles.navBarMenus })
@@ -24,6 +25,9 @@ export default function NavBar() {
       <NavBarMenu>
         <NavBarMenuLink to="/">Home</NavBarMenuLink>
         <NavBarMenuLink to="/talks">My Talks</NavBarMenuLink>
+        <NavBarMenuItemPlaceHolder>
+          <WebRing />
+        </NavBarMenuItemPlaceHolder>
       </NavBarMenu>
     </NavBarPlaceHolder>
   )
