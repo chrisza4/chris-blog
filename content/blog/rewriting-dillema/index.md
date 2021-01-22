@@ -52,13 +52,17 @@ Most of the time, this is step four.
 
 4. After the rewrite project was approved, programmers start to treat the legacy system as a black box. They refuse to touch it with a ten-foot pole. They only look into specs and build the new system accordingly.
 
+That is different from what I did. In my success rewrite, I never treat it at a black box.
+
 In the first project, I understand my messy stored procedures' ins-and-outs, and it took me only a week and few days to move almost every business logic to the core code.
 
 The second project was a mess, and I have permission to rewrite it. I spent a great amount of time during the rewrite mapping out the relationship between the current messy front-end codebase and the features.
 
-In my experience, every successful rewrite required a significant level of understanding of the legacy system.
+At this point, I believe every successful rewrite required a significant level of understanding of the legacy system.
 
 Ironically, most programmers suggest the rewrite because they don't want to work with the legacy system anymore. They want to be free from it. They don't want to understand it.
+
+And that is the dilemma. Only one who brave enough to dig into legacy system, are the only one who capable of escaping.
 
 ## Don't avoid legacy code
 
