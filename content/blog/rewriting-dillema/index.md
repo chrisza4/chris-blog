@@ -1,5 +1,6 @@
 ---
 title: The software rewrite dilemma
+date: "2021-01-24T12:00:00.000"
 ---
 
 Imagine this: You've been assigned to a legacy project. It does not have any tests. It used an ancient coding style or no consistent style at all. Global variables are everywhere. Everything is such an incomprehensible mess.

@@ -1,5 +1,6 @@
 ---
 title: SOLID Javascript without Classes
+date: "2021-01-15T00:00:00.000"
 ---
 
 I gave a talk in [Javascript Bangkok](https://javascriptbangkok.com/). It is about how you can use SOLID principle in Javascript without classes and objects.

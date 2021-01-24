@@ -1,5 +1,6 @@
 ---
 title: Why I blog here.
+date: "2021-01-13T00:00:00.000"
 ---
 
 Hi. I have been blogging in both [Medium](https://medium.com/@chrisza) and [dev.to](https://dev.to/chrisza4) for a really long time.

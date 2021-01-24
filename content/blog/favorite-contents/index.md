@@ -1,5 +1,6 @@
 ---
 title: My favorite blogs
+date: "2021-01-24T00:00:00.000"
 ---
 
 These are some of the blogs I enjoy. I will share it here.
