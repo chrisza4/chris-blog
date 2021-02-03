@@ -64,15 +64,21 @@ public void ShouldHideComplicatedSettingMenuForJane() {
 }
 ```
 
----
-
 So I think that when we code, reflecting the truth and nature of the requirement is way more important than conforming to the structure and "best practices".
 
-Yes, you might leave a weird code but with some comment to explain the context. In this case, we hardcode it because it is Jane's personal request, and she refuses to work with the system unless we hide the menu. We can put that into the comment.
+It's ok to leave the code but with some comment to explain the context. In this case, we hardcode it because it is Jane's personal request, and she refuses to work with the system unless we hide the menu. We can put that into the comment.
 
-Sometimes, we don't be totally honest with the requirement. And we put some fancy stuff and abstraction over it. We might disdain the practice of hardcoding to just "Jane" so we might put an abstraction over it to make it seems more likable, more consistent, better structured, etc. That structure might be some role, configuration, or whatsoever.
+---
 
-I think those abstractions will blur the real truth and nature of the requirement. And make the system even harder to maintain.
+Sometimes, we don't be totally honest with the requirement. We want the code to looks good, looks consistence and have a well-defined structured. That is what good code look like.
+
+But somtimes, the truth is the requirement and human desired can be messy.
+
+And from what I see, many times developers (including me) hate this messiness and don't want to make a code to reflect the messy reality. So we put some fancy stuff and abstraction over it.
+
+For example, We might disdain the practice of hardcoding to just "Jane" so we might put an abstraction over it to make it seems more likable, more consistent, better structured, etc. That structure can be some role, configuration, or whatsoever.
+
+I think those abstractions will blur the real truth and nature of the requirement. And make the system even harder to maintain. It reduce the quality of the code by acting as a sophicicated sheet to covered up the actual system requirement.
 
 I think we should be honest with the requirement. If it is Jane's personal request, make it clear that it is her personal request. reflect it truthfully no matter how messy it is.
 
