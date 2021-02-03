@@ -1,5 +1,6 @@
 ---
 title: Code to reflect of truth
+date: "2021-02-03T00:00:00.000"
 ---
 
 Let say you are building an ERP application with a role-based authorization system.
@@ -40,7 +41,7 @@ In the second option, we create a role to conform to the current structure of th
 
 In the third option, it is simply a bad practice. Any good programmer should not be going around doing things the easy way and hardcoding stuff. They should implement everything in the right way.
 
-But is it? Is hardcoding is an easy way out of this?
+But is it? Is hardcoding is an easy sloppy way to implement this requirement?
 
 I would argue that since this request is a personal request from Jane herself, the hardcoding would reflect the truth in the most honest way.
 
@@ -73,6 +74,6 @@ Sometimes, we don't be totally honest with the requirement. And we put some fanc
 
 I think those abstractions will blur the real truth and nature of the requirement. And make the system even harder to maintain.
 
-I think we should be honest with the requirement, reflect it truthfully no matter how messy it is.
+I think we should be honest with the requirement. If it is Jane's personal request, make it clear that it is her personal request. reflect it truthfully no matter how messy it is.
 
 And the truth shall set you free.
