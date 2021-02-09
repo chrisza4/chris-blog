@@ -1,6 +1,6 @@
 ---
 title: We don't need "more documentation"
-date: "2021-01-13T00:00:00.000"
+date: "2021-02-13T00:00:00.000"
 ---
 
 There are many sentiments around code documentation. On the one side, some advocates for self-documented code, and another side advocate for more documentation.
