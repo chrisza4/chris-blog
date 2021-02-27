@@ -3,8 +3,6 @@ title: Agile upfront design
 date: "2021-02-27T12:00:00.000"
 ---
 
-(Disclaimer: I make a lot of bash in waterfall methodology in the article. When I bash it, I bash on waterfall done wrong. I am aware that effective waterfall will not end up this way.)
-
 One of the greatest questions in software design is how much should we put effort into upfront design?
 
 Agile methodology has become a norm for software development, and many people argue for not design upfront. As a result, many of us claim that Agile prevents a good software design and aims to churn out endless features and technical debts.
@@ -12,6 +10,8 @@ Agile methodology has become a norm for software development, and many people ar
 While I don't believe that is true, I can see where this is coming from.
 
 I want to share my approach toward architectural design.
+
+(Disclaimer: I make a lot of bash in waterfall methodology in the article. When I bash it, I bash on waterfall done wrong. I am aware that effective waterfall will not end up this way.)
 
 ## Two secrets of the agile design upfront
 
