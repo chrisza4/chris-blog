@@ -22,3 +22,17 @@ I am not a person who always advocates for any "Original stuff". I firmly believ
 It does provide value to a certain degree. But if we apply Pareto's 80/20 rules here, I would say inheritance and base class design provides the 20% side.
 
 I should write on this more sometimes. I touch the surface of this topic in the article [Composition over Inheritance](https://dev.to/chrisza4/composition-over-inheritance-1ojg)
+
+# CALM Theorem
+
+Design a program on a distributed system is hard. As an industry, we are not 100% aware of limitations when you take a single node application and make it distributed.
+
+I love theorem. CAP Theorem talks about the trade-offs when you go distributed. That makes me feel at ease because I never again had to judge myself for not thinking hard enough to design a consistent and available program.
+
+CALM Theorem talk is another fantastic theorem.
+
+CALM talks about how to know if you need massive coordination. For example: If you design a highly-available stream-based average calculator. You have a program in multiple nodes calculate the average for redundancy. It is possible that each node might not yield the same result at a given time. Do you need a consensus resolver? Or you can just wait for it to be eventually consistent? The answer is: If you design a program in a specific way, then you can wait for it to be eventually consistent.
+
+I wish for this theorem to gain more traction.
+
+[Paper](https://arxiv.org/abs/1901.01930)
