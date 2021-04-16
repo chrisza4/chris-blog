@@ -86,6 +86,8 @@ The context helps you empathize with the capability, limitation, and habit of ma
 
 For example, let say we want to adopt microservice architecture. Here is a persona example:
 
+![Persona](./Personas.png)
+
 We might start with either the context side or the expectation side. We might start by asking ourselves: here what I want from our maintainers. What kind of people are they? Or you might start by: here are our maintainers. What can I expect? It works both ways.
 
 Just by writing down persona, we make a connection between maintainer and expectation clearer and more realistic.
@@ -96,7 +98,7 @@ Once you have persona, you need to test your persona.
 
 It is very simple. We just look at actual maintainers and see if they fit the description.
 
-//////////////////////////////////////
+![Persona testing context](./Persona testing context.png)
 
 In this case, we identify the gap between the actual maintainers and our ideal maintainers. Mark doesn't have 6 years of experience, but he understands distributed systems.
 
@@ -122,9 +124,11 @@ Those gaps will not go away just because we don't think about it. So let us be m
 
 As we adjust our context, we still might be wrong about expectations.
 
-For example, we might think that a person with 4 years of infrastructure experience would be able to monitor microservices within 5 days effectively. We might think that a senior developer will be able to facilitate post-mortem.
+For example, we might think that our maintainers can independently create new feature. We might think that a senior developer will be able to facilitate post-mortem.
 
 In the end, we might be wrong.
+
+![Persona testing context](Persona testing Expectation.png)
 
 When you have expectations and context written down, it opens up an opportunity to improve.
 
