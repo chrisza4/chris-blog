@@ -155,7 +155,7 @@ Also, it is better to say
 
 than
 
-> _We need to hire better programmers to maintain this system. Please hire only rock stars._
+> _We need better programmers to maintain this system. Please hire only top class programmers._
 
 And personas allow you to say these types of sentences with confidence.
 
