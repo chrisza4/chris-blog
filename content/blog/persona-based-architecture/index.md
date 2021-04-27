@@ -22,7 +22,7 @@ Wait. In a quest to chase a maintainable codebase, we accidentally created a cod
 
 ### Practical maintainability
 
-Personally, I have no issue working with great architectural patterns such as [Hexagonal Architecture](<https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)>), [CQRS](https://martinfowler.com/bliki/CQRS.html), [Flux](https://facebook.github.io/flux/) [Microservices](https://microservices.io/). I learned about this pattern for quite a while.
+Personally, I have no issue working with great architectural patterns such as [Hexagonal Architecture](<https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)>), [CQRS](https://martinfowler.com/bliki/CQRS.html), [Flux](https://facebook.github.io/flux/) or [Microservices](https://microservices.io/). I learned about this pattern for quite a while.
 
 But when I work in a team of 10 developers, does it matter if I am the only one out of nine who knows about it?
 
