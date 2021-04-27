@@ -1,7 +1,6 @@
 ---
 title: Persona-based architecture
 date: "2021-04-15T00:00:00.000"
-hidden: true
 ---
 
 We developers always dream about a maintainable system. We longed for a simple system that is easy to work with. It should be easy to change, debug and observe.
