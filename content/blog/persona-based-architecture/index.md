@@ -46,23 +46,23 @@ In the end, the maintainability of any codebase never depends on whether you do 
 
 It all depends on **humans**. Yes, those fuzzy emotional unreliable humans.
 
-### Working with human
+### Working with humans
 
 > Once, a software architect said this to me: Software Architect is a very special role. We are responsible for the overall quality of the codebase. We know the quality of the codebase depends on developers. And yet, we don't have any power to hold those developers accountable. We can only design, convince, and maybe set some rules.
 
 A path toward maintainable architecture is such a vague path. Since it all depends on humans, there is no correct answer. No matter what you do, you might be right, or you might be wrong.
 
-Software engineers are familiar with working with binary. There will always be a right way. Code should either compiled or error. Code should either pass a test or fail a test. Everything should be consistent and reproducible.
+Software engineers are familiar with working with a binary concept. Code should either compiled or error. Code should either pass a test or fail a test. Everything should be consistent and reproducible.
 
 On the other hand, humans are not consistent at all. Today a human can love one thing, and tomorrow they might hate it. They might say our codebase is the best codebase ever today, and in the next few months, they might want to rewrite everything from scratch.
 
 How can we work with humans?
 
-I would like to introduce you to two fields that are pretty much in the same spot.
+I would like to introduce you to two fields that are pretty much in the same place.
 
-The first field is the design field. Designers never have direct control over users, yet they need to design both UX and UI to guide users to do the right thing. Their career pretty much depends on the user doing the right thing while still happy with the overall experience.
+The first field is the design field. Designers don't have direct control over users, yet they need to design both UX and UI to guide users to do the right thing. Their career pretty much depends on the user doing the right thing while still happy with the overall experience.
 
-The second field is the economic field. Economic planners never have direct control over the population behavior, yet they need to create a system that incentivizes people to a certain economic direction. Otherwise, the whole nation failed.
+The second field is the economic. Economic planners never have direct control over the population behavior, yet they need to create a system that incentivizes people to a certain economic direction. Otherwise, the whole nation failed.
 
 I am always fascinated by behavioral economics. How can you introduce a policy? How will people react to that? What will be the consequence?
 
@@ -93,9 +93,9 @@ We might start with either the context side or the expectation side. We might st
 
 Just by writing down persona, we make a connection between maintainer and expectation clearer and more realistic.
 
-### Persona testing: Context side
+### Persona validation: Context side
 
-Once you have persona, you need to test your persona.
+Once you have persona, you need to validate your persona.
 
 It is very simple. We just look at actual maintainers and see if they fit the description.
 
@@ -105,7 +105,9 @@ In this case, we identify the gap between the actual maintainers and our ideal m
 
 Once all gaps are clearly identified, we have many choices to deal with them.
 
-Aside from a clear choice of changing our architecture to fit the maintainers, we can also provide a training and capability improvement program. We can switch some team members around with other projects. We can hire someone from the outside that matches a requirement.
+The first clear choice is to adapt our architecture to be more realistic. If we know the maintainer cannot maintain this architecture, we should not insist on building it.
+
+For another choice, we can also provide a training and capability improvement program. We can switch some team members around with other projects. We can hire someone from the outside that matches a requirement.
 
 We can even set a standard and career development. We can bring your persona to all those junior and say: We want you to be this person within a year. Once you obtain these, we can talk about promotion and next step in your career.
 
@@ -121,11 +123,11 @@ I heard this kind of story so many times. Architecture implements fancy architec
 
 Those gaps will not go away just because we don't think about it. So let us be mentally prepared and confront those gaps heads-on.
 
-### Persona testing: Expectation side
+### Persona validation: Expectation side
 
 As we adjust our context, we still might be wrong about expectations.
 
-For example, we might think that our maintainers can independently create new feature. We might think that a senior developer will be able to facilitate post-mortem.
+For example, we might think that our maintainers can independently create a new feature. We might think that a senior developer will be able to facilitate post-mortem.
 
 In the end, we might be wrong.
 
@@ -177,13 +179,11 @@ I was in a position of tech lead who responsible for both management and archite
 
 ## Endnote
 
-Today, I introduce the concept of practical maintainability. And I think software architects should strive for it.
-
 When it comes to practical maintainability, it's all about real humans rather than rules, processes, and practices.
 
 In the software engineering field, we mainly focus on binary and concept. In some other fields, they have many tools to deal with human inconsistency. We can learn a lot from them.
 
-To be successful in software architecture design, you rely on humans. Persona is one of many tools to help you layout dependency between your structure and human behavior. Persona testing helps you understand how your design actually works in practice.
+To be successful in software architecture design, you rely on humans. Persona is one of many tools to help you layout dependency between your structure and human behavior. Persona validation helps you understand how your design actually works in practice.
 
 Once you have everything visualize, you have the power to solve it.
 
