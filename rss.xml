@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris' Dialogue]]></title><description><![CDATA[A blog of Chris, a human who love to learn more about himself and the world]]></description><link>https://gatsby-starter-blog-demo.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 27 Apr 2021 05:59:46 GMT</lastBuildDate><item><title><![CDATA[Persona-based architecture]]></title><description><![CDATA[We developers always dream about a maintainable system. We longed for a simple system that is easy to work with. It should be easy to change…]]></description><link>https://gatsby-starter-blog-demo.netlify.app/persona-based-architecture/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.app/persona-based-architecture/</guid><pubDate>Wed, 14 Apr 2021 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;We developers always dream about a maintainable system. We longed for a simple system that is easy to work with. It should be easy to change, debug and observe.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris' Dialogue]]></title><description><![CDATA[A blog of Chris, a human who love to learn more about himself and the world]]></description><link>https://gatsby-starter-blog-demo.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 06 May 2021 06:29:07 GMT</lastBuildDate><item><title><![CDATA[Persona-based architecture]]></title><description><![CDATA[We developers always dream about a maintainable system. We longed for a simple system that is easy to work with. It should be easy to change…]]></description><link>https://gatsby-starter-blog-demo.netlify.app/persona-based-architecture/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.app/persona-based-architecture/</guid><pubDate>Wed, 14 Apr 2021 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;We developers always dream about a maintainable system. We longed for a simple system that is easy to work with. It should be easy to change, debug and observe.&lt;/p&gt;
 &lt;p&gt;We created a concept called clean code and clean architecture in order to pursue that dream.&lt;/p&gt;
 &lt;p&gt;What is clean architecture? There is a definition defined by &lt;a href=&quot;https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html&quot;&gt;Uncle Bob&lt;/a&gt;. It must be independent of a framework. It must be independent of UI, etc.&lt;/p&gt;
 &lt;p&gt;Everything seems good. Since we have a solid ground on what a clean code is, we should already achieve a maintainable codebase, right?&lt;/p&gt;
@@ -23,17 +23,17 @@
 &lt;p&gt;Is the CQRS codebase maintainable? If a team finds it easy to work with, then yes.&lt;/p&gt;
 &lt;p&gt;In the end, the maintainability of any codebase never depends on whether you do things in the right way or follow best practices. While it helps, it is not a deciding factor.&lt;/p&gt;
 &lt;p&gt;It all depends on &lt;strong&gt;humans&lt;/strong&gt;. Yes, those fuzzy emotional unreliable humans.&lt;/p&gt;
-&lt;h3&gt;Working with human&lt;/h3&gt;
+&lt;h3&gt;Working with humans&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Once, a software architect said this to me: Software Architect is a very special role. We are responsible for the overall quality of the codebase. We know the quality of the codebase depends on developers. And yet, we don’t have any power to hold those developers accountable. We can only design, convince, and maybe set some rules.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;A path toward maintainable architecture is such a vague path. Since it all depends on humans, there is no correct answer. No matter what you do, you might be right, or you might be wrong.&lt;/p&gt;
-&lt;p&gt;Software engineers are familiar with working with binary. There will always be a right way. Code should either compiled or error. Code should either pass a test or fail a test. Everything should be consistent and reproducible.&lt;/p&gt;
+&lt;p&gt;Software engineers are familiar with working with a binary concept. Code should either compiled or error. Code should either pass a test or fail a test. Everything should be consistent and reproducible.&lt;/p&gt;
 &lt;p&gt;On the other hand, humans are not consistent at all. Today a human can love one thing, and tomorrow they might hate it. They might say our codebase is the best codebase ever today, and in the next few months, they might want to rewrite everything from scratch.&lt;/p&gt;
 &lt;p&gt;How can we work with humans?&lt;/p&gt;
-&lt;p&gt;I would like to introduce you to two fields that are pretty much in the same spot.&lt;/p&gt;
-&lt;p&gt;The first field is the design field. Designers never have direct control over users, yet they need to design both UX and UI to guide users to do the right thing. Their career pretty much depends on the user doing the right thing while still happy with the overall experience.&lt;/p&gt;
-&lt;p&gt;The second field is the economic field. Economic planners never have direct control over the population behavior, yet they need to create a system that incentivizes people to a certain economic direction. Otherwise, the whole nation failed.&lt;/p&gt;
+&lt;p&gt;I would like to introduce you to two fields that are pretty much in the same place.&lt;/p&gt;
+&lt;p&gt;The first field is the design field. Designers don’t have direct control over users, yet they need to design both UX and UI to guide users to do the right thing. Their career pretty much depends on the user doing the right thing while still happy with the overall experience.&lt;/p&gt;
+&lt;p&gt;The second field is the economic. Economic planners never have direct control over the population behavior, yet they need to create a system that incentivizes people to a certain economic direction. Otherwise, the whole nation failed.&lt;/p&gt;
 &lt;p&gt;I am always fascinated by behavioral economics. How can you introduce a policy? How will people react to that? What will be the consequence?&lt;/p&gt;
 &lt;p&gt;There are many tools and ways of thinking from those fields that we can apply to software architecture. I can name many. Design thinking, User testing, Unintended consequence, Game Theory, etc. All those tools are applicable to software architecture.&lt;/p&gt;
 &lt;p&gt;And today, I will write about a tool that I steal from the design field: &lt;strong&gt;Persona&lt;/strong&gt;&lt;/p&gt;
@@ -82,8 +82,8 @@
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;We might start with either the context side or the expectation side. We might start by asking ourselves: here what I want from our maintainers. What kind of people are they? Or you might start by: here are our maintainers. What can I expect? It works both ways.&lt;/p&gt;
 &lt;p&gt;Just by writing down persona, we make a connection between maintainer and expectation clearer and more realistic.&lt;/p&gt;
-&lt;h3&gt;Persona testing: Context side&lt;/h3&gt;
-&lt;p&gt;Once you have persona, you need to test your persona.&lt;/p&gt;
+&lt;h3&gt;Persona validation: Context side&lt;/h3&gt;
+&lt;p&gt;Once you have persona, you need to validate your persona.&lt;/p&gt;
 &lt;p&gt;It is very simple. We just look at actual maintainers and see if they fit the description.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -117,7 +117,8 @@
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;In this case, we identify the gap between the actual maintainers and our ideal maintainers. Mark doesn’t have 6 years of experience, but he understands distributed systems.&lt;/p&gt;
 &lt;p&gt;Once all gaps are clearly identified, we have many choices to deal with them.&lt;/p&gt;
-&lt;p&gt;Aside from a clear choice of changing our architecture to fit the maintainers, we can also provide a training and capability improvement program. We can switch some team members around with other projects. We can hire someone from the outside that matches a requirement.&lt;/p&gt;
+&lt;p&gt;The first clear choice is to adapt our architecture to be more realistic. If we know the maintainer cannot maintain this architecture, we should not insist on building it.&lt;/p&gt;
+&lt;p&gt;For another choice, we can also provide a training and capability improvement program. We can switch some team members around with other projects. We can hire someone from the outside that matches a requirement.&lt;/p&gt;
 &lt;p&gt;We can even set a standard and career development. We can bring your persona to all those junior and say: We want you to be this person within a year. Once you obtain these, we can talk about promotion and next step in your career.&lt;/p&gt;
 &lt;p&gt;All of the above are some examples of what we can do once gaps are clearly identified.&lt;/p&gt;
 &lt;p&gt;I hope you now see the value of writing down persona.&lt;/p&gt;
@@ -125,9 +126,9 @@
 &lt;p&gt;All I can say is that this approach works much better than design for the best and pray for the rest approach. It works much better than blindly adopting microservice, and in the end, all maintainers just want to quit or kill the project.&lt;/p&gt;
 &lt;p&gt;I heard this kind of story so many times. Architecture implements fancy architecture and creates a big gap between what should happen and what actually happens.&lt;/p&gt;
 &lt;p&gt;Those gaps will not go away just because we don’t think about it. So let us be mentally prepared and confront those gaps heads-on.&lt;/p&gt;
-&lt;h3&gt;Persona testing: Expectation side&lt;/h3&gt;
+&lt;h3&gt;Persona validation: Expectation side&lt;/h3&gt;
 &lt;p&gt;As we adjust our context, we still might be wrong about expectations.&lt;/p&gt;
-&lt;p&gt;For example, we might think that our maintainers can independently create new feature. We might think that a senior developer will be able to facilitate post-mortem.&lt;/p&gt;
+&lt;p&gt;For example, we might think that our maintainers can independently create a new feature. We might think that a senior developer will be able to facilitate post-mortem.&lt;/p&gt;
 &lt;p&gt;In the end, we might be wrong.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -193,10 +194,9 @@
 &lt;/ul&gt;
 &lt;p&gt;I was in a position of tech lead who responsible for both management and architecture, and having a persona in mind helps a lot.&lt;/p&gt;
 &lt;h2&gt;Endnote&lt;/h2&gt;
-&lt;p&gt;Today, I introduce the concept of practical maintainability. And I think software architects should strive for it.&lt;/p&gt;
 &lt;p&gt;When it comes to practical maintainability, it’s all about real humans rather than rules, processes, and practices.&lt;/p&gt;
 &lt;p&gt;In the software engineering field, we mainly focus on binary and concept. In some other fields, they have many tools to deal with human inconsistency. We can learn a lot from them.&lt;/p&gt;
-&lt;p&gt;To be successful in software architecture design, you rely on humans. Persona is one of many tools to help you layout dependency between your structure and human behavior. Persona testing helps you understand how your design actually works in practice.&lt;/p&gt;
+&lt;p&gt;To be successful in software architecture design, you rely on humans. Persona is one of many tools to help you layout dependency between your structure and human behavior. Persona validation helps you understand how your design actually works in practice.&lt;/p&gt;
 &lt;p&gt;Once you have everything visualize, you have the power to solve it.&lt;/p&gt;
 &lt;p&gt;I believe that just like every other type of architect, a software architect is supposed to solve a human problem. Architecture should serve human needs, not the other way around.&lt;/p&gt;
 &lt;p&gt;Thanks for reading!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Code quality without familiarity]]></title><description><![CDATA[หลายๆ ครั้งผมพบว่าโปรแกรมเมอร์มักจะตัดสินคุณภาพของโค้ดจากปัจจัยเพียงแค่ว่า Pattern ที่เขาใช้ตรงกับที่เราใช้มั้ย เช่น ถ้าสมมติเราทำโค้ด MVC…]]></description><link>https://gatsby-starter-blog-demo.netlify.app/code-without-familiarity/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.app/code-without-familiarity/</guid><pubDate>Sat, 06 Mar 2021 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;หลายๆ ครั้งผมพบว่าโปรแกรมเมอร์มักจะตัดสินคุณภาพของโค้ดจากปัจจัยเพียงแค่ว่า Pattern ที่เขาใช้ตรงกับที่เราใช้มั้ย&lt;/p&gt;

@@ -26,17 +26,17 @@
 <p>Is the CQRS codebase maintainable? If a team finds it easy to work with, then yes.</p>
 <p>In the end, the maintainability of any codebase never depends on whether you do things in the right way or follow best practices. While it helps, it is not a deciding factor.</p>
 <p>It all depends on <strong>humans</strong>. Yes, those fuzzy emotional unreliable humans.</p>
-<h3>Working with human</h3>
+<h3>Working with humans</h3>
 <blockquote>
 <p>Once, a software architect said this to me: Software Architect is a very special role. We are responsible for the overall quality of the codebase. We know the quality of the codebase depends on developers. And yet, we don’t have any power to hold those developers accountable. We can only design, convince, and maybe set some rules.</p>
 </blockquote>
 <p>A path toward maintainable architecture is such a vague path. Since it all depends on humans, there is no correct answer. No matter what you do, you might be right, or you might be wrong.</p>
-<p>Software engineers are familiar with working with binary. There will always be a right way. Code should either compiled or error. Code should either pass a test or fail a test. Everything should be consistent and reproducible.</p>
+<p>Software engineers are familiar with working with a binary concept. Code should either compiled or error. Code should either pass a test or fail a test. Everything should be consistent and reproducible.</p>
 <p>On the other hand, humans are not consistent at all. Today a human can love one thing, and tomorrow they might hate it. They might say our codebase is the best codebase ever today, and in the next few months, they might want to rewrite everything from scratch.</p>
 <p>How can we work with humans?</p>
-<p>I would like to introduce you to two fields that are pretty much in the same spot.</p>
-<p>The first field is the design field. Designers never have direct control over users, yet they need to design both UX and UI to guide users to do the right thing. Their career pretty much depends on the user doing the right thing while still happy with the overall experience.</p>
-<p>The second field is the economic field. Economic planners never have direct control over the population behavior, yet they need to create a system that incentivizes people to a certain economic direction. Otherwise, the whole nation failed.</p>
+<p>I would like to introduce you to two fields that are pretty much in the same place.</p>
+<p>The first field is the design field. Designers don’t have direct control over users, yet they need to design both UX and UI to guide users to do the right thing. Their career pretty much depends on the user doing the right thing while still happy with the overall experience.</p>
+<p>The second field is the economic. Economic planners never have direct control over the population behavior, yet they need to create a system that incentivizes people to a certain economic direction. Otherwise, the whole nation failed.</p>
 <p>I am always fascinated by behavioral economics. How can you introduce a policy? How will people react to that? What will be the consequence?</p>
 <p>There are many tools and ways of thinking from those fields that we can apply to software architecture. I can name many. Design thinking, User testing, Unintended consequence, Game Theory, etc. All those tools are applicable to software architecture.</p>
 <p>And today, I will write about a tool that I steal from the design field: <strong>Persona</strong></p>
@@ -85,8 +85,8 @@
     </span></p>
 <p>We might start with either the context side or the expectation side. We might start by asking ourselves: here what I want from our maintainers. What kind of people are they? Or you might start by: here are our maintainers. What can I expect? It works both ways.</p>
 <p>Just by writing down persona, we make a connection between maintainer and expectation clearer and more realistic.</p>
-<h3>Persona testing: Context side</h3>
-<p>Once you have persona, you need to test your persona.</p>
+<h3>Persona validation: Context side</h3>
+<p>Once you have persona, you need to validate your persona.</p>
 <p>It is very simple. We just look at actual maintainers and see if they fit the description.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -120,7 +120,8 @@
     </span></p>
 <p>In this case, we identify the gap between the actual maintainers and our ideal maintainers. Mark doesn’t have 6 years of experience, but he understands distributed systems.</p>
 <p>Once all gaps are clearly identified, we have many choices to deal with them.</p>
-<p>Aside from a clear choice of changing our architecture to fit the maintainers, we can also provide a training and capability improvement program. We can switch some team members around with other projects. We can hire someone from the outside that matches a requirement.</p>
+<p>The first clear choice is to adapt our architecture to be more realistic. If we know the maintainer cannot maintain this architecture, we should not insist on building it.</p>
+<p>For another choice, we can also provide a training and capability improvement program. We can switch some team members around with other projects. We can hire someone from the outside that matches a requirement.</p>
 <p>We can even set a standard and career development. We can bring your persona to all those junior and say: We want you to be this person within a year. Once you obtain these, we can talk about promotion and next step in your career.</p>
 <p>All of the above are some examples of what we can do once gaps are clearly identified.</p>
 <p>I hope you now see the value of writing down persona.</p>
@@ -128,9 +129,9 @@
 <p>All I can say is that this approach works much better than design for the best and pray for the rest approach. It works much better than blindly adopting microservice, and in the end, all maintainers just want to quit or kill the project.</p>
 <p>I heard this kind of story so many times. Architecture implements fancy architecture and creates a big gap between what should happen and what actually happens.</p>
 <p>Those gaps will not go away just because we don’t think about it. So let us be mentally prepared and confront those gaps heads-on.</p>
-<h3>Persona testing: Expectation side</h3>
+<h3>Persona validation: Expectation side</h3>
 <p>As we adjust our context, we still might be wrong about expectations.</p>
-<p>For example, we might think that our maintainers can independently create new feature. We might think that a senior developer will be able to facilitate post-mortem.</p>
+<p>For example, we might think that our maintainers can independently create a new feature. We might think that a senior developer will be able to facilitate post-mortem.</p>
 <p>In the end, we might be wrong.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -196,10 +197,9 @@
 </ul>
 <p>I was in a position of tech lead who responsible for both management and architecture, and having a persona in mind helps a lot.</p>
 <h2>Endnote</h2>
-<p>Today, I introduce the concept of practical maintainability. And I think software architects should strive for it.</p>
 <p>When it comes to practical maintainability, it’s all about real humans rather than rules, processes, and practices.</p>
 <p>In the software engineering field, we mainly focus on binary and concept. In some other fields, they have many tools to deal with human inconsistency. We can learn a lot from them.</p>
-<p>To be successful in software architecture design, you rely on humans. Persona is one of many tools to help you layout dependency between your structure and human behavior. Persona testing helps you understand how your design actually works in practice.</p>
+<p>To be successful in software architecture design, you rely on humans. Persona is one of many tools to help you layout dependency between your structure and human behavior. Persona validation helps you understand how your design actually works in practice.</p>
 <p>Once you have everything visualize, you have the power to solve it.</p>
 <p>I believe that just like every other type of architect, a software architect is supposed to solve a human problem. Architecture should serve human needs, not the other way around.</p>
 <p>Thanks for reading!</p></section><hr/><footer><div class="bio"><div class="bio-avatar gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:130px;height:130px"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAEDBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/2gAMAwEAAhADEAAAAellpialWZ25hbBj/8QAHBABAQACAgMAAAAAAAAAAAAAAQIAEQMEEhMU/9oACAEBAAEFAq5gn32P1WY1Dmi80J2DcybrxHP/xAAXEQEAAwAAAAAAAAAAAAAAAAAQESFB/9oACAEDAQE/AYow/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHBAAAgMBAAMAAAAAAAAAAAAAAAERITECUWGB/9oACAEBAAY/Aq0jtpyWVpfUCz6xeifBh//EABsQAQADAQEBAQAAAAAAAAAAAAEAETEhQVGR/9oACAEBAAE/IbmTxKYpYsMYcAPybqj5U8QjubLZ3zaGE2q0BNWjio68fFJ//9oADAMBAAIAAwAAABAL133/xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQMBAT8Qiign/8QAFxEAAwEAAAAAAAAAAAAAAAAAARARQf/aAAgBAgEBPxAWxav/xAAbEAEBAQEAAwEAAAAAAAAAAAABESEAMUFhkf/aAAgBAQABPxBS2kFhL74LC8Myy8NsGEjO3jvBOb9nUBaZFcpjxf0TaJ+nLPy8Er84wVSUhp76MiRCB+D3/9k=" alt="Chris" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/68ed63ec4ddb138076d797fb285af16d/feab9/my-pic.jpg 1x,
