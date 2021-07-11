@@ -22,7 +22,7 @@ Wait. In a quest to chase a maintainable codebase, we accidentally created a cod
 
 ### Practical maintainability
 
-Personally, I have no issue working with great architectural patterns such as [Hexagonal Architecture](<https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)>), [CQRS](https://martinfowler.com/bliki/CQRS.html), [Flux](https://facebook.github.io/flux/) or [Microservices](https://microservices.io/). I learned about this pattern for quite a while.
+Personally, I have no issue working with great architectural patterns such as [Hexagonal Architecture](<https://en.wikipedia.org/wiki/Hexagonal_architecture_(software)>), [CQRS](https://en.wikipedia.org/wiki/Command%E2%80%93query_separation#Command_query_responsibility_segregation), [Flux](https://facebook.github.io/flux/) [Microservices](https://martinfowler.com/articles/microservices.html). I learned about this pattern for quite a while.
 
 But when I work in a team of 10 developers, does it matter if I am the only one out of nine who knows about it?
 
@@ -54,9 +54,9 @@ A path toward maintainable architecture is such a vague path. Since it all depen
 
 Software engineers are familiar with working with a binary concept. Code should either compiled or error. Code should either pass a test or fail a test. Everything should be consistent and reproducible.
 
-On the other hand, humans are not consistent at all. Today a human can love one thing, and tomorrow they might hate it. They might say our codebase is the best codebase ever today, and in the next few months, they might want to rewrite everything from scratch.
+On the other hand, humans are not consistent at all. Today a human can love one thing, and tomorrow they might hate it. Today they might say our codebase is the best codebase ever. In the next few months they might want to rewrite everything from scratch.
 
-How can we work with humans?
+How can we work with human, [a creature full of inconsistency](https://academic.oup.com/ilarjournal/article/31/2/3/657422) and nuisance?
 
 I would like to introduce you to two fields that are pretty much in the same place.
 
