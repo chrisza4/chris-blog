@@ -5,6 +5,12 @@ date: "2021-01-24T00:00:00.000"
 
 These are some of the blogs I enjoy. I will share it here.
 
+## [Api Design](https://fasterthanli.me/articles/abstracting-away-correctness)
+
+This is a great article which criticized API design of Go language in the way that IMHO, very constructive and educational. I am pretty much align with the philosophy.
+
+[Link](https://fasterthanli.me/articles/abstracting-away-correctness)
+
 ## [Tradable Quality Hypothesis](https://martinfowler.com/bliki/TradableQualityHypothesis.html)
 
 Martin Fowler put good content on why we might wrongly perceive internal quality and design as trade-offs for cheaper development. I agree that just like how we can buy a lower quality phone for lower prices, we can make a lower external quality software (eg. Non-performance critical. Non-optimal user interface) for the sake of lowering budget. However, it will be different story when it comes to internal quality.

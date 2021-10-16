@@ -24,7 +24,10 @@ export default function NavBar() {
     <NavBarPlaceHolder>
       <NavBarMenu>
         <NavBarMenuLink to="/">Home</NavBarMenuLink>
-        <NavBarMenuLink to="/talks">My Talks</NavBarMenuLink>
+        <NavBarMenuLink to="/favorite-contents">
+          My favorite blogs
+        </NavBarMenuLink>
+        <NavBarMenuLink to="/talks">Talks</NavBarMenuLink>
         <NavBarMenuItemPlaceHolder>
           <WebRing />
         </NavBarMenuItemPlaceHolder>
