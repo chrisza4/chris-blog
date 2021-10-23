@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris' Dialogue]]></title><description><![CDATA[A blog of Chris, a human who love to learn more about himself and the world]]></description><link>https://gatsby-starter-blog-demo.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 23 Oct 2021 04:30:13 GMT</lastBuildDate><item><title><![CDATA[Start with Microservices. Don't start with Microservices]]></title><description><![CDATA[This article has an oxymoron title. I want to tell two stories. One which makes a case for don’t start with Microservice, one for start with…]]></description><link>https://gatsby-starter-blog-demo.netlify.app/microservice-start-not-start/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.app/microservice-start-not-start/</guid><pubDate>Sat, 16 Oct 2021 05:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This article has an oxymoron title.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris' Dialogue]]></title><description><![CDATA[A blog of Chris, a human who love to learn more about himself and the world]]></description><link>https://gatsby-starter-blog-demo.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 23 Oct 2021 05:21:18 GMT</lastBuildDate><item><title><![CDATA[Start with Microservices. Don't start with Microservices]]></title><description><![CDATA[This article has an oxymoron title. I want to tell two stories. One which makes a case for don’t start with Microservice, one for start with…]]></description><link>https://gatsby-starter-blog-demo.netlify.app/microservice-start-not-start/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.app/microservice-start-not-start/</guid><pubDate>Sat, 16 Oct 2021 05:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This article has an oxymoron title.&lt;/p&gt;
 &lt;p&gt;I want to tell two stories. One which makes a case for don’t start with Microservice, one for start with Microservice. And I believe by looking from both side of thing, we will understand more about what is the actual benefit of Microservice.&lt;/p&gt;
 &lt;p&gt;So, let’s get start.&lt;/p&gt;
 &lt;h2&gt;Don’t start with Microservice&lt;/h2&gt;
@@ -141,7 +141,7 @@
 &lt;p&gt;There are some specific pricing scheme, relevancy (a customer who buy a lot of IT-related items get more discount on IT items), and customer privileged classes. These should be managed by the product list team since they have done much research on how to display relevant attractive products. Also, the product list team know exactly how to show the product in an attractive manner. They know exactly what color, font, image size and margin yield the best conversion rate.&lt;/p&gt;
 &lt;p&gt;However, this change going to be tough.&lt;/p&gt;
 &lt;p&gt;Since both the backend and the frontend for the Checkout process and product page belong to different microservice, so we need to share code, design, logic, etc. between both teams. We can do a simple copy-paste, we can create a shared library, we can expose some kind of API.&lt;/p&gt;
-&lt;p&gt;While those are all technically possible, implementing this change requires significant in this microservices architecture required significantly more effort compared to a monolith architecture.&lt;/p&gt;
+&lt;p&gt;While those are all technically possible, implementing this type of change in this microservices architecture required significantly more effort compared to a monolith architecture.&lt;/p&gt;
 &lt;p&gt;And what if we need to iterate the design, data, and everything in promotion? Every change in each iteration must be reflected on both the checkout page and product list page. If we don’t do it right, we will need to double all the work or keep redesigning API between these two teams again and again.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Once we use microservice architecture, we essentially make &lt;strong&gt;any change within service become easier&lt;/strong&gt;, while &lt;strong&gt;a change across services become harder&lt;/strong&gt;.&lt;/p&gt;
@@ -229,17 +229,25 @@
 &lt;p&gt;John saw this once it is too late. There are many code duplications and separate logic branches between &lt;code class=&quot;language-text&quot;&gt;CheckoutWithOneClick&lt;/code&gt; and the normal checkout process. It would take quite a significant investment to refactor this piece of code.&lt;/p&gt;
 &lt;p&gt;At some point, John was fired and Jane hired a new CTO.&lt;/p&gt;
 &lt;p&gt;The first question Jane asked was: Why is it so hard for us to do anything in the checkout process?&lt;/p&gt;
-&lt;p&gt;New CTO: Well, there is a different logic implemented in one-click checkout and normal checkout. This makes it hard to do anything in the checkout process.
-Jane: How did this happen?
-Random Engineer in the team: Everyone know about this. It’s started by one of the developers decide to have separate logic for one-button check-in. That’s bad, but I don’t know how John could do it better. He could not possibly check every piece of code.
-&lt;strong&gt;New CTO: Well, John should have started with Microservice. That way, the product list team would never be able to come up with this design. They would be blocked by Checkout team service ownership.&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;New CTO: Well, there is a different logic implemented in one-click checkout and normal checkout. This makes it hard to do anything in the checkout process.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Jane: How did this happen?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Random Engineer in the team: Everyone know about this. It’s started by one of the developers decide to have separate logic for one-button check-in. That’s bad, but I don’t know how John could do it better. He could not possibly check every piece of code.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;New CTO: Well, John should have started with Microservice. That way, the product list team would never be able to come up with this design. They would be blocked by Checkout team service ownership.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2&gt;The value of Microservice&lt;/h2&gt;
 &lt;p&gt;Well, John was in a weird situation. Doom if he used Microservice, also doom if he didn’t.&lt;/p&gt;
 &lt;p&gt;Because essentially, Microservice is a management tool.&lt;/p&gt;
 &lt;p&gt;Microservice prevent some type of changes and enable some type of changes to be easier.&lt;/p&gt;
 &lt;p&gt;In the first example, the Microservice architecture prevents desirable changes. In the second example, the lack of Microservices architecture enables an undesirable set of changes.&lt;/p&gt;
 &lt;p&gt;That is why John is doomed either way. The problem is not about Monolith vs. Microservice. The problem is about architecture choice misalignment with business growth.&lt;/p&gt;
-&lt;p&gt;Well, you can argue that in the second story John can work harder and make sure all the code have design review and throughout audit and etc. But that’s the point. That’s management solution can be costly and add a lot of overhead into the development process.&lt;/p&gt;
+&lt;p&gt;Well, you can argue that in the second story John can work harder and make sure all the code have design review and throughout audit and etc. But that’s the point. That kind of management solution can be costly and add a lot of overhead into the development process.&lt;/p&gt;
 &lt;p&gt;Microservice can reduce that cost by making it inherently hard to mess the design up. But when we actually want to mess the design up for a good reason, well… you got the scenario in the first story.&lt;/p&gt;
 &lt;p&gt;In the end, the architecture must align with business growth. That is all to it.&lt;/p&gt;
 &lt;p&gt;When you use microservice, you enable some set of growth to be easier and simultaneously disable some type of growth to be harder.&lt;/p&gt;
