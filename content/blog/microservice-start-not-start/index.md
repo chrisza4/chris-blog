@@ -41,7 +41,7 @@ However, this change going to be tough.
 
 Since both the backend and the frontend for the Checkout process and product page belong to different microservice, so we need to share code, design, logic, etc. between both teams. We can do a simple copy-paste, we can create a shared library, we can expose some kind of API.
 
-While those are all technically possible, implementing this change requires significant in this microservices architecture required significantly more effort compared to a monolith architecture.
+While those are all technically possible, implementing this type of change in this microservices architecture required significantly more effort compared to a monolith architecture.
 
 And what if we need to iterate the design, data, and everything in promotion? Every change in each iteration must be reflected on both the checkout page and product list page. If we don't do it right, we will need to double all the work or keep redesigning API between these two teams again and again.
 
@@ -93,10 +93,13 @@ At some point, John was fired and Jane hired a new CTO.
 
 The first question Jane asked was: Why is it so hard for us to do anything in the checkout process?
 
-New CTO: Well, there is a different logic implemented in one-click checkout and normal checkout. This makes it hard to do anything in the checkout process.
-Jane: How did this happen?
-Random Engineer in the team: Everyone know about this. It's started by one of the developers decide to have separate logic for one-button check-in. That's bad, but I don't know how John could do it better. He could not possibly check every piece of code.
-**New CTO: Well, John should have started with Microservice. That way, the product list team would never be able to come up with this design. They would be blocked by Checkout team service ownership.**
+> New CTO: Well, there is a different logic implemented in one-click checkout and normal checkout. This makes it hard to do anything in the checkout process.
+
+> Jane: How did this happen?
+
+> Random Engineer in the team: Everyone know about this. It's started by one of the developers decide to have separate logic for one-button check-in. That's bad, but I don't know how John could do it better. He could not possibly check every piece of code.
+
+> **New CTO: Well, John should have started with Microservice. That way, the product list team would never be able to come up with this design. They would be blocked by Checkout team service ownership.**
 
 ## The value of Microservice
 
@@ -110,7 +113,7 @@ In the first example, the Microservice architecture prevents desirable changes. 
 
 That is why John is doomed either way. The problem is not about Monolith vs. Microservice. The problem is about architecture choice misalignment with business growth.
 
-Well, you can argue that in the second story John can work harder and make sure all the code have design review and throughout audit and etc. But that's the point. That's management solution can be costly and add a lot of overhead into the development process.
+Well, you can argue that in the second story John can work harder and make sure all the code have design review and throughout audit and etc. But that’s the point. That kind of management solution can be costly and add a lot of overhead into the development process.
 
 Microservice can reduce that cost by making it inherently hard to mess the design up. But when we actually want to mess the design up for a good reason, well... you got the scenario in the first story.
 
