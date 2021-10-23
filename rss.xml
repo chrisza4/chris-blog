@@ -1,4 +1,256 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris' Dialogue]]></title><description><![CDATA[A blog of Chris, a human who love to learn more about himself and the world]]></description><link>https://gatsby-starter-blog-demo.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 25 Jul 2021 12:45:42 GMT</lastBuildDate><item><title><![CDATA[Is this too complex?]]></title><description><![CDATA[I made a comment in Reddit and I want to blog it here as well. Because my sentiment toward someone claim that we have unnecessary complexity…]]></description><link>https://gatsby-starter-blog-demo.netlify.app/complexity/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.app/complexity/</guid><pubDate>Sun, 25 Jul 2021 05:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I made a comment in Reddit and I want to blog it here as well. Because my sentiment toward someone claim that we have unnecessary complexity usually goes like this.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris' Dialogue]]></title><description><![CDATA[A blog of Chris, a human who love to learn more about himself and the world]]></description><link>https://gatsby-starter-blog-demo.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 23 Oct 2021 04:30:13 GMT</lastBuildDate><item><title><![CDATA[Start with Microservices. Don't start with Microservices]]></title><description><![CDATA[This article has an oxymoron title. I want to tell two stories. One which makes a case for don’t start with Microservice, one for start with…]]></description><link>https://gatsby-starter-blog-demo.netlify.app/microservice-start-not-start/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.app/microservice-start-not-start/</guid><pubDate>Sat, 16 Oct 2021 05:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This article has an oxymoron title.&lt;/p&gt;
+&lt;p&gt;I want to tell two stories. One which makes a case for don’t start with Microservice, one for start with Microservice. And I believe by looking from both side of thing, we will understand more about what is the actual benefit of Microservice.&lt;/p&gt;
+&lt;p&gt;So, let’s get start.&lt;/p&gt;
+&lt;h2&gt;Don’t start with Microservice&lt;/h2&gt;
+&lt;p&gt;Imagine you are working for a big e-commerce platform. And like all e-commerce platform, there is a product list page which show all the product. There is also a checkout page which handling a shopping cart and a checkout process.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/64ea8d6f88b43aa118eff2c09c881782/b5a09/Shopping.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 45.56962025316456%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABnUlEQVQoz1VSx6pCUQy8v64Lv0HcCHYXVkTsHRErFizYe+8iiMo8JuCFJwznZDLJ5OSqmEwmOBwOWK1WAe8Wi0Vgs9nk1Ov1MBgMkvP5fPB6vQKPxyNwuVzC2+12KG63G+FwGH6/XxUxyZgoFAoolUool8ty/lCpVFQuGAwilUohEAhAyWQyaLVa6Ha7gk6ng2aziXa7jV6vJ7l6vS4NyPPOXLFYRLVaRaPREM18Ppe8MhwOhdRoNDgej5J4vV7Q6XRIp9N4PB64XC5SrNVqcbvdcD6fcb/fYTQa4XQ6hePver1C4UTb7VaKWTgej/F8PpHP50GzzWYjRofDAXwNc+RoxIlYT4P3+y0apVarScFoNJKTTVarFWazmQgYk/9+v1iv1/h8PjIAG5PnVJyQPGOF+6CQX+p0OsmEfDI/EHdI991uh+l0KppfTLNcLidgTENp2O/3xXEwGGC/34vbb9LFYiFrILdcLlUN98eayWQiL/nXkJNks1nZYTQaRSgUQiQSQTKZRCKRQCwWEzCmhlw8Hldjgnf+bcxmM/4ANl1sy02n4zgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Shopping&quot;
+        title=&quot;Shopping&quot;
+        src=&quot;/static/64ea8d6f88b43aa118eff2c09c881782/f058b/Shopping.png&quot;
+        srcset=&quot;/static/64ea8d6f88b43aa118eff2c09c881782/c26ae/Shopping.png 158w,
+/static/64ea8d6f88b43aa118eff2c09c881782/6bdcf/Shopping.png 315w,
+/static/64ea8d6f88b43aa118eff2c09c881782/f058b/Shopping.png 630w,
+/static/64ea8d6f88b43aa118eff2c09c881782/40601/Shopping.png 945w,
+/static/64ea8d6f88b43aa118eff2c09c881782/78612/Shopping.png 1260w,
+/static/64ea8d6f88b43aa118eff2c09c881782/b5a09/Shopping.png 1360w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1a1758620915db82383677360df27ecb/b5a09/Checkout.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 63.291139240506325%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAABtklEQVQ4y61T16piQRA8//8HIoIgBkT0GsAsKoYH84s+GDDnHDFgLdXQF/fuPi17oKie6jB9pmcMp9MJh8MBm80Gl8sFu93+DbfbDYvFApPJBKvVCp/Ph6+vr28EAgEEg0F4vV5Z+/1+GLFYDOFwWEQGUAyFQhKYTqdRq9VQqVRQrVb/QLlcRqFQkLxisYhkMgkjGo1KYi6XQzabRSaTEaRSKSkaiUQQj8fBjcmJRELATVmAufl8Xrher8Og2O/3MRqNMBwOBdPpFM1mE6VSSfTJZPIN+qhx016vh9lshvF4LNzpdGC02208Hg+8Xi/B8/kEv91uh8PhIDY19RP3+x2tVgun0wnv91v85G63C4PVj8ejJCvO5zPm87mASdQ0hrzdbjEYDH7TGScd0tBd2SmZay3+08duLpeL/AFtaprDozPW6zWu16t0peB6tVoJfvpYbL/fS/e0P3UpuNlsJImd0kGmc7lcCtSn0O4+C5Jvt5sMyVgsFpKoZ8ZpkXWqqil0zWnrpozj5Gkb+A8fO+eQeBSGjv1foNeNx8J72Wg0YOhzI6ut+Hy3fMd/g/o8Hg/MZjN+ATyfqLunWtMvAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Checkout&quot;
+        title=&quot;Checkout&quot;
+        src=&quot;/static/1a1758620915db82383677360df27ecb/f058b/Checkout.png&quot;
+        srcset=&quot;/static/1a1758620915db82383677360df27ecb/c26ae/Checkout.png 158w,
+/static/1a1758620915db82383677360df27ecb/6bdcf/Checkout.png 315w,
+/static/1a1758620915db82383677360df27ecb/f058b/Checkout.png 630w,
+/static/1a1758620915db82383677360df27ecb/40601/Checkout.png 945w,
+/static/1a1758620915db82383677360df27ecb/78612/Checkout.png 1260w,
+/static/1a1758620915db82383677360df27ecb/b5a09/Checkout.png 1360w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;A long time ago, John, CTO of this company read something about Microservices. John thought that this is a great idea. So John decided to have a Microservice which responsible for the Product list domain, and Shopping Cart domain.&lt;/p&gt;
+&lt;p&gt;The microservices architecture allows John to have a product list team and a checkout team. Both of them have their own business objectives, metrics, KPI, SLA and so on. Both teams are cross-functional teams responsible for the product list page and checkout process end-to-end.&lt;/p&gt;
+&lt;p&gt;Each of them can go wild with what they want to do. For example, the checkout team can implement their own AB Testing with multiple localization and a nice holiday theme on top of it. The product team can focus on optimizing the product list by suggesting relevant items. Both of them can focus on their area without being afraid of making breaking changes to other areas, as long as the backward compatibility of API communication between domains is maintained.&lt;/p&gt;
+&lt;p&gt;Furthermore, we can partially scale the system. Let say we have a big Friday promotion, the customer will browser products and promotions a lot more. We might need a much bigger Product list backend while a little bit bigger checkout page.&lt;/p&gt;
+&lt;p&gt;Perfect sounds good. Life is nice.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Next year, Jane the CEO want to have a promotion sales. Jane also figured out from some research that if show relevant products on the landing page and during the checkout process can significantly increase sales.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6e22142e3e67e9df844a59450490ddca/bc3ae/ShoppingPromo.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 48.734177215189874%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABtklEQVQoz11Sx6oCQRCc/9YP8OQXCCKeFBVBRcw5YjyICOacs6KI1qMaZg9vobdne6qqe2tGud1u+P1+2O12+Hw+eDweeL1eYx0IBBAKhRAOh5HNZpHP55HL5YxIpVKCz2QyiEajUCRqQYozOxwOIygUi8WQSCSQTCZFIJ1OG5kiTqdTBIPBIFSxWEShUEC5XJbulUoFpVIJ7XYbtVpN1twjrtVqSY3f1WrVwDWbTVnX63UovihIocFggP1+j9FohEgkgm63i8vlgt1uh+VyKdN0Oh3BHI9HyfF4HI1GQ3Dv9xvq8XjAarWKD7/fD4vFAufzGSaTSX7h8/lgPp/j+XzCbDaLt9xng+/3C4vFApvNJjg2UJPJRPygwZvNBuPxWGI6nYp4v9/Her0WAvP9fpfpuOZDDodinY0URyW51+uJEDuzNhwOcb1ecTgcRJjTcFKSuE8cH3KJeb1eUlfsxlOmZ+y0Wq0kXC6XmMwayRSiLTw4/hoxt9tNbKG3FJMJt9utdGF3mq/9oRWz2UxqeiJdI+d0OkmNXNZoAadUPG5eCWZ2Z/DU9XWit/pC8/t/jTjN5z3+Ayl0sm2U5dsrAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Shopping Promo&quot;
+        title=&quot;Shopping Promo&quot;
+        src=&quot;/static/6e22142e3e67e9df844a59450490ddca/f058b/ShoppingPromo.png&quot;
+        srcset=&quot;/static/6e22142e3e67e9df844a59450490ddca/c26ae/ShoppingPromo.png 158w,
+/static/6e22142e3e67e9df844a59450490ddca/6bdcf/ShoppingPromo.png 315w,
+/static/6e22142e3e67e9df844a59450490ddca/f058b/ShoppingPromo.png 630w,
+/static/6e22142e3e67e9df844a59450490ddca/40601/ShoppingPromo.png 945w,
+/static/6e22142e3e67e9df844a59450490ddca/78612/ShoppingPromo.png 1260w,
+/static/6e22142e3e67e9df844a59450490ddca/bc3ae/ShoppingPromo.png 1268w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/cb0c838b18a8615d4b00dc103c849ecd/b5a09/CheckoutwithPromo.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 80.37974683544303%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAACD0lEQVQ4y51U14oqQRCd//8C9U2MiKCYFV1zxJwzZsw5omstp5aR8S4Xli04M92nQnd1V7WgVCpJp9ORRqMhtVrNY5VKxWNwGMtkMlIoFKTX68lsNpPJZHqD0WhkXqvVkgDC5/OR3W4nq9VKFouFbDYbz51OJ2UyGcpmsz+Qz+cZ0LtcLopGo2wv4AMiEokwKf4Bj8fDgQOBAMPv9zOCwSA5HA5yu90UDocpHo+zH2wEr9dL6XSaJpMJjcfjF4bDIeVyOep2u6yTYrlcUiqVokKhwGORx1xIJpM0nU7p8Xi88Pn5SdfrlRaLBT2fzzfd/X4nSK/X4yAQcNDVajUSEHW/39PhcHjheDzSZrNhh9Pp9EMPDjrYwFbky+Xyd0Ds5nK5vIA5DObzOd1utzcdAA462Eh96/U6Cbix8/nMqwIY/xsQnOiEMbjZbMY7Fzn4vlLGGSAIIKYgpow5HKUAJ00ZQFAOiGtHieCmY7EYH/ZqteLdAbhFXA6AOf7gRCDoaDSiVqv1nXK1WqVSqURyuZyD7XY7+ou0220uM6HZbPIELYYVt9stG6B0UDK/AQQbSyQSJBSLRU4F261UKrRer9ngt8EALA5BdkKj0eAzQOP3+/0/pwzB+QqdTod3OBgMOGWUAVaUdoe0S/4HCPwFNDn6Eg0eCoW4+T8+PrjR8QgA4EWgKqTAoyA+EAaDgb4AsFqNV+oxCCUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Checkout Promo&quot;
+        title=&quot;Checkout Promo&quot;
+        src=&quot;/static/cb0c838b18a8615d4b00dc103c849ecd/f058b/CheckoutwithPromo.png&quot;
+        srcset=&quot;/static/cb0c838b18a8615d4b00dc103c849ecd/c26ae/CheckoutwithPromo.png 158w,
+/static/cb0c838b18a8615d4b00dc103c849ecd/6bdcf/CheckoutwithPromo.png 315w,
+/static/cb0c838b18a8615d4b00dc103c849ecd/f058b/CheckoutwithPromo.png 630w,
+/static/cb0c838b18a8615d4b00dc103c849ecd/40601/CheckoutwithPromo.png 945w,
+/static/cb0c838b18a8615d4b00dc103c849ecd/78612/CheckoutwithPromo.png 1260w,
+/static/cb0c838b18a8615d4b00dc103c849ecd/b5a09/CheckoutwithPromo.png 1360w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;There are some specific pricing scheme, relevancy (a customer who buy a lot of IT-related items get more discount on IT items), and customer privileged classes. These should be managed by the product list team since they have done much research on how to display relevant attractive products. Also, the product list team know exactly how to show the product in an attractive manner. They know exactly what color, font, image size and margin yield the best conversion rate.&lt;/p&gt;
+&lt;p&gt;However, this change going to be tough.&lt;/p&gt;
+&lt;p&gt;Since both the backend and the frontend for the Checkout process and product page belong to different microservice, so we need to share code, design, logic, etc. between both teams. We can do a simple copy-paste, we can create a shared library, we can expose some kind of API.&lt;/p&gt;
+&lt;p&gt;While those are all technically possible, implementing this change requires significant in this microservices architecture required significantly more effort compared to a monolith architecture.&lt;/p&gt;
+&lt;p&gt;And what if we need to iterate the design, data, and everything in promotion? Every change in each iteration must be reflected on both the checkout page and product list page. If we don’t do it right, we will need to double all the work or keep redesigning API between these two teams again and again.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Once we use microservice architecture, we essentially make &lt;strong&gt;any change within service become easier&lt;/strong&gt;, while &lt;strong&gt;a change across services become harder&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bed51e39b4c182f44db7d75614b11796/3fca6/Change.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNElEQVQoz21Sya6DMAzM/38WR3rgQKuylxaxg1gqIcrmp7FeUFLVUhTHjp2ZiQX923EcvE/TRPf7nV6vF680TcmyLLpcLuzLOO6M46jVwgQOMrBtG91uN26qmm3b3HTf9zO2LAtdr1f6fD5nUyyhFgJBWZbaq3EcU9/3tK4rBUGg5RBHXjWR5zkVRUFVVTESoMTCGTuazPNMdV2T4zhc1DQNs0AeKHEXQABIDMNAbduyHigABSDouo4phmHIxci7rssN4eMRoIaW7/ebe6BGo4yXH4+HRkGiR5MkSehboizLdMpSTKmL53kEGVQzTZMMw9B+ExIAnfoh2qeol5/PJ9PH7vs+o4b48BEDdUgha7SxUQNqAj60wXhIg2agro7Pd634lVAlwGgALYY5iqKzGfZfQP4Aw0QBA4gVICkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Change&quot;
+        title=&quot;Change&quot;
+        src=&quot;/static/bed51e39b4c182f44db7d75614b11796/f058b/Change.png&quot;
+        srcset=&quot;/static/bed51e39b4c182f44db7d75614b11796/c26ae/Change.png 158w,
+/static/bed51e39b4c182f44db7d75614b11796/6bdcf/Change.png 315w,
+/static/bed51e39b4c182f44db7d75614b11796/f058b/Change.png 630w,
+/static/bed51e39b4c182f44db7d75614b11796/40601/Change.png 945w,
+/static/bed51e39b4c182f44db7d75614b11796/3fca6/Change.png 1112w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since we as a human are bad at predicting future, we should never start with microservices. We don’t know what business going to expect from us 6-12 months down the line. However we split microservice, it is likely to be wrong.&lt;/p&gt;
+&lt;p&gt;Let’s never start with Microservice.&lt;/p&gt;
+&lt;h2&gt;Start with Microservice&lt;/h2&gt;
+&lt;p&gt;Let’s rewind back and see how things can go differently.&lt;/p&gt;
+&lt;p&gt;John, CTO of this company read something about Microservices. John thought that this is a disastrous idea. Everything Microservices technically solve can also be done with Monolith, so why add distributed part into the equation? Most of our programmers will suffer from &lt;a href=&quot;https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing&quot;&gt;the fallacies of distributed computing&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;John insisted on using Monolith architecture.&lt;/p&gt;
+&lt;p&gt;John has a team of around 30 developers. At this scale, it is not possible for John to take reviewed every single change to his big monolith. So he checked the code once in a while.&lt;/p&gt;
+&lt;p&gt;The company took the opposite direction: They want to implement a single &lt;strong&gt;Buy now!!&lt;/strong&gt; button, which essentially is a single-step checkout.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1a9c3dd386048dabf02da5f54db4b9f2/e515d/buynow.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 46.835443037974684%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABlElEQVQoz01SV8vCQBDM/3/1yceABUUQRLEido2KNXbFHqxYsEGEkdmPhO9guN29vb2Z3VM6nQ5SqRTS6TSi0Siy2SwymYzAssPhsJwVCgWUy2WUSiUbjOVyOcmdzWZQmOB2u+H3+6GqKnw+HzweD7xeryASiSAWiwkSiYQgmUwKSITngUAAwWAQuq5DGQwGaLfb4gyHQ4zHY3S7XRv0+/0+Wq0WqIY5k8nE9nu9HhaLBTabDQzDgEKar9cLDodDDq7XK57PpzCmlM/nI36lUoHL5RKbOfv9Hk6nE9PpFO/3G1yXywUKGdCg9O12i91uJ2g2mxiNRmLf73es12thxMcPhwMejwfq9brc5QOmaeJ8PkMh5ePxKBeYuFwusVqt7OK0GedF7ixOebfbTSTSP51O+H6/fwXJhM1l09noarUq0+NkOQBN09BoNBAKhRCPx5HP56WvHAYnzzv0uaQg+zafz4UZbbIlAytutYA2QSVkxHMLLETZVCCS+ZdqtZqwYy/JygL9/zEOp1gsym6BcbLnb/gBR39wFlRBC9IAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Buy Now&quot;
+        title=&quot;Buy Now&quot;
+        src=&quot;/static/1a9c3dd386048dabf02da5f54db4b9f2/f058b/buynow.png&quot;
+        srcset=&quot;/static/1a9c3dd386048dabf02da5f54db4b9f2/c26ae/buynow.png 158w,
+/static/1a9c3dd386048dabf02da5f54db4b9f2/6bdcf/buynow.png 315w,
+/static/1a9c3dd386048dabf02da5f54db4b9f2/f058b/buynow.png 630w,
+/static/1a9c3dd386048dabf02da5f54db4b9f2/40601/buynow.png 945w,
+/static/1a9c3dd386048dabf02da5f54db4b9f2/78612/buynow.png 1260w,
+/static/1a9c3dd386048dabf02da5f54db4b9f2/e515d/buynow.png 1430w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Since this is obviously on the Product List page, so stakeholders ask the Product List team to develop it. One of the developers looked at the requirement. They thought that since this page is all about the product, we should implement it in a product class like this.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Product&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;CheckoutWithOneClick&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;PaymentService&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Pay&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Price&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;From a seasoned developer perspective, this is a very very strong code smell. Somehow, this passed through code review, got check-ins, and become the main part of the monolith.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Six months later, everything relate to checkout become really hard to implement and buggy. If we want to be able to apply promo code, we need to remember that there are one-click checkout implemented in a product class. If we want to provide a discount for a special class of customers, we also need to remember this as well. There were many instances where the checkout team was asked to implement some sophisticated checkout scheme, and it does not work well with this one-click button.&lt;/p&gt;
+&lt;p&gt;Feature development, bug fixes and everything related to the checkout process was implemented separately. And since Product Team own the &lt;code class=&quot;language-text&quot;&gt;Product&lt;/code&gt; class and Checkout team own the &lt;code class=&quot;language-text&quot;&gt;CheckoutService&lt;/code&gt;, each team interpreted requirement a little bit differently and implement business logic a different way. One might check for promo code first and the other might check for customer privileged first and so on.&lt;/p&gt;
+&lt;p&gt;John saw this once it is too late. There are many code duplications and separate logic branches between &lt;code class=&quot;language-text&quot;&gt;CheckoutWithOneClick&lt;/code&gt; and the normal checkout process. It would take quite a significant investment to refactor this piece of code.&lt;/p&gt;
+&lt;p&gt;At some point, John was fired and Jane hired a new CTO.&lt;/p&gt;
+&lt;p&gt;The first question Jane asked was: Why is it so hard for us to do anything in the checkout process?&lt;/p&gt;
+&lt;p&gt;New CTO: Well, there is a different logic implemented in one-click checkout and normal checkout. This makes it hard to do anything in the checkout process.
+Jane: How did this happen?
+Random Engineer in the team: Everyone know about this. It’s started by one of the developers decide to have separate logic for one-button check-in. That’s bad, but I don’t know how John could do it better. He could not possibly check every piece of code.
+&lt;strong&gt;New CTO: Well, John should have started with Microservice. That way, the product list team would never be able to come up with this design. They would be blocked by Checkout team service ownership.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;The value of Microservice&lt;/h2&gt;
+&lt;p&gt;Well, John was in a weird situation. Doom if he used Microservice, also doom if he didn’t.&lt;/p&gt;
+&lt;p&gt;Because essentially, Microservice is a management tool.&lt;/p&gt;
+&lt;p&gt;Microservice prevent some type of changes and enable some type of changes to be easier.&lt;/p&gt;
+&lt;p&gt;In the first example, the Microservice architecture prevents desirable changes. In the second example, the lack of Microservices architecture enables an undesirable set of changes.&lt;/p&gt;
+&lt;p&gt;That is why John is doomed either way. The problem is not about Monolith vs. Microservice. The problem is about architecture choice misalignment with business growth.&lt;/p&gt;
+&lt;p&gt;Well, you can argue that in the second story John can work harder and make sure all the code have design review and throughout audit and etc. But that’s the point. That’s management solution can be costly and add a lot of overhead into the development process.&lt;/p&gt;
+&lt;p&gt;Microservice can reduce that cost by making it inherently hard to mess the design up. But when we actually want to mess the design up for a good reason, well… you got the scenario in the first story.&lt;/p&gt;
+&lt;p&gt;In the end, the architecture must align with business growth. That is all to it.&lt;/p&gt;
+&lt;p&gt;When you use microservice, you enable some set of growth to be easier and simultaneously disable some type of growth to be harder.&lt;/p&gt;
+&lt;p&gt;If you have a checkout microservice, the checkout team would be able to churn out new features much faster. They can release on their own. They can use a programming language they prefer. They don’t depend on the other team. They can manage the scalability of their service independently.&lt;/p&gt;
+&lt;p&gt;That is, what I believe, the core benefit of microservice architecture.&lt;/p&gt;
+&lt;p&gt;Every technical aspect of Microservice, such as independently scale some part of the system or using multi-language implementation, can be solved using Monolith. You can use a build and configure it to open a specific endpoint for some containers and there you go independently scaling just a part of the system. You can use cross-process communication at the OS level and manage binary distribution and there you go, multi-language implementation. The latency might be even better than the network.&lt;/p&gt;
+&lt;p&gt;What Monolith cannot solve is when you want to have a certain type of management structure and incentivize growth and creativity in a certain area by giving autonomy and a frequent independent release cycle. That is what really really hard to do in Monolith architecture.&lt;/p&gt;
+&lt;p&gt;So I would say the deciding factor for Microservice implementation: Is it aligned with how your organization want to grow?&lt;/p&gt;
+&lt;p&gt;Because again, Microservice essentially is a technical solution to the management problem. And it is a real problem that requires a good solution.&lt;/p&gt;
+&lt;p&gt;If you think it is a stupid management problem, well I invite you to try solve that. If you can solve just a simple question of “how to make programmers collaborate effectively?” in a scalable and repeatable way, I believe you have the potential to be richer than Jeff Bezos.&lt;/p&gt;
+&lt;p&gt;Amazon has been working on this. Google has been working on this. Facebook has been working on this. Every behemoth tech company in existence have been working on this for decades and they came up with Microservice stuff. If you have a better answer, then go ahead, let me and all those guys know. They are ready to invest.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Is this too complex?]]></title><description><![CDATA[I made a comment in Reddit and I want to blog it here as well. Because my sentiment toward someone claim that we have unnecessary complexity…]]></description><link>https://gatsby-starter-blog-demo.netlify.app/complexity/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.app/complexity/</guid><pubDate>Sun, 25 Jul 2021 05:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I made a comment in Reddit and I want to blog it here as well. Because my sentiment toward someone claim that we have unnecessary complexity usually goes like this.&lt;/p&gt;
 &lt;p&gt;Disclaimer: All I want to say here is more often than not, people deemed system to be “too complex” based on their familiarity and skillset. And I think that is very unfair.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Re: &lt;a href=&quot;http://evrl.com/devops/cloud/2020/12/18/serverless.html&quot;&gt;Back to the ’70s with Serverless&lt;/a&gt;&lt;/p&gt;
@@ -561,7 +813,10 @@
 &lt;p&gt;&lt;strong&gt;Once you touch legacy code, there is no escape&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The sooner you accept this statement into your heart, the quicker you can get away from legacy code.&lt;/p&gt;
 &lt;p&gt;It works for me. As I started to submit myself to the fact that I need to read and understand legacy code, ironically, I began to get more and more opportunities to rewrite, refactor and eventually get away from it.&lt;/p&gt;
-&lt;p&gt;The world is pretty ironic, and thanks for reading.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My favorite blogs]]></title><description><![CDATA[These are some of the blogs I enjoy. I will share it here. Tradable Quality Hypothesis Martin Fowler put good content on why we might…]]></description><link>https://gatsby-starter-blog-demo.netlify.app/favorite-contents/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.app/favorite-contents/</guid><pubDate>Sat, 23 Jan 2021 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;These are some of the blogs I enjoy. I will share it here.&lt;/p&gt;
+&lt;p&gt;The world is pretty ironic, and thanks for reading.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My favorite blogs]]></title><description><![CDATA[These are some of the blogs I enjoy. I will share it here. Api Design This is a great article which criticized API design of Go language in…]]></description><link>https://gatsby-starter-blog-demo.netlify.app/favorite-contents/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.app/favorite-contents/</guid><pubDate>Sat, 23 Jan 2021 17:00:00 GMT</pubDate><content:encoded>&lt;p&gt;These are some of the blogs I enjoy. I will share it here.&lt;/p&gt;
+&lt;h2&gt;&lt;a href=&quot;https://fasterthanli.me/articles/abstracting-away-correctness&quot;&gt;Api Design&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This is a great article which criticized API design of Go language in the way that IMHO, very constructive and educational. I am pretty much align with the philosophy.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://fasterthanli.me/articles/abstracting-away-correctness&quot;&gt;Link&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;&lt;a href=&quot;https://martinfowler.com/bliki/TradableQualityHypothesis.html&quot;&gt;Tradable Quality Hypothesis&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Martin Fowler put good content on why we might wrongly perceive internal quality and design as trade-offs for cheaper development. I agree that just like how we can buy a lower quality phone for lower prices, we can make a lower external quality software (eg. Non-performance critical. Non-optimal user interface) for the sake of lowering budget. However, it will be different story when it comes to internal quality.&lt;/p&gt;
 &lt;p&gt;I am not saying that we must over-engineer everything we build. I think we need to be aware that buying cheaper mobile with fewer features and buying ill design software for a cheaper budget, let it be time or money, is not comparable in many ways.&lt;/p&gt;
