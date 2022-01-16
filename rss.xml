@@ -1,4 +1,92 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris' Dialogue]]></title><description><![CDATA[A blog of Chris, a human who love to learn more about himself and the world]]></description><link>https://gatsby-starter-blog-demo.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 26 Dec 2021 08:33:58 GMT</lastBuildDate><item><title><![CDATA[Common misconception of dependency inversion]]></title><description><![CDATA[Dependency inversion is widely misunderstood. I will explain why. According to the definition: the principle itself consists of two rules…]]></description><link>https://gatsby-starter-blog-demo.netlify.app/dependency-inversion-injection/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.app/dependency-inversion-injection/</guid><pubDate>Sun, 26 Dec 2021 05:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Dependency inversion is widely misunderstood. I will explain why.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris' Dialogue]]></title><description><![CDATA[A blog of Chris, a human who love to learn more about himself and the world]]></description><link>https://gatsby-starter-blog-demo.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 16 Jan 2022 09:16:49 GMT</lastBuildDate><item><title><![CDATA[CRUD is simple until it's not]]></title><description><![CDATA[Every app is just a glorified CRUD app with extra steps. There are a lot of debates happening in the dev community between using complex…]]></description><link>https://gatsby-starter-blog-demo.netlify.app/crud-or-not/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.app/crud-or-not/</guid><pubDate>Sun, 16 Jan 2022 05:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Every app is just a glorified CRUD app with extra steps.&lt;/p&gt;
+&lt;p&gt;There are a lot of debates happening in the dev community between using complex architecture (such as CQRS) and viewing everything as a CRUD.&lt;/p&gt;
+&lt;p&gt;I want to clarify when CRUD is simple enough for the job, and when it is not.&lt;/p&gt;
+&lt;p&gt;Let say you want to create an accounting system. You have an invoice. Invoice can be created, read, updated and deleted.&lt;/p&gt;
+&lt;p&gt;Sounds like a CRUD app.&lt;/p&gt;
+&lt;p&gt;So you start with a simple Rails-style framework with REST-style API surface, where everything is just a resource that can be CRUDed.&lt;/p&gt;
+&lt;p&gt;The code can look like this (simplified version)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ruby&quot;&gt;&lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token method-definition&quot;&gt;&lt;span class=&quot;token function&quot;&gt;update&lt;/span&gt;&lt;/span&gt;
+  invoice &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;Invoice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;get&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;request&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  invoice&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;update_by&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;request&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  invoice&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;save&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;Fit everything to CRUD&lt;/h1&gt;
+&lt;p&gt;Let say that your invoice can be approved. You added &lt;code class=&quot;language-text&quot;&gt;status&lt;/code&gt; field to the model. The status can be &lt;code class=&quot;language-text&quot;&gt;Draft&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Confirmed&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Approved&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;Commented&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;Rejected&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;And then you some business requirement&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;When an invoice is approved, send a notification to someone so they can proceed to pay.&lt;/li&gt;
+&lt;li&gt;When an invoice is commented or rejected, send a notification to the creator so they can be revised.&lt;/li&gt;
+&lt;li&gt;When a confirmed invoice has a total of more than 100,000 USD, send a notification to the director level.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If we still model by CRUD, we need a code that looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ruby&quot;&gt;&lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token method-definition&quot;&gt;&lt;span class=&quot;token function&quot;&gt;update&lt;/span&gt;&lt;/span&gt;
+  invoice &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;Invoice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;get&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;request&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  old_status &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; invoice&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;status
+  invoice&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;update_by&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;request&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  invoice&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;save&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  new_status &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; invoice&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;status
+
+  &lt;span class=&quot;token comment&quot;&gt;# Send notification to payment department if status changed to approved&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; old_status &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;token symbol&quot;&gt;:Approved&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;and&lt;/span&gt; new_status &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token symbol&quot;&gt;:Approved&lt;/span&gt;
+    &lt;span class=&quot;token constant&quot;&gt;Notification&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;send_to&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:payment_department&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;# Send notification to invoice owner if invoice was commented or rejected&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; old_status &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token symbol&quot;&gt;:Confirmed&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:Commented&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token symbol&quot;&gt;:Rejected&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;included&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;new_status&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token constant&quot;&gt;Notification&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;send_to&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;invoice&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;owner&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;# Send notification to management board if invoice exceed particular amount&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; old_status &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token symbol&quot;&gt;:Draft&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;and&lt;/span&gt; new_status &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token symbol&quot;&gt;:Confirmed&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;and&lt;/span&gt; invoice&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;total &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;100000&lt;/span&gt;
+    &lt;span class=&quot;token constant&quot;&gt;Notification&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;send_to&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:C_level&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;So now we can generalize everything as CRUD.&lt;/p&gt;
+&lt;p&gt;Six months later, we want to add functionality to the invoice approval step.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;We want to ensure that any invoice exceeding 100,000 USD must be approved by someone with a proper level of authorization&lt;/li&gt;
+&lt;li&gt;We want to lock any invoice that has been rejected more than 3 times.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If we wrote code as CRUD, to implement these requirements you must:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Carefully read through update hoops and see which line is related to which.&lt;/li&gt;
+&lt;li&gt;If 2 programmers work in parallel, they might need to resolve to merge conflict.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1&gt;Use business intent&lt;/h1&gt;
+&lt;p&gt;Another type of implementation is to put a business intent into our model.&lt;/p&gt;
+&lt;p&gt;Instead of update, we have these:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ruby&quot;&gt;&lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token method-definition&quot;&gt;&lt;span class=&quot;token function&quot;&gt;approve&lt;/span&gt;&lt;/span&gt;
+  invoice &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;Invoice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;get&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;request&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  invoice&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;status &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token symbol&quot;&gt;:Approved&lt;/span&gt;
+  invoice&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;save
+  &lt;span class=&quot;token constant&quot;&gt;Notification&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;send_to&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:payment_department&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token method-definition&quot;&gt;&lt;span class=&quot;token function&quot;&gt;reject&lt;/span&gt;&lt;/span&gt;
+  invoice &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;Invoice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;get&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;request&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;body&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  invoice&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;status &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token symbol&quot;&gt;:Reject&lt;/span&gt;
+  invoice&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;save
+  &lt;span class=&quot;token constant&quot;&gt;Notification&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;send_to&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token symbol&quot;&gt;:invoice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;owner&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# And so-on&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Instead of translating business intention such as approve to be like: approval is just an update with extra steps. We instead embedded business intention directly into our method.&lt;/p&gt;
+&lt;p&gt;When the business what to modify the approval process, we can search for &lt;code class=&quot;language-text&quot;&gt;approve&lt;/code&gt; method.
+When the business what to modify the confirmation process, we can search for &lt;code class=&quot;language-text&quot;&gt;confirm&lt;/code&gt; method.&lt;/p&gt;
+&lt;p&gt;Even if this contains more code, it’s become easier to modify and reason about.&lt;/p&gt;
+&lt;p&gt;This is the power of moving away from CRUD based modelling.&lt;/p&gt;
+&lt;h1&gt;It’s not black and white&lt;/h1&gt;
+&lt;p&gt;CRUD is a simple model. There are only four concepts and it can handle almost every requirement imaginable.&lt;/p&gt;
+&lt;p&gt;Everything can be viewed as “CRUD with extra steps”. Even network communication can be viewed as “CRUD of network packet with extra steps”.&lt;/p&gt;
+&lt;p&gt;It is a simple and powerful model. But it has its own limitation.&lt;/p&gt;
+&lt;p&gt;CRUD based method works well until collaboration break.&lt;/p&gt;
+&lt;p&gt;You can fit nearly every app into the CRUD model, but at what cost?&lt;/p&gt;
+&lt;p&gt;The question is here is not can you, it’s should you.&lt;/p&gt;
+&lt;p&gt;If your software grows based on some particular business process, such as if your accounting module is famous for a world-class approval system, it’s worth you putting a highlight to those business intent rather than generalize it to “just CRUD with extra steps”.&lt;/p&gt;
+&lt;p&gt;I don’t have a clear line between when to model the app as CRUD and when to do the domain event-based app.&lt;/p&gt;
+&lt;p&gt;But I know that if communication starts to break down. If a requirement needs 2 days of dev assessment just to translate the requirement into codebase modelling, check where to change, what is the impact.&lt;/p&gt;
+&lt;p&gt;Your model might not be sufficient.&lt;/p&gt;
+&lt;p&gt;And that’s when you might need to move on from the simple CRUD model.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Common misconception of dependency inversion]]></title><description><![CDATA[Dependency inversion is widely misunderstood. I will explain why. According to the definition: the principle itself consists of two rules…]]></description><link>https://gatsby-starter-blog-demo.netlify.app/dependency-inversion-injection/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.app/dependency-inversion-injection/</guid><pubDate>Sun, 26 Dec 2021 05:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Dependency inversion is widely misunderstood. I will explain why.&lt;/p&gt;
 &lt;p&gt;According to the definition: the principle itself consists of two rules&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;High-level modules should not depend on low-level modules. Both should depend on abstractions.&lt;/li&gt;
