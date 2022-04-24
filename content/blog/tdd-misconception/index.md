@@ -5,6 +5,14 @@ date: "2022-04-24T00:00:00.000"
 
 I start a title with a controversial statement. Yes, you can write code before a test in TDD.
 
+After I pair with many TDD practitioner, especially the beginner one. I found that many of them usually discourage me to write any code before test. I could not touch a codebase, keyboard or play around with anything before I write a test case.
+
+So here I am, making a statement as a TDD practitioner too. You can write a code before test in TDD.
+
+It is clear that any TDD tutorial and content says that you need to write tests before code. Why do I claim this?
+
+Let me explain.
+
 ## The step zero of TDD: design
 
 When we normally talk about TDD we usually just talk about the test-code-refactor cycle. We often forget or take a pre-requisite step for a grant.
@@ -29,11 +37,11 @@ When I am not confident about having all the details I need to design an appropr
 
 The act of coding can help in figuring out the design. And no rule in software engineering states that the design must not involve any act of coding. And if someone tries to declare and enforce this rule, it will be an obviously stupid rule.
 
-The point here is that in TDD, you can code as much you want if it helps you uncover an appropriate design. TDD only says that any _production code_ must have tests first. Not any type of code.
+The point here is that in TDD, you can code as much you want if it helps you discover an appropriate design. TDD only says that any _production code_ must have tests first. Not any type of code.
 
 So the misconception here is that you cannot touch your keyboard and type any code before writing a test. You can, as long as it is not a production code.
 
-The key here is that the code generated in this design phase is to uncover an appropriate design. It is a throwaway code.
+The key here is that the code generated in this design phase is to discover an appropriate design. It is a throwaway code.
 
 You should not expect to use code generated in this phase as a production code. Well, you can copy some of it into production code but you need to treat it as some kind of code in the documentation, Google or Stackoverflow. You generated a test and a blank method first, you wrote some code that satisfied the test. Some of the code might be copied from some kind of documentation with few modifications.
 
