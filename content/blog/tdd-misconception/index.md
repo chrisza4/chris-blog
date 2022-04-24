@@ -1,5 +1,5 @@
 ---
-title: TDD Misconception: You can write code before test in TDD
+title: "TDD Misconception: Yes, you can write code before test in TDD"
 date: "2022-04-24T00:00:00.000"
 ---
 
@@ -57,4 +57,4 @@ And that is what actually makes TDD generally lead to a better code architecture
 
 You can write some code before tests in TDD, but only as a design tool and without any expectation that the code written in this phase should be used in production. You don't need to unnecessary constraint yourselves to put down the keyboard and forbid any code writing activity during the design phase just because someone says in TDD you need to write tests before code.
 
-Let us try not to take software development practices too literally and dogmatic (and disguise this as "disciplined"). Let us try to be more understanding of the underlying concept of software development practices.
+Let us try not to take software development practices too literally and dogmatic (and disguise this short-sightedness as "disciplined"). Let us try to be more understanding of the underlying concept of software development practices.
