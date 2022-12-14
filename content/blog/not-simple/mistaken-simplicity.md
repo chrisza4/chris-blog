@@ -37,7 +37,9 @@ In general, is it really about priniple of simplicity by using one technology or
 
 I usually agree with principle of simplicity but I find it is very rare to see true believer. It's usually more about just get back and use what I learned for the past 10 years rather than simplifying technology stacks.
 
-Also, we can technically use C or Assembly for everything. Radical simplicity has its own limit. What grind my gear is how people usually draw the line. It's almost always like what I am good inherently simple and what I don't know is needless complexity since I can use what I know to achieve the same.
+Also, we can technically use C or Assembly for everything. Radical simplicity has its own limit. What grind my gear is how people usually draw the line. It's almost always like what I am currently good at is inherently simple and what I don't know is needless complexity since I can use what I am good at to achieve the same.
+
+General simplicity shouldn't care much about your personal expertise, don't you think?
 
 Modified from Douglas Adam quotes, it's almost like this:
 
