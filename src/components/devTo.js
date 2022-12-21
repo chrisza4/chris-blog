@@ -23,9 +23,9 @@ const DevTo = () => {
     <div>
       <h2>Blogs in dev.to</h2>
       <p>I wrote an engineering focus article here</p>
-      {devToPosts.map(devToPost => {
+      {devToPosts.map((devToPost, index) => {
         return (
-          <Article>
+          <Article key={index}>
             <a href={devToPost.canonical_url}>{devToPost.title}</a>
             <PublishedDate>
               {dayJs(devToPost.published_at).fromNow()}

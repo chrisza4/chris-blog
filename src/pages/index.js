@@ -6,7 +6,6 @@ import Layout from "../components/layout/mainLayout"
 import SEO from "../components/seo"
 import DevTo from "../components/devTo"
 import PodCasts from "../components/podCasts"
-import NavBar from "../components/layout/navBar"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -14,7 +13,6 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <>
-      <NavBar />
       <Layout location={location} title={siteTitle}>
         <SEO title="Chris' Dialogue" />
         <Bio />
