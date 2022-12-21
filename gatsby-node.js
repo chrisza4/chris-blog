@@ -1,6 +1,25 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+// To be refactor out of this file: Logic about markdown
+
+function isBlogContent(markdown) {
+  return markdown.fields.contentType === "blog"
+}
+
+function isCourseContent(markdown) {
+  return markdown.fields.contentType === "course"
+}
+
+function getMarkdownContentType(markdownNode) {
+  const regExpForCourseFolder = /.*\/courses\/.+/
+  return regExpForCourseFolder.test(markdownNode.fileAbsolutePath)
+    ? "course"
+    : "blog"
+}
+
+// === End ===
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
@@ -19,6 +38,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             id
             fields {
               slug
+              contentType
             }
           }
         }
@@ -34,24 +54,43 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
 
-  const posts = result.data.allMarkdownRemark.nodes
+  const allMarkdowns = result.data.allMarkdownRemark.nodes
+  const coursesMarkdown = allMarkdowns.filter(markdown =>
+    isCourseContent(markdown)
+  )
+  const blogsMarkdown = allMarkdowns.filter(markdown => isBlogContent(markdown))
 
   // Create blog posts pages
   // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
   // `context` is available in the template as a prop and as a variable in GraphQL
 
-  if (posts.length > 0) {
-    posts.forEach((post, index) => {
-      const previousPostId = index === 0 ? null : posts[index - 1].id
-      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
+  if (blogsMarkdown.length > 0) {
+    blogsMarkdown.forEach((markdown, index) => {
+      const previousPostId = index === 0 ? null : blogsMarkdown[index - 1].id
+      const nextPostId =
+        index === blogsMarkdown.length - 1 ? null : blogsMarkdown[index + 1].id
 
       createPage({
-        path: post.fields.slug,
+        path: markdown.fields.slug,
         component: blogPost,
         context: {
-          id: post.id,
+          id: markdown.id,
           previousPostId,
           nextPostId,
+        },
+      })
+    })
+  }
+
+  if (coursesMarkdown.length > 0) {
+    coursesMarkdown.forEach(markdown => {
+      createPage({
+        path: markdown.fields.slug,
+        component: blogPost,
+        context: {
+          id: markdown.id,
+          previousPostId: null,
+          nextPostId: null,
         },
       })
     })
@@ -70,14 +109,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
 
     // Check if it's a blog or course
-    const regExpForCourseFolder = /.*\/courses\/.+/
-    const contentType = regExpForCourseFolder.test(node.fileAbsolutePath)
-      ? "course"
-      : "blog"
     createNodeField({
       name: "contentType",
       node,
-      value: contentType,
+      value: getMarkdownContentType(node),
     })
   }
 }
