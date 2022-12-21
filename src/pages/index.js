@@ -10,7 +10,7 @@ import PodCasts from "../components/podCasts"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
-
+  console.log("p:", posts)
   return (
     <>
       <Layout location={location} title={siteTitle}>
@@ -67,7 +67,10 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { frontmatter: { hidden: { ne: true } } }
+      filter: {
+        frontmatter: { hidden: { ne: true } }
+        fields: { contentType: { eq: "blog" } }
+      }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       nodes {

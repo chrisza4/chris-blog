@@ -63,11 +63,21 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
-
     createNodeField({
       name: `slug`,
       node,
       value,
+    })
+
+    // Check if it's a blog or course
+    const regExpForCourseFolder = /.*\/courses\/.+/
+    const contentType = regExpForCourseFolder.test(node.fileAbsolutePath)
+      ? "course"
+      : "blog"
+    createNodeField({
+      name: "contentType",
+      node,
+      value: contentType,
     })
   }
 }
