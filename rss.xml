@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris' Dialogue]]></title><description><![CDATA[A blog of Chris, a human who love to learn more about himself and the world]]></description><link>https://chrisza.me</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 21 Dec 2022 11:07:46 GMT</lastBuildDate><item><title><![CDATA[Humanistic Architecture]]></title><description><![CDATA[TLDR; คอร์ส the art of humanistic architecture design ที่จะสอนเรื่อง “การดีไซน์” software architecture…]]></description><link>https://chrisza.me/course/</link><guid isPermaLink="false">https://chrisza.me/course/</guid><content:encoded>&lt;h2&gt;TLDR;&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Chris' Dialogue]]></title><description><![CDATA[A blog of Chris, a human who love to learn more about himself and the world]]></description><link>https://chrisza.me</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 21 Dec 2022 11:13:55 GMT</lastBuildDate><item><title><![CDATA[Humanistic Architecture]]></title><description><![CDATA[TLDR; คอร์ส the art of humanistic architecture design ที่จะสอนเรื่อง “การดีไซน์” software architecture…]]></description><link>https://chrisza.me/course/</link><guid isPermaLink="false">https://chrisza.me/course/</guid><content:encoded>&lt;h2&gt;TLDR;&lt;/h2&gt;
 &lt;p&gt;คอร์ส the art of humanistic architecture design ที่จะสอนเรื่อง “การดีไซน์” software architecture โดยใช้ศาสตร์ความเป็นมนุษย์เข้ามาเสริม จากประสบการณ์ผมเองที่ synthesize ศาสตร์จิตวิทยาความเป็นมนุษย์ (humanistic psychology) อย่าง Satir enneagram งาน ux/ui ไปจนถึง math และ category theory เพื่อให้มองไปไกลกว่าแค่ตอบโจทย์ตรงหน้า แต่รู้ว่าเราจะเข้าถึงความเป็นมนุษย์เพื่อเลือกคำตอบที่มี impact ที่ดี จากคำตอบที่เป็นไปได้ร้อยอย่างพันอย่างได้อย่างไร&lt;/p&gt;
 &lt;h2&gt;Description&lt;/h2&gt;
 &lt;p&gt;“In the software engineering world full of trade-offs and competing opinions on what is the best, how do you really decide?&lt;/p&gt;
@@ -50,8 +50,8 @@
 &lt;/ul&gt;
 &lt;p&gt;(และ Case study อื่นๆ หากมีเวลาเหลือ เช่น Log Formatting, GraphQL vs RESTFul design)&lt;/p&gt;
 &lt;h2&gt;เวลาเรียน&lt;/h2&gt;
-&lt;p&gt;คอร์ส 1 (Active): วันที่ 4-5 กุมภาพันธ์ 2023 เวลา 9.00-16.30
-สถานที่: &lt;a href=&quot;https://www.google.com/maps/place/Geeky+Base/@13.852423,100.5803335,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29d2386568ec7:0xdf0eb043fcd08544!8m2!3d13.8524221!4d100.5825129&quot;&gt;Geeky Base&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;คอร์ส 1 (Active): วันที่ 4-5 กุมภาพันธ์ 2023 เวลา 9.00-16.30&lt;/p&gt;
+&lt;p&gt;สถานที่: &lt;a href=&quot;https://www.google.com/maps/place/Geeky+Base/@13.852423,100.5803335,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29d2386568ec7:0xdf0eb043fcd08544!8m2!3d13.8524221!4d100.5825129&quot;&gt;Geeky Base&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;รับผู้เรียนทั้งหมดจำนวน 20 คน&lt;/p&gt;
 &lt;p&gt;ราคา: 7,000 บาท&lt;/p&gt;
 &lt;p&gt;โอนเงินจองได้ที่ Promptpay 0879337879 นายชาคริต ลิขิตขจร&lt;/p&gt;
