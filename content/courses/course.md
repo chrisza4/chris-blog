@@ -14,9 +14,10 @@ title: Humanistic Architecture
 
 # Reviews & Teaser
 
-- [Review#1](https://www.facebook.com/ratixoxo/posts/pfbid02QLs6E9jWYgWUyeU44TN5eqc2V2cPR5aqt9BAm2Pu4fYmPa5iMiZGNggR6fUu7sAbl)
+- [Review#1](https://www.facebook.com/kanin.kearpimy56/posts/pfbid0SK6i7N5w459WDy9xcp2mjtuUGqYJ8kjqCSfeT8wjbknsVhJZtpXdZEhWJQkM8KYBl?__cft__[0]=AZX_VxKVkYUmMMjm8AHrZrYJWlxF_Hogm53otdXqyysW3NMV0Hq9772Ta8tWHvkb6ADsWunyUbRhoqLO2XiQFeyw0vQ_FZjmEFh8I1qRGNeh5saf1zDgQo7L9q1Snrf-mII&__tn__=%2CO%2CP-R)
 - [Review#2](https://www.facebook.com/Sikiryl/posts/pfbid09vXxBLsaXPTasVg4yQ3FyNQh89iRUbtDBoDV7b2QhbHgzPo5Y6mipH8Xcpj6uJUql)
-- [Review#3](https://medium.com/@thikonwachiraarunwong/%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B6%E0%B8%81-humanistic-architecture-89f73a334ff3?fbclid=IwAR2Li7ciRMztwqsvmu_C1Ut81mzS_SlXAgqLH30IZMFCzmMZiLA_Uo7cR_g)
+- [Review#3](https://www.facebook.com/ratixoxo/posts/pfbid02QLs6E9jWYgWUyeU44TN5eqc2V2cPR5aqt9BAm2Pu4fYmPa5iMiZGNggR6fUu7sAbl)
+- [Review#4](https://medium.com/@thikonwachiraarunwong/%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B6%E0%B8%81-humanistic-architecture-89f73a334ff3?fbclid=IwAR2Li7ciRMztwqsvmu_C1Ut81mzS_SlXAgqLH30IZMFCzmMZiLA_Uo7cR_g)
 - [คำโปรยแรก](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid02UETwFp5SptBqWr14EXpVn5yGGsrXQrgFhZr2QhpKH8Bo9us35W8u1NSsy6QwGEkxl?__cft__[0]=AZXS11dgQsmKjc-UOjjJxMAZp9u8LVLqACCAKD2WJlcwNH00-jzor8QJl8abLWObMtQa5GdjxwmMi7MrsTrp_cvuaMnCRLmGuOz4HEpZbUVc3VJKmxq0ZEe3ceJt9z0q_uI&__tn__=%2CO%2CP-R)
 - [Teaser](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid02XWvnJVyVk5AXMB9yQ9vfKUNZdRGahUCxYa2uNuyPRp1zGoAZM1gFidFBX3Mj8Ccql)
 - [คำโปรยสอง](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid0nEWpLYF3URBMAUWStpwPL92KvKxMiyL9ZzPv2g1Be14K6uqJxRDhzRX4Ybxj9bVal)
