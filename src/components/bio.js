@@ -74,7 +74,7 @@ const Bio = () => {
           <div>{author?.summary || null}</div>
           <WhereIWorkSection>
             I am currently working at{" "}
-            <Link to="https://www.thoughtworks.com/">ThoughtWorks</Link>
+            <a href="https://www.thoughtworks.com/">ThoughtWorks</a>
           </WhereIWorkSection>
         </AuthorSection>
       )}

@@ -71,7 +71,7 @@ export const pageQuery = graphql`
         frontmatter: { hidden: { ne: true } }
         fields: { contentType: { eq: "blog" } }
       }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
     ) {
       nodes {
         excerpt

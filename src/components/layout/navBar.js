@@ -1,7 +1,7 @@
 import React from "react"
 import { StyledDiv, StyledUl, StyledLi } from "../tools/styled"
 import { Link } from "gatsby"
-import styles from "./navBar.module.css"
+import * as styles from "./navBar.module.css"
 import WebRing from "../webRing"
 
 const NavBarPlaceHolder = StyledDiv({ className: styles.navBar })
