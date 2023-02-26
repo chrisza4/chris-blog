@@ -62,6 +62,7 @@ const Bio = () => {
           imgStyle={{
             borderRadius: `50%`,
           }}
+          loading="eager"
         />
       )}
       {author?.name && (

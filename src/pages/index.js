@@ -10,7 +10,7 @@ import PodCasts from "../components/podCasts"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
-  console.log("p:", posts)
+
   return (
     <>
       <Layout location={location} title={siteTitle}>
