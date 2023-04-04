@@ -74,6 +74,11 @@ const Talks = ({ location }) => {
         }}
       >
         <Talk
+          title="[TH] XConf - Evolutionary Testing in Evolutionary Architecture"
+          detail="I gave a talk on how to design unit testing which is not tightly coupled to the class structure, to the point that architectural change is prevented by unit tests. This is a common mistake I found in many codebase and unit testing practitioners."
+          embeddedLink="https://www.youtube.com/embed/l2WxQQzvSA4"
+        />
+        <Talk
           title="[EN] Applying SOLID principle in JavaScript without Class and Object - Javascript Bangkok"
           detail="In order to understand the root of SOLID principle, I present a unique manifestation of the principle, the one without any object nor class"
           embeddedLink="https://www.youtube.com/embed/R3fv__odSbI"
