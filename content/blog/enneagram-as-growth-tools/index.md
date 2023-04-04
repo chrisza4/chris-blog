@@ -23,9 +23,9 @@ We also don't look at Enneagram 9s and be like "why is this creature need comfor
 
 I can go on but I think I already made a point.
 
-This is because every human has every type of capability. We are in some sense, every Enneagram type to a certain degree. We all have shame, fear and anger. We all have the capability and yearn to be integrity, loved, successful, authentic, self-sufficient, safe, happy, autonomous and comfort.
+This is because every human has every type's capability. We are in some sense, every Enneagram type to a certain degree. We all have shame, fear and anger. We all have the capability and yearn to be integrity, loved, successful, authentic, self-sufficient, safe, happy, autonomous and comfort.
 
-We are not an AI maximizer which will do everything imaginable for just one single yearning that we are programmed with. We are human.
+We are not an AI maximizer which will do everything imaginable for just one single yearning that we are programmed with. We are human. We have multiple yearning and need.
 
 This leads to the next question.
 
