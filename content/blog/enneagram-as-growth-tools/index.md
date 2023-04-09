@@ -3,7 +3,7 @@ title: Using Enneagram as a growth tool
 date: "2023-03-30T12:00:00.000"
 ---
 
-(Inspired by subreddit r/enneagram)
+(Inspired by subreddit r/enneagram. Posted [here](https://www.reddit.com/r/Enneagram/comments/126r960/using_enneagram_as_a_growth_tool/))
 
 Today I want to talk about using Enneagram as a growth tool.
 
