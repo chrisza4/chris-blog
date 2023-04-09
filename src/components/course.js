@@ -4,12 +4,10 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout/mainLayout"
 import SEO from "../components/seo"
-import RegistrationForm from "./registrationForm"
 
 const Course = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
 
   return (
     <>
@@ -32,7 +30,6 @@ const Course = ({ data, location }) => {
             itemProp="articleBody"
           />
           <hr />
-          <RegistrationForm />
           <footer>
             <Bio />
           </footer>

@@ -12,16 +12,6 @@ title: Humanistic Architecture
 
 (สำหรับคนที่ติดตามผู้สอนมาซักพัก คอร์สนี้จะเปิดเผยว่าเนื้อหา Talk ต่างๆ ที่ผมเคยพูด งานสอนอื่นๆ ที่ผมทำมาจากพื้นฐานเบื้องลึกอย่างไร ทำไมหลายๆ อาจจะมองว่าผมพูดเข้าใจง่าย มาจากเลนส์มุมมองอย่างไรกันแน่ แล้วจะเข้าใจทั้งฐานคิดและวิธีสื่อสารเพื่อนำปรับไปใช้กับทีมของคุณได้)
 
-# Reviews & Teaser
-
-- [Review#1](https://www.facebook.com/kanin.kearpimy56/posts/pfbid0SK6i7N5w459WDy9xcp2mjtuUGqYJ8kjqCSfeT8wjbknsVhJZtpXdZEhWJQkM8KYBl?__cft__[0]=AZX_VxKVkYUmMMjm8AHrZrYJWlxF_Hogm53otdXqyysW3NMV0Hq9772Ta8tWHvkb6ADsWunyUbRhoqLO2XiQFeyw0vQ_FZjmEFh8I1qRGNeh5saf1zDgQo7L9q1Snrf-mII&__tn__=%2CO%2CP-R)
-- [Review#2](https://www.facebook.com/Sikiryl/posts/pfbid09vXxBLsaXPTasVg4yQ3FyNQh89iRUbtDBoDV7b2QhbHgzPo5Y6mipH8Xcpj6uJUql)
-- [Review#3](https://www.facebook.com/ratixoxo/posts/pfbid02QLs6E9jWYgWUyeU44TN5eqc2V2cPR5aqt9BAm2Pu4fYmPa5iMiZGNggR6fUu7sAbl)
-- [Review#4](https://medium.com/@thikonwachiraarunwong/%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B6%E0%B8%81-humanistic-architecture-89f73a334ff3?fbclid=IwAR2Li7ciRMztwqsvmu_C1Ut81mzS_SlXAgqLH30IZMFCzmMZiLA_Uo7cR_g)
-- [คำโปรยแรก](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid02UETwFp5SptBqWr14EXpVn5yGGsrXQrgFhZr2QhpKH8Bo9us35W8u1NSsy6QwGEkxl?__cft__[0]=AZXS11dgQsmKjc-UOjjJxMAZp9u8LVLqACCAKD2WJlcwNH00-jzor8QJl8abLWObMtQa5GdjxwmMi7MrsTrp_cvuaMnCRLmGuOz4HEpZbUVc3VJKmxq0ZEe3ceJt9z0q_uI&__tn__=%2CO%2CP-R)
-- [Teaser](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid02XWvnJVyVk5AXMB9yQ9vfKUNZdRGahUCxYa2uNuyPRp1zGoAZM1gFidFBX3Mj8Ccql)
-- [คำโปรยสอง](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid0nEWpLYF3URBMAUWStpwPL92KvKxMiyL9ZzPv2g1Be14K6uqJxRDhzRX4Ybxj9bVal)
-
 ## เหมาะสำหรับใคร
 
 คอร์สนี้เหมาะสำหรับคนที่มีประสบการณ์การทำงานมาระดับนึง และอยู่ในจุดที่รับโจทย์มาแล้วต้องเลือก Solution ที่ดีที่สุดจากความเป็นไปได้หลายรูปแบบ ไม่ว่าจะเป็นการเลือกภาษา เลือกเฟรมเวิร์ค เลือก Coding Standard หรือเลือก Collaboration Scheme ในระดับองค์กร และเราต้องการ "ออกแบบ" สิ่งที่เหมาะที่สุดสำหรับบริบทนั้น
@@ -57,12 +47,11 @@ Recommend profile:
 
 ## เวลาเรียน
 
-- รอบที่ 1 (จบไปแล้ว): วันที่ 4-5 กุมภาพันธ์ 2023 เวลา 9.00-16.30
-- **รอบที่ 2 (เต็ม): วันที่ 25-26 มีนาคม 2023 เวลา 9.00-17.00**
+**รอบที่ 3 (เปิดรับสมัครสำหรับคน Shortlist ไว้): วันที่ 27-28 พฤษภาคม 2023 เวลา 9.00-17.00**
 
 สถานที่: [Geeky Base](https://www.google.com/maps/place/Geeky+Base/@13.852423,100.5803335,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29d2386568ec7:0xdf0eb043fcd08544!8m2!3d13.8524221!4d100.5825129)
 
-รับผู้เรียนทั้งหมดจำนวน 17 คน
+รับผู้เรียนทั้งหมดจำนวน 18 คน
 
 ราคา: 7,500 บาท
 
@@ -72,3 +61,21 @@ Recommend profile:
 
 - Facebook messenger: [Chakrit Likitkhajorn](https://www.facebook.com/chakrit.likitkhajorn)
 - Email: chakrit.lj@gmail.com
+
+**คอร์สที่จบไปก่อนหน้านี้**
+
+- รอบที่ 1 (จบไปแล้ว): วันที่ 4-5 กุมภาพันธ์ 2023 เวลา 9.00-16.30
+- รอบที่ 2 (จบไปแล้ว): วันที่ 25-26 มีนาคม 2023 เวลา 9.00-17.00
+
+# Reviews & Teaser
+
+- [Review#1](https://www.facebook.com/kanin.kearpimy56/posts/pfbid0SK6i7N5w459WDy9xcp2mjtuUGqYJ8kjqCSfeT8wjbknsVhJZtpXdZEhWJQkM8KYBl?__cft__[0]=AZX_VxKVkYUmMMjm8AHrZrYJWlxF_Hogm53otdXqyysW3NMV0Hq9772Ta8tWHvkb6ADsWunyUbRhoqLO2XiQFeyw0vQ_FZjmEFh8I1qRGNeh5saf1zDgQo7L9q1Snrf-mII&__tn__=%2CO%2CP-R)
+- [Review#2](https://www.facebook.com/Sikiryl/posts/pfbid09vXxBLsaXPTasVg4yQ3FyNQh89iRUbtDBoDV7b2QhbHgzPo5Y6mipH8Xcpj6uJUql)
+- [Review#3](https://www.facebook.com/ratixoxo/posts/pfbid02QLs6E9jWYgWUyeU44TN5eqc2V2cPR5aqt9BAm2Pu4fYmPa5iMiZGNggR6fUu7sAbl)
+- [Review#4](https://medium.com/@thikonwachiraarunwong/%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B6%E0%B8%81-humanistic-architecture-89f73a334ff3?fbclid=IwAR2Li7ciRMztwqsvmu_C1Ut81mzS_SlXAgqLH30IZMFCzmMZiLA_Uo7cR_g)
+- [Review#5](https://knowlats.dev/review-course-humanistic-software-architecture/)
+- [Review#6](https://knowlats.dev/review-course-humanistic-software-architecture/) อันนี้ละเอียดมาก
+- [Review#7](https://naiwaen.debuggingsoft.com/2023/03/%e0%b8%9a%e0%b8%b1%e0%b8%99%e0%b8%97%e0%b8%b6%e0%b8%81-humanistic-software-architecture/?fbclid=IwAR1OdnaqfoM7rbtB7WtTJZpTZTmrJgIvnfgYrdyaYnQLuiPKhPm_EDZnT34)
+- [คำโปรยแรก](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid02UETwFp5SptBqWr14EXpVn5yGGsrXQrgFhZr2QhpKH8Bo9us35W8u1NSsy6QwGEkxl?__cft__[0]=AZXS11dgQsmKjc-UOjjJxMAZp9u8LVLqACCAKD2WJlcwNH00-jzor8QJl8abLWObMtQa5GdjxwmMi7MrsTrp_cvuaMnCRLmGuOz4HEpZbUVc3VJKmxq0ZEe3ceJt9z0q_uI&__tn__=%2CO%2CP-R)
+- [Teaser](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid02XWvnJVyVk5AXMB9yQ9vfKUNZdRGahUCxYa2uNuyPRp1zGoAZM1gFidFBX3Mj8Ccql)
+- [คำโปรยสอง](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid0nEWpLYF3URBMAUWStpwPL92KvKxMiyL9ZzPv2g1Be14K6uqJxRDhzRX4Ybxj9bVal)
