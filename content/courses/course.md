@@ -74,7 +74,7 @@ Recommend profile:
 - [Review#3](https://www.facebook.com/ratixoxo/posts/pfbid02QLs6E9jWYgWUyeU44TN5eqc2V2cPR5aqt9BAm2Pu4fYmPa5iMiZGNggR6fUu7sAbl)
 - [Review#4](https://medium.com/@thikonwachiraarunwong/%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B6%E0%B8%81-humanistic-architecture-89f73a334ff3?fbclid=IwAR2Li7ciRMztwqsvmu_C1Ut81mzS_SlXAgqLH30IZMFCzmMZiLA_Uo7cR_g)
 - [Review#5](https://knowlats.dev/review-course-humanistic-software-architecture/)
-- [Review#6](https://knowlats.dev/review-course-humanistic-software-architecture/) อันนี้ละเอียดมาก
+- [Review#6](https://sarunyhot.medium.com/%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B6%E0%B8%81%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-humanistic-architecture-5a47b0b488e5) อันนี้ละเอียดมาก
 - [Review#7](https://naiwaen.debuggingsoft.com/2023/03/%e0%b8%9a%e0%b8%b1%e0%b8%99%e0%b8%97%e0%b8%b6%e0%b8%81-humanistic-software-architecture/?fbclid=IwAR1OdnaqfoM7rbtB7WtTJZpTZTmrJgIvnfgYrdyaYnQLuiPKhPm_EDZnT34)
 - [คำโปรยแรก](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid02UETwFp5SptBqWr14EXpVn5yGGsrXQrgFhZr2QhpKH8Bo9us35W8u1NSsy6QwGEkxl?__cft__[0]=AZXS11dgQsmKjc-UOjjJxMAZp9u8LVLqACCAKD2WJlcwNH00-jzor8QJl8abLWObMtQa5GdjxwmMi7MrsTrp_cvuaMnCRLmGuOz4HEpZbUVc3VJKmxq0ZEe3ceJt9z0q_uI&__tn__=%2CO%2CP-R)
 - [Teaser](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid02XWvnJVyVk5AXMB9yQ9vfKUNZdRGahUCxYa2uNuyPRp1zGoAZM1gFidFBX3Mj8Ccql)
