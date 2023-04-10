@@ -25,7 +25,10 @@ export default function NavBar() {
       <NavBarMenu>
         <NavBarMenuLink to="/">Home</NavBarMenuLink>
         <NavBarMenuLink to="/favorite-contents">Favorite Blogs</NavBarMenuLink>
-        <NavBarMenuLink to="/course">Course</NavBarMenuLink>
+        <NavBarMenuLink to="/course">
+          Humanistic Architecture Course
+        </NavBarMenuLink>
+        <NavBarMenuLink to="/otherCourses">Other Courses</NavBarMenuLink>
         <NavBarMenuLink to="/talks">Talks</NavBarMenuLink>
         <NavBarMenuItemPlaceHolder>
           <WebRing />
