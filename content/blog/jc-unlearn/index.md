@@ -205,4 +205,6 @@ When JC developer learn new language, I suggest to stay open-minded about testin
 
 I have a mixed feeling in how many TypeScript framework adopt IoC container approach. I understand it helps JC developer to be at ease with TypeScript, but at the same time I always think it is unnecessary if all you want to do is just write a testable code.
 
+This [talk](https://www.youtube.com/watch?v=PTE4VJIdHPg&t=650s) also convey a great message on why explicitly using constructor can have benefit over delegated constructor to DI container.
+
 Stay tuned for part 2: Everything don't need to be an object.
