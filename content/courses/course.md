@@ -57,10 +57,7 @@ Recommend profile:
 
 โอนเงินจองได้ที่ Promptpay 0879337879 นายชาคริต ลิขิตขจร
 
-แจ้งโอนเงินได้ที่
-
-- Facebook messenger: [Chakrit Likitkhajorn](https://www.facebook.com/chakrit.likitkhajorn)
-- Email: chakrit.lj@gmail.com
+แจ้งโอนเงินได้ที่ [เว็บไซต์นี้](https://humanarch.fly.dev/registrations/register)
 
 **คอร์สที่จบไปก่อนหน้านี้**
 
