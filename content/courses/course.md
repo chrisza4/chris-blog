@@ -22,7 +22,7 @@ title: Humanistic Architecture
 
 Recommend profile:
 
-- เคยทำงานมาแล้ว 2 ปี
+- เคยทำงานมาแล้วอย่างน้อย 2 ปี มีประสบการณ์ในการทำงาน
 - เคยจับ Framework, Architecture มากกว่า 1 แบบขึ้นไป
 - มีประสบการณ์ที่ต้องร่วมตัดสินใจเลือกรูปแบบการทำงานหรือ Architecture, Framework, Library ให้ทีม
 - คอร์สจะ Assume ความรู้พื้นฐานเหล่านี้ Dependency Injection, IoC container, Unit testing, Object oriented Programming, Functional programming, MVC Architecture, Event and Observer Pattern อย่างน้อยพอรู้ว่ามันคืออะไรนิดๆ หน่อยๆ ไม่ต้องสันทัดมากก็ได้
@@ -47,23 +47,19 @@ Recommend profile:
 
 ## เวลาเรียน
 
-**รอบที่ 4: วันที่ 7-8 ตุลาคม 2023 เวลา 9.00-17.00**
+**รอบที่ 5: วันที่ 24-25 กุมภาพันธ์ 2024 เวลา 9.00-18.00**
 
-สถานที่: [Geeky Base](https://www.google.com/maps/place/Geeky+Base/@13.852423,100.5803335,17z/data=!3m1!4b1!4m5!3m4!1s0x30e29d2386568ec7:0xdf0eb043fcd08544!8m2!3d13.8524221!4d100.5825129)
+สถานที่: [Clazy Cafe](https://maps.app.goo.gl/hzxPpnwFG7gRDQtq7) ห้อง B
+
+ลง BTS สนามเป้าทางออก 1 เดินประมาณ 700 เมตร อยู่ที่ Season mall
 
 รับผู้เรียนทั้งหมดจำนวน 18 คน
 
-ราคา: 7,500 บาท
+ราคา: 8,000 บาท
 
 โอนเงินจองได้ที่ Promptpay 0879337879 นายชาคริต ลิขิตขจร
 
 แจ้งโอนเงินได้ที่ [เว็บไซต์นี้](https://humanarch.fly.dev/registrations/register)
-
-**คอร์สที่จบไปก่อนหน้านี้**
-
-- รอบที่ 1 (จบไปแล้ว): วันที่ 4-5 กุมภาพันธ์ 2023 เวลา 9.00-16.30
-- รอบที่ 2 (จบไปแล้ว): วันที่ 25-26 มีนาคม 2023 เวลา 9.00-17.00
-- รอบที่ 3 (จบไปแล้ว): วันที่ 27-28 พฤษภาคม 2023 เวลา 9.00-17.00
 
 # Reviews & Teaser
 
@@ -78,3 +74,10 @@ Recommend profile:
 - [คำโปรยแรก](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid02UETwFp5SptBqWr14EXpVn5yGGsrXQrgFhZr2QhpKH8Bo9us35W8u1NSsy6QwGEkxl?__cft__[0]=AZXS11dgQsmKjc-UOjjJxMAZp9u8LVLqACCAKD2WJlcwNH00-jzor8QJl8abLWObMtQa5GdjxwmMi7MrsTrp_cvuaMnCRLmGuOz4HEpZbUVc3VJKmxq0ZEe3ceJt9z0q_uI&__tn__=%2CO%2CP-R)
 - [Teaser](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid02XWvnJVyVk5AXMB9yQ9vfKUNZdRGahUCxYa2uNuyPRp1zGoAZM1gFidFBX3Mj8Ccql)
 - [คำโปรยสอง](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid0nEWpLYF3URBMAUWStpwPL92KvKxMiyL9ZzPv2g1Be14K6uqJxRDhzRX4Ybxj9bVal)
+
+**คอร์สที่จบไปก่อนหน้านี้**
+
+- รอบที่ 1 (จบไปแล้ว): วันที่ 4-5 กุมภาพันธ์ 2023 เวลา 9.00-16.30
+- รอบที่ 2 (จบไปแล้ว): วันที่ 25-26 มีนาคม 2023 เวลา 9.00-17.00
+- รอบที่ 3 (จบไปแล้ว): วันที่ 27-28 พฤษภาคม 2023 เวลา 9.00-17.00
+- รอบที่ 4 (จบไปแล้ว): วันที่ 7-8 ตุลาคม 2023 เวลา 9.00-17.00
