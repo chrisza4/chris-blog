@@ -28,6 +28,9 @@ export default function NavBar() {
         <NavBarMenuLink to="/course">
           Humanistic Architecture Course
         </NavBarMenuLink>
+        <NavBarMenuLink to="/techlead-course">
+          Tech Leadership Course
+        </NavBarMenuLink>
         <NavBarMenuLink to="/otherCourses">Other Courses</NavBarMenuLink>
         <NavBarMenuLink to="/talks">Talks</NavBarMenuLink>
         <NavBarMenuItemPlaceHolder>
