@@ -1,3 +1,9 @@
+---
+title: Head intelligence
+date: "2021-04-15T00:00:00.000"
+hidden: true
+---
+
 This aimed to be a series which explains how to use Enneagram for inner growth. For this I will go into the first major topic, accessing your own 3 centers of intelligence
 
 ## Prelude
