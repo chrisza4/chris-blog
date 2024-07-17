@@ -46,4 +46,4 @@ title: "Tech leadership: Building culture 101"
 
 รับผู้เรียนทั้งหมดจำนวน 20 คน
 
-ราคา: 9,999 บาท
+ราคา: 8,000 บาท
