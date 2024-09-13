@@ -3,6 +3,9 @@ import { StyledDiv, StyledUl, StyledLi } from "../tools/styled"
 import { Link } from "gatsby"
 import * as styles from "./navBar.module.css"
 import WebRing from "../webRing"
+import useIsMobile from "../../hooks/useIsMobile"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 const NavBarPlaceHolder = StyledDiv({ className: styles.navBar })
 const NavBarMenu = StyledUl({ className: styles.navBarMenus })
@@ -20,6 +23,16 @@ const NavBarMenuLink = ({ to, children }) => (
 )
 
 export default function NavBar() {
+  const isMobile = useIsMobile()
+  if (isMobile) {
+    return (
+      <NavBarPlaceHolder>
+        <NavBarMenuItemPlaceHolder>
+          <FontAwesomeIcon icon={faBars} />
+        </NavBarMenuItemPlaceHolder>
+      </NavBarPlaceHolder>
+    )
+  }
   return (
     <NavBarPlaceHolder>
       <NavBarMenu>

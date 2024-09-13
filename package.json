@@ -8,6 +8,11 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "latest",
     "@tanstack/react-query": "^4.24.10",
     "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.5",
@@ -30,6 +35,7 @@
     "gatsby-transformer-json": "^5.7.0",
     "gatsby-transformer-remark": "^6.7.0",
     "gatsby-transformer-sharp": "^5.7.0",
+    "lodash": "^4.17.21",
     "prismjs": "^1.22.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
