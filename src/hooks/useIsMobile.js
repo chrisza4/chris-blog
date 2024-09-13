@@ -15,7 +15,6 @@ const useIsMobile = () => {
       setIsMobile(isMobileScreen())
     }
     window.addEventListener("resize", debounce(updateSize, 250))
-    // updateSize();
     return () => window.removeEventListener("resize", updateSize)
   }, [])
 

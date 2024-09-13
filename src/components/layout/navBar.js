@@ -76,9 +76,9 @@ export default function NavBar() {
   if (isMobile) {
     return (
       <NavBarPlaceHolder>
-        <NavBarMenuItemPlaceHolder>
+        <div className={styles.navBarMenu}>
           <HamburgerMenu />
-        </NavBarMenuItemPlaceHolder>
+        </div>
       </NavBarPlaceHolder>
     )
   }

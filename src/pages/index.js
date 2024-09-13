@@ -6,8 +6,6 @@ import Layout from "../components/layout/mainLayout"
 import SEO from "../components/seo"
 import DevTo from "../components/devTo"
 import PodCasts from "../components/podCasts"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
