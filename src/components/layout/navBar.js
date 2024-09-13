@@ -1,11 +1,12 @@
-import React from "react"
+import React, { useState } from "react"
 import { StyledDiv, StyledUl, StyledLi } from "../tools/styled"
 import { Link } from "gatsby"
 import * as styles from "./navBar.module.css"
 import WebRing from "../webRing"
 import useIsMobile from "../../hooks/useIsMobile"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons"
+import Hamburgur from "hamburger-react"
 
 const NavBarPlaceHolder = StyledDiv({ className: styles.navBar })
 const NavBarMenu = StyledUl({ className: styles.navBarMenus })
@@ -22,13 +23,48 @@ const NavBarMenuLink = ({ to, children }) => (
   </NavBarMenuItemPlaceHolder>
 )
 
+const BurgerMenu = StyledDiv({ className: styles.shadow })
+const BurgerMenuBackground = StyledDiv({ className: styles.burgerMenu })
+const BurgerMenuItem = StyledDiv({ className: styles.burgerMenuItem })
+const BurgerMenuOverlay = StyledDiv({ className: styles.overlay })
+
+const menus = [
+  { to: "/", title: "Home" },
+  { to: "/favorite-contents", title: "Favorite Blogs" },
+  { to: "/course", title: "Humanistic Architecture Course" },
+  { to: "/techlead-course", title: "Tech Leadership Course" },
+  { to: "/otherCourses", title: "Other Courses" },
+  { to: "/talks", title: "Talks" },
+]
+
+function HamburgerMenu() {
+  const [isOpen, setIsOpen] = useState(false)
+  return (
+    <div onClick={() => setIsOpen(!isOpen)}>
+      <Hamburgur toggled={isOpen} />
+      {isOpen && (
+        <BurgerMenu>
+          <BurgerMenuBackground>
+            {menus.map(m => (
+              <BurgerMenuItem key={m.to}>
+                <NavBarMenuLink to={m.to}>{m.title}</NavBarMenuLink>
+              </BurgerMenuItem>
+            ))}
+          </BurgerMenuBackground>
+          <BurgerMenuOverlay />
+        </BurgerMenu>
+      )}
+    </div>
+  )
+}
+
 export default function NavBar() {
   const isMobile = useIsMobile()
   if (isMobile) {
     return (
       <NavBarPlaceHolder>
         <NavBarMenuItemPlaceHolder>
-          <FontAwesomeIcon icon={faBars} />
+          <HamburgerMenu />
         </NavBarMenuItemPlaceHolder>
       </NavBarPlaceHolder>
     )
@@ -36,16 +72,11 @@ export default function NavBar() {
   return (
     <NavBarPlaceHolder>
       <NavBarMenu>
-        <NavBarMenuLink to="/">Home</NavBarMenuLink>
-        <NavBarMenuLink to="/favorite-contents">Favorite Blogs</NavBarMenuLink>
-        <NavBarMenuLink to="/course">
-          Humanistic Architecture Course
-        </NavBarMenuLink>
-        <NavBarMenuLink to="/techlead-course">
-          Tech Leadership Course
-        </NavBarMenuLink>
-        <NavBarMenuLink to="/otherCourses">Other Courses</NavBarMenuLink>
-        <NavBarMenuLink to="/talks">Talks</NavBarMenuLink>
+        {menus.map(m => (
+          <NavBarMenuLink to={m.to} key={m.to}>
+            {m.title}
+          </NavBarMenuLink>
+        ))}
         <NavBarMenuItemPlaceHolder>
           <WebRing />
         </NavBarMenuItemPlaceHolder>

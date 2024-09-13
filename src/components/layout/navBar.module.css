@@ -18,6 +18,40 @@
   }
 }
 
+.shadow {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 1;
+}
+.burgerMenu {
+  position: relative;
+  margin-top: 60px;
+  background-color: green;
+
+  opacity: 1;
+  z-index: 2;
+}
+
+.burgerMenuItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  color: black;
+}
+
 .navBarMenus {
   margin: 0px;
   display: flex;

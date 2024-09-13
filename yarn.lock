@@ -10702,6 +10702,7 @@ __metadata:
     gatsby-transformer-remark: ^6.7.0
     gatsby-transformer-sharp: ^5.7.0
     gh-pages: ^3.1.0
+    hamburger-react: ^2.5.1
     identity-obj-proxy: ^3.0.0
     jest: ^26.6.3
     lodash: ^4.17.21
@@ -11494,6 +11495,15 @@ __metadata:
   dependencies:
     duplexer: ^0.1.2
   checksum: 2df97f359696ad154fc171dcb55bc883fe6e833bca7a65e457b9358f3cb6312405ed70a8da24a77c1baac0639906cd52358dc0ce2ec1a937eaa631b934c94194
+  languageName: node
+  linkType: hard
+
+"hamburger-react@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "hamburger-react@npm:2.5.1"
+  peerDependencies:
+    react: ^16.8 || ^17 || ^18
+  checksum: 169f5dae90c645d34e6d03ddbd3ceb22fdb337947ee58e74f89006a0a4457b90e2ad8c5b8cfe0e543a8346a4334b703473a5770c74688391d13e6c5079400ca5
   languageName: node
   linkType: hard
 
