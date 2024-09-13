@@ -3,6 +3,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import Layout from "../components/layout/mainLayout"
 import SEO from "../components/seo"
 import Image from "gatsby-image"
+import useIsMobile from "../hooks/useIsMobile"
 
 export default function OtherCourses({ location }) {
   const data = useStaticQuery(graphql`
@@ -28,7 +29,7 @@ export default function OtherCourses({ location }) {
       }
     }
   `)
-  console.log(data)
+  const isMobile = useIsMobile()
   const oopImage = data?.oop?.childImageSharp?.fixed
   const archImage = data?.arch?.childImageSharp?.fixed
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -41,22 +42,44 @@ export default function OtherCourses({ location }) {
         <p>Few online courses coordinated with others</p>
         <p>
           <Link to="https://www.skooldio.com/courses/oop-the-right-way">
-            <Image
-              style={{ borderRadius: 12 }}
-              fixed={oopImage}
-              alt="OOP"
-              loading="eager"
-            />
+            {isMobile ? (
+              "Oop the right way"
+            ) : (
+              <Image
+                style={{ borderRadius: 12, zIndex: -1 }}
+                fixed={oopImage}
+                alt="OOP"
+                loading="eager"
+              />
+            )}
           </Link>
         </p>
         <p>
           <Link to="https://www.skooldio.com/courses/software-architecture-design">
-            <Image
-              style={{ borderRadius: 12 }}
-              fixed={archImage}
-              alt="OOP"
-              loading="eager"
-            />
+            {isMobile ? (
+              "Software Architecture Design"
+            ) : (
+              <Image
+                style={{ borderRadius: 12 }}
+                fixed={archImage}
+                alt="OOP"
+                loading="eager"
+              />
+            )}
+          </Link>
+        </p>
+        <p>
+          <Link to="https://www.skooldio.com/courses/tactical-domain-driven-design">
+            {isMobile ? (
+              "Tactical Domain Driven Design"
+            ) : (
+              <Image
+                style={{ borderRadius: 12 }}
+                fixed={archImage}
+                alt="TDDD"
+                loading="eager"
+              />
+            )}
           </Link>
         </p>
       </center>

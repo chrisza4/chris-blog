@@ -4,8 +4,7 @@ import { Link } from "gatsby"
 import * as styles from "./navBar.module.css"
 import WebRing from "../webRing"
 import useIsMobile from "../../hooks/useIsMobile"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars, faClose } from "@fortawesome/free-solid-svg-icons"
+import { AnimatePresence, motion } from "framer-motion"
 import Hamburgur from "hamburger-react"
 
 const NavBarPlaceHolder = StyledDiv({ className: styles.navBar })
@@ -23,7 +22,19 @@ const NavBarMenuLink = ({ to, children }) => (
   </NavBarMenuItemPlaceHolder>
 )
 
-const BurgerMenu = StyledDiv({ className: styles.shadow })
+const BurgerMenu = ({ children }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.2 }}
+      className={styles.shadow}
+    >
+      {children}
+    </motion.div>
+  )
+}
 const BurgerMenuBackground = StyledDiv({ className: styles.burgerMenu })
 const BurgerMenuItem = StyledDiv({ className: styles.burgerMenuItem })
 const BurgerMenuOverlay = StyledDiv({ className: styles.overlay })
@@ -43,16 +54,18 @@ function HamburgerMenu() {
     <div onClick={() => setIsOpen(!isOpen)}>
       <Hamburgur toggled={isOpen} />
       {isOpen && (
-        <BurgerMenu>
-          <BurgerMenuBackground>
-            {menus.map(m => (
-              <BurgerMenuItem key={m.to}>
-                <NavBarMenuLink to={m.to}>{m.title}</NavBarMenuLink>
-              </BurgerMenuItem>
-            ))}
-          </BurgerMenuBackground>
-          <BurgerMenuOverlay />
-        </BurgerMenu>
+        <AnimatePresence>
+          <BurgerMenu>
+            <BurgerMenuBackground>
+              {menus.map(m => (
+                <BurgerMenuItem key={m.to}>
+                  <NavBarMenuLink to={m.to}>{m.title}</NavBarMenuLink>
+                </BurgerMenuItem>
+              ))}
+            </BurgerMenuBackground>
+            <BurgerMenuOverlay />
+          </BurgerMenu>
+        </AnimatePresence>
       )}
     </div>
   )

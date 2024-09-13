@@ -17,6 +17,7 @@
     "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.5",
     "dayjs": "^1.9.8",
+    "framer-motion": "^11.5.4",
     "gatsby": "^5.0.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-feed": "^5.7.0",
