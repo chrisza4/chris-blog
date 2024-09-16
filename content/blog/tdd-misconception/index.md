@@ -1,5 +1,5 @@
 ---
-title: "TDD Misconception: Yes, you can write code before test in TDD"
+title: "TDD Misconception: You can write some design code before test"
 date: "2022-04-24T00:00:00.000"
 ---
 
@@ -25,7 +25,11 @@ Without this step, we cannot even write a test. At least we need to have method(
 
 One thing why people advocate for TDD is because TDD encourages good design. You need to put some thought into where would you put the implementation, what should be an interface and all the design stuff. You need to make a decision on the interface in order to write a test before a code. And that's why generally speaking, TDD encourages good design. (This topic is still in a heated debate. Some claimed that TDD hurt the design.)
 
-The full TDD cycle is not just test, code and refactor. It's actually a design, test, code and then refactor. There is a zero-phase involved, design how and where your implementation should be.
+The full TDD cycle is not just test, code and refactor.
+
+It's actually a design, test, code and then refactor.
+
+There is a zero-phase involved, design how and where your implementation should be.
 
 ## Coding can be part of designing
 
@@ -43,7 +47,9 @@ So the misconception here is that you cannot touch your keyboard and type any co
 
 The key here is that the code generated in this design phase is to discover an appropriate design. It is a throwaway code.
 
-You should not expect to use code generated in this phase as a production code. Well, you can copy some of it into production code but you need to treat it as some kind of code in the documentation, Google or Stackoverflow. You generated a test and a blank method first, you wrote some code that satisfied the test. Some of the code might be copied from some kind of documentation with few modifications.
+**But at the same time, you should not expect to use code generated in this phase as a production code.**
+
+Well, you can copy some of it into production code but you need to treat it as some kind of code in the documentation, Google or Stackoverflow. You generated a test and a blank method first, you wrote some code that satisfied the test. Some of the code might be copied from some kind of documentation with few modifications.
 
 You can treat throwaway code this way instead of trying to use the throwaway code as much as possible.
 

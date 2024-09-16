@@ -22,6 +22,13 @@ export default function OtherCourses({ location }) {
           }
         }
       }
+      ddd: file(absolutePath: { regex: "/ddd-course.jpg/" }) {
+        childImageSharp {
+          fixed(width: 1200, height: 630, quality: 95) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       site {
         siteMetadata {
           title
@@ -32,6 +39,7 @@ export default function OtherCourses({ location }) {
   const isMobile = useIsMobile()
   const oopImage = data?.oop?.childImageSharp?.fixed
   const archImage = data?.arch?.childImageSharp?.fixed
+  const dddImage = data?.ddd?.childImageSharp?.fixed
   const siteTitle = data.site.siteMetadata?.title || `Title`
   return (
     <Layout location={location} title={siteTitle}>
@@ -46,7 +54,7 @@ export default function OtherCourses({ location }) {
               "Oop the right way"
             ) : (
               <Image
-                style={{ borderRadius: 12, zIndex: -1 }}
+                style={{ borderRadius: 12 }}
                 fixed={oopImage}
                 alt="OOP"
                 loading="eager"
@@ -75,7 +83,7 @@ export default function OtherCourses({ location }) {
             ) : (
               <Image
                 style={{ borderRadius: 12 }}
-                fixed={archImage}
+                fixed={dddImage}
                 alt="TDDD"
                 loading="eager"
               />
