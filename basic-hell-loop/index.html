@@ -130,11 +130,7 @@
         commission <span class="token operator">+=</span> price <span class="token operator">*</span> contract<span class="token punctuation">.</span>bonusCommission<span class="token punctuation">;</span>
       <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
-    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> contract <span class="token keyword">of</span> salesPerson<span class="token punctuation">.</span>contracts<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">if</span> <span class="token punctuation">(</span>contract<span class="token punctuation">.</span>hasBonus<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        commission <span class="token operator">+=</span> price <span class="token operator">*</span> contract<span class="token punctuation">.</span>bonusCommission<span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
+
     totalCommission <span class="token operator">+=</span> commission<span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 
