@@ -327,7 +327,7 @@ function extractLineWithSpecialProduct(
       otherProductLines.push(line);
     }
   }
-  return [specialProductLines, otherProductLines];
+  return [specialProductLgines, otherProductLines];
 }
 
 function applyBonusContract(
@@ -416,7 +416,7 @@ export function calculateCommission(
 
 ผมจะบอกว่า
 
-1. วนลูป Constant time บนข้อมูลแบบนี้ ถ้าไม่ถึหมื่นตัว ผมมองว่าผลน้อยมากๆ ลองวัดผลได้ครับ ดูว่ามีนัยสำคัญมั้ย
+1. วนลูป Constant time บนข้อมูลแบบนี้ ถ้าข้อมูลไม่ไซส์ใหญ่จริงๆ แบบเป็นแสนเป็นล้านตัว ผมมองว่าผลน้อยมากๆ ถ้ายังข้องใจ ก็ลองวัดผลได้ครับ ดูว่ามีนัยสำคัญมั้ย
 2. ถ้ายังบอกว่า ไม่เอา ไม่ชอบ เปลือง ไซส์ข้อมูลใหญ่ เราก็ยังใช้เทคนิคแบบเดียวกันได้ แต่ต้องใช้วิธีการของ Functional Programming ที่เรียกว่า Lazy Evaluation เข้ามาช่วยอีกทีได้ โดยไม่ต้องกลับไปเขียนลูปนรกที่อ่านและไล่ตามบั๊กยากมาก โดยบอกว่า "ก็มันเร็วกว่า ลูปทีเดียว" แต่ผมขอละเรื่อง Lazy Evaluation ไว้ในโอกาสหน้าครับ
 
 ---
