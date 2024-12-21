@@ -151,11 +151,7 @@ export function calculateCommission(
         commission += price * contract.bonusCommission;
       }
     }
-    for (const contract of salesPerson.contracts) {
-      if (contract.hasBonus) {
-        commission += price * contract.bonusCommission;
-      }
-    }
+
     totalCommission += commission;
   }
 
