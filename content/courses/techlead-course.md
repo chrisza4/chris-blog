@@ -26,24 +26,29 @@ title: "Tech leadership: Building culture 101"
 
 **Day 1: Designing your "team"**
 
+ออกแบบทีมและเข้าใจพื้นฐานของ Culture ในการทำงาน
+
 - Define your team: ทีมของคุณเป็นอย่างไร และการนิยามทีมขึ้นมาต้องพิจารณาอะไรบ้าง
 - Write your culture book: สร้าง Culture book ที่ไม่ได้เป็นแค่สโลแกนสวยๆ แต่มีประโยชน์ต่อการใช้งานจริง
 - Team lead role & Team maturity model: เข้าใจบทบาทของผู้นำ และระดับความสามารถของทีม
 
-**Day 2: Take care your team member well**
+**Day 2: Practical guide**
 
-- Getting to know your team: วิธีการทำความรู้จักคนในทีมที่มีประโยชน์ต่อทั้งความสัมพันธ์และการทำงานร่วมกัน
-- Trust building & maintaining: สร้างและดูแลความเชื่อใจภายในทีม
-- Expectation management: การเข้าใจวิธีการสื่อสารและจัดการกับความคาดหวัง
+การเคลื่อนไหวและ Action พื้นฐานที่ใช้ในการดูแลและทำงานร่วมกันทีม เช่น
+
+- Know and understand your team
+- Communication
+- Delegation
+- Expectation management
 
 เวลาเรียน
 
-รอบที่ 2: วันที่ 17-18 เดือนสิงหาคม เวลา 9.00-17.00
+รอบที่ 3: วันที่ 1-2 กุมภาพันธ์ เวลา 9.00-17.00
 
-สถานที่: Clazy Cafe ห้อง B
+สถานที่: Clazy Cafe
 
 ลง BTS สนามเป้าทางออก 1 เดินประมาณ 700 เมตร อยู่ที่ Season mall
 
 รับผู้เรียนทั้งหมดจำนวน 20 คน
 
-ราคา: 8,000 บาท
+ราคา: 10,000 บาท
