@@ -52,3 +52,13 @@ title: "Tech leadership: Building culture 101"
 รับผู้เรียนทั้งหมดจำนวน 20 คน
 
 ราคา: 10,000 บาท
+
+## Some review & Testinomial
+
+จาก Feedback นักเรียน
+
+"ขอเป็นกำลังใจให้ทำคอร์สดี ๆ แบบนี้ต่อไป ชอบที่สอนแบบใช้จริง ๆ ไม่อิงตำรา มีจิตวิทยาและความเป็นมนุษย์ในนั้น หาคอร์สแบบนั้นได้ยาก"
+
+"ชอบเนื้อหาเกี่ยวกับ shadow, polarity"
+
+[Post](https://www.facebook.com/share/p/1CsjtvVnLp/)
