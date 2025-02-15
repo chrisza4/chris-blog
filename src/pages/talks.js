@@ -89,6 +89,11 @@ const Talks = ({ location }) => {
           gap: 20,
         }}
       >
+        <EmbeddedTalk
+          title="[EN] Objective and subjective quality of code and system"
+          detail="Developer tends to believe that there are such things as objectively good code and system design. There are things such as best practices that can apply to every system regardless of context. This belief, while not completely false, is not completely true."
+          embeddedLink="https://www.youtube.com/embed/TUL3ePI_tJY?si=ghXxlxcyIjhx1Qfi"
+        />
         <Talk
           title="[EN] Leveraging Domain Driven Design to support Legacy Modernization"
           detail="Many developers learned about domain-driven design but struggle to implement in their project because, let's face it, majority of us is working on legacy code. In this talk, we will explore how to use Domain-driven design to help improve the existing codebase, even when the full practice cannot be adopted."
