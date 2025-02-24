@@ -49,4 +49,33 @@ So you can see that I build program in many paradigm, OOP, functional. I can bui
 With this out of the way, let start by what I agree with critics
 
 - You don't need any modern frontend framework for building blog or form-based application. This blog itself just using React because I was experiment on Gatsby and I am too lazy to change at this point. I still develop my own course registration system fully in Elixir with server side rendering, not even with LiveView.
--
+- Too many new frontend devs should know more about fundamental of HTML, CSS and vanilla Javascript. There will be nuance to this take later though.
+- Too many projects unnecessarily adopt frontend framework inappropriately.
+- The whole NPM ecosystem is crazy.
+- Keeping up with frontend community these days can be very exhausting. This, I totally sympathize with.
+
+Now, let me take on things that I half-agree with:
+
+## Frontend devs should stop learning framework and learn fundamental
+
+I agree with this take but I think too many people don't even know what they are asking for when they said this.
+
+## Frontend devs keep rediscover and rebrand the old pattern
+
+I mean, I agree with this but is it even a thing to complain about?
+
+## Most of the work we do don't really required modern frontend stack
+
+Chicken and egg.
+
+---
+
+And here are takes that I absolutely disagree with
+
+## Frontend back in the day is way simpler
+
+## Frontend devs are forcing everyone to use modern frontend
+
+I think this is totally misplaced anger.
+
+##
