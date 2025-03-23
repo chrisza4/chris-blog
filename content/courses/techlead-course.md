@@ -43,7 +43,7 @@ title: "Tech leadership: Building culture 101"
 
 เวลาเรียน
 
-รอบที่ 3: วันที่ 1-2 กุมภาพันธ์ เวลา 9.00-17.00
+รอบที่ 4: วันที่ 26-27 เมษายน เวลา 9.00-17.00
 
 สถานที่: Clazy Cafe
 
@@ -62,3 +62,5 @@ title: "Tech leadership: Building culture 101"
 "ชอบเนื้อหาเกี่ยวกับ shadow, polarity"
 
 [Post](https://www.facebook.com/share/p/1CsjtvVnLp/)
+
+[Round 3](https://www.facebook.com/share/p/15ttqL3G5t/)
