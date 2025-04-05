@@ -1,6 +1,6 @@
 ---
 title: Architecture Congruency
-date: "2025-04-05:00:00.000"
+date: "2025-04-05T00:00:00.000"
 ---
 
 เรื่องนึงที่คนทำ Software Architecture ไม่ได้พูดถึงกันมากเท่าที่ควร คือเรื่อง Architecture Congruency หรือความสอดคล้องของ Architecture
