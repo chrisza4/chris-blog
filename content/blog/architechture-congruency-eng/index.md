@@ -115,7 +115,7 @@ Try checking for congruency.
 
 Do you have a vision? And are your decisions aligned with that vision?
 
-When working in design architecture of big systems, I have been so many times people are vouching for what they know best and care the most.
+When working in design architecture of big systems, so many times people are vouching for what they know best and care the most.
 
 "We should put more performance consideration"
 
@@ -123,7 +123,7 @@ When working in design architecture of big systems, I have been so many times pe
 
 "We should do more [insert good things here]"
 
-and if you are not careful about vision and congruency, here what you will ended up with.
+and as an architect, if you are not careful about vision and congruency, here what you will ended up with.
 
 ![incongruency](./incongruency.jpg)
 
