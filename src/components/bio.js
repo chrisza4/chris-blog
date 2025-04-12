@@ -9,7 +9,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
-const WhereIWorkSection = ({ children }) => (
+const AuthorParagraph = ({ children }) => (
   <div style={{ marginTop: 20 }}>{children}</div>
 )
 
@@ -69,14 +69,19 @@ const Bio = () => {
         <AuthorSection
           style={{ marginLeft: 50, display: "flex", flexDirection: "column" }}
         >
-          <div>
-            <AuthorNameSection>Hi. I'm {author.name}.</AuthorNameSection>
-          </div>
+          <AuthorNameSection>Hi. I'm {author.name}.</AuthorNameSection>
           <div>{author?.summary || null}</div>
-          <WhereIWorkSection>
+          <AuthorParagraph>
             I am currently working at{" "}
-            <a href="https://www.thoughtworks.com/">ThoughtWorks</a>
-          </WhereIWorkSection>
+            <a href="https://www.thoughtworks.com/">Thoughtworks</a>.
+          </AuthorParagraph>
+          <AuthorParagraph>
+            I am one of Technology Advisory Board who curate{" "}
+            <a href="https://www.thoughtworks.com/radar">
+              Thoughtworks Technology Radar
+            </a>
+            .
+          </AuthorParagraph>
         </AuthorSection>
       )}
     </div>

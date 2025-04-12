@@ -3,7 +3,7 @@ title: Architecture Congruency [ENG]
 date: "2025-04-12T00:00:00.000"
 ---
 
-One thing that people in Software Architecture don’t talk about enough is Architecture Congruency. Or in other words, how consistent or aligned the architecture is.
+One thing that I think people who interested in software architecture don’t talk about enough is Architecture Congruency. Or in other words, how consistent or aligned the architecture is.
 
 Here’s the thing: every architectural decision in the world comes with its own trade-offs. For example, we might not choose the network connection with the lowest latency because we need to pass through certain security layers. Or we might not choose the cheapest cloud provider because the level of support is insufficient (or we don’t want to host our own servers).
 
@@ -151,7 +151,13 @@ And this go way beyond hard skill understanding math, distributing system, syste
 
 I have been in so many situation where what I value when I build software for myself is not congruence with the software we build and direction we want to go, and it required totally different way approach.
 
-And it is not just thinking, it is about empathizing and be into that vision. It's more like when you need to empathize and perform a cerntain character in the performance stage. It required that kind of approach.
+I really love domain-driven design but I also totally empathize with the software vision that is anti-thesis of domain driven design itself. Like, many business workflow sofware aim to be so global, flexible and applicable to every type of business. But then in order to do that domain need to adopt software language instead.
+
+Since it's aim to be applicable for more than 10 domains, the vision itself is not congruence with domain-driven design that I really love.
+
+And as an architect I need to be able to let that go instead of saying "Domain-driven equals good design. Domain-driven design is the best practices!!".
+
+And it is not just thinking, it is about empathizing and be into that vision.
 
 And I think we as a software industry, should acknowledge and be aware of importance of this kind of skill. We should top pretending that architecture is all about knowing good pattern and engineering, finding the "right optimal choice".
 
