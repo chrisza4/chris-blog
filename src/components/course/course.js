@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import * as styles from "./course.module.css"
 import Layout from "../layout/mainLayout"
 import SEO from "../seo"
+import titleImage from "./title-image.png"
 
 const Course = ({ data, location }) => {
   const post = data.markdownRemark
@@ -17,7 +18,12 @@ const Course = ({ data, location }) => {
           description={post.frontmatter.description || post.excerpt}
         />
         <div className={styles.coursePage}>
-          <div className={styles.bigImage}>
+          <div
+            className={styles.bigImage}
+            style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url(${titleImage})`,
+            }}
+          >
             <div className={styles.container}>
               <h1 className={styles.heading}>{post.frontmatter.title}</h1>
               <h2 className={styles.subheading}>
