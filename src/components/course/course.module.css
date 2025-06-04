@@ -1,0 +1,93 @@
+.coursePage a {
+  text-decoration: none;
+}
+.bigImage {
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  gap: 1.5rem; /* 6 * 0.25rem */
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2.5rem; /* 10 * 0.25rem */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), 
+    url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7FTGALKaQCBsv_3KQkCNxayuPmzN3QrFd01bqkN7oKfbhc9fcuFwBbOVTAYEtqMkl9jTTE6fBPOZrRwmyJe5YE9Zdwd0KBE_aZagQPqRxhUVNpnrKScoCJUQl_maZCER5ZgbTR4jTvMnrGxi8Rse1-hH9PgajiI_7f2CFB1XfBQZ4BuGbMGVJiLhr4QoVDwT6LWS0NN2dXreOxjIL7yZ4D6a4KMxhglb0d80Dz1zEMi-oSNRUNqYhYE3Bu4OaUy5O_06ekXnU1qCd");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0; /* default, overwritten in media query */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* gap-2 */
+  text-align: left;
+}
+
+.heading {
+  color: white;
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: -0.033em;
+}
+
+.subheading {
+  color: white;
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.ctaButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 84px;
+  max-width: 360px;
+  height: 2.5rem; /* h-10 */
+  padding: 0 1rem;
+  background-color: #0c77f2;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+  overflow: hidden;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.buttonLabel {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 480px) {
+  .heading {
+    font-size: 3rem; /* text-5xl */
+  }
+
+  .subheading {
+    font-size: 1rem; /* text-base */
+  }
+
+  .ctaButton {
+    height: 3rem; /* h-12 */
+    padding-left: 1.25rem; /* px-5 */
+    padding-right: 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .bigImage {
+    gap: 2rem; /* 8 * 0.25rem */
+    padding-left: 2.5rem; /* 10 * 0.25rem */
+    padding-right: 2.5rem;
+    border-radius: 0.5rem; /* rounded-lg */
+  }
+}

@@ -1,9 +1,9 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
-import Bio from "../components/bio"
-import Layout from "../components/layout/mainLayout"
-import SEO from "../components/seo"
+import * as styles from "./course.module.css"
+import Layout from "../layout/mainLayout"
+import SEO from "../seo"
 
 const Course = ({ data, location }) => {
   const post = data.markdownRemark
@@ -16,24 +16,28 @@ const Course = ({ data, location }) => {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article
-          className="blog-post"
-          itemScope
-          itemType="http://schema.org/Article"
-        >
-          <header>
-            <h1 itemProp="headline">{post.frontmatter.title}</h1>
-            <p>{post.frontmatter.date}</p>
-          </header>
+        <div className={styles.coursePage}>
+          <div className={styles.bigImage}>
+            <div className={styles.container}>
+              <h1 className={styles.heading}>{post.frontmatter.title}</h1>
+              <h2 className={styles.subheading}>
+                {post.frontmatter.description}
+              </h2>
+              <a
+                href="https://humanarch.fly.dev/registrations/register"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.ctaButton}
+              >
+                <span className={styles.buttonLabel}>สมัครเลย</span>
+              </a>
+            </div>
+          </div>
           <section
             dangerouslySetInnerHTML={{ __html: post.html }}
             itemProp="articleBody"
           />
-          <hr />
-          <footer>
-            <Bio />
-          </footer>
-        </article>
+        </div>
       </Layout>
     </>
   )

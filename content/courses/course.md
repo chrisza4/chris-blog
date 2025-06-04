@@ -1,5 +1,6 @@
 ---
 title: Humanistic Architecture
+description: เข้าใจศาสตร์ความเป็นมนุษย์ในงานออกแบบ Software Architecture
 ---
 
 ## Summarized
