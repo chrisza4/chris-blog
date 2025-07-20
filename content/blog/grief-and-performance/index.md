@@ -115,4 +115,4 @@ date: "2025-07-20T12:00:00.000"
 
 เหมือนที่ผมบอกไว้ว่า Tech leadership รอบ 2 ที่เราคุยเรื่องนี้กันเยอะมาก ธีมมันคือ
 
-Accept the truth, and he truth shall set you free
+Accept the truth, and the truth shall set you free
