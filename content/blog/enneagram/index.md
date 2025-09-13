@@ -27,7 +27,6 @@ Final: [Congruency](https://www.reddit.com/r/Enneagram/comments/18u63ca/enneagra
 - [Why Enneagram type can't change](https://www.reddit.com/r/Enneagram/comments/1gsnoi0/can_enneagram_type_change_deep_dive_into_what/)
 - [Dissecting instinct and core type influence of social 7s](https://www.reddit.com/r/Enneagram/comments/1d3rnqa/two_part_of_social_instinct_and_social_7s/)
 - [Typical growth journey of 7s](https://www.reddit.com/r/Enneagram/comments/1lyouut/7s_growth_journey_what_typical_7s_path_of_growth/)
--
 
 ## Other interesting content
 
