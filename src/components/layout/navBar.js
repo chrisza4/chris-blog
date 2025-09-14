@@ -41,7 +41,6 @@ const BurgerMenuOverlay = StyledDiv({ className: styles.overlay })
 
 const menus = [
   { to: "/", title: "Home" },
-  { to: "/favorite-contents", title: "Favorite Blogs" },
   { to: "/course", title: "Humanistic Architecture Course" },
   { to: "/techlead-course", title: "Tech Leadership Course" },
   { to: "/otherCourses", title: "Other Courses" },

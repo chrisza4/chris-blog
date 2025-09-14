@@ -22,6 +22,13 @@ export default function OtherCourses({ location }) {
           }
         }
       }
+      testable: file(absolutePath: { regex: "/testable-course.jpg/" }) {
+        childImageSharp {
+          fixed(width: 1200, height: 630, quality: 95) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       ddd: file(absolutePath: { regex: "/ddd-course.jpg/" }) {
         childImageSharp {
           fixed(width: 1200, height: 630, quality: 95) {
@@ -40,6 +47,7 @@ export default function OtherCourses({ location }) {
   const oopImage = data?.oop?.childImageSharp?.fixed
   const archImage = data?.arch?.childImageSharp?.fixed
   const dddImage = data?.ddd?.childImageSharp?.fixed
+  const testableImage = data?.testable?.childImageSharp?.fixed
   const siteTitle = data.site.siteMetadata?.title || `Title`
   return (
     <Layout location={location} title={siteTitle}>
@@ -48,6 +56,20 @@ export default function OtherCourses({ location }) {
         <h1>Other courses</h1>
         <div style={{ height: 20 }}></div>
         <p>Few online courses coordinated with others</p>
+        <p>
+          <Link to="https://www.skooldio.com/courses/testable-architecture-design">
+            {isMobile ? (
+              "Testable Architecture"
+            ) : (
+              <Image
+                style={{ borderRadius: 12 }}
+                fixed={testableImage}
+                alt="Testable Architecture"
+                loading="eager"
+              />
+            )}
+          </Link>
+        </p>
         <p>
           <Link to="https://www.skooldio.com/courses/oop-the-right-way">
             {isMobile ? (
