@@ -1,6 +1,6 @@
 ---
 title: 'A guide to "actually using" Enneagram beyond simply knowing Enneagram'
-date: "2025-07-20T12:00:00.000"
+date: "2025-10-13T12:00:00.000"
 ---
 
 # Part 1: Map, model and reality
