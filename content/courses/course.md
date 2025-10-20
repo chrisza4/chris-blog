@@ -48,7 +48,7 @@ Recommend profile:
 
 ## เวลาเรียน
 
-**รอบที่ 8: วันที่ 22-23 พฤศจิกายน 2025 เวลา 9.00-18.00**
+**รอบที่ 8: วันที่ 29-30 พฤศจิกายน 2025 เวลา 9.00-18.00**
 
 สถานที่: [Abloom Exclusive Serviced Apartments](https://maps.app.goo.gl/owLr4YMri4Faghry6) ใกล้บริเวณ BTS สนามเป้า
 
