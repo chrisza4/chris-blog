@@ -48,11 +48,9 @@ Recommend profile:
 
 ## เวลาเรียน
 
-**รอบที่ 7: วันที่ 21-22 มิถุนายน 2025 เวลา 9.00-18.00**
+**รอบที่ 8: วันที่ 22-23 พฤศจิกายน 2025 เวลา 9.00-18.00**
 
-สถานที่: [Clazy Cafe](https://maps.app.goo.gl/hzxPpnwFG7gRDQtq7) ห้อง B
-
-ลง BTS สนามเป้าทางออก 1 เดินประมาณ 700 เมตร อยู่ที่ Season mall
+สถานที่: [Abloom Exclusive Serviced Apartments](https://maps.app.goo.gl/owLr4YMri4Faghry6) ใกล้บริเวณ BTS สนามเป้า
 
 รับผู้เรียนทั้งหมดจำนวน 18 คน
 
@@ -75,10 +73,3 @@ Recommend profile:
 - [คำโปรยแรก](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid02UETwFp5SptBqWr14EXpVn5yGGsrXQrgFhZr2QhpKH8Bo9us35W8u1NSsy6QwGEkxl?__cft__[0]=AZXS11dgQsmKjc-UOjjJxMAZp9u8LVLqACCAKD2WJlcwNH00-jzor8QJl8abLWObMtQa5GdjxwmMi7MrsTrp_cvuaMnCRLmGuOz4HEpZbUVc3VJKmxq0ZEe3ceJt9z0q_uI&__tn__=%2CO%2CP-R)
 - [Teaser](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid02XWvnJVyVk5AXMB9yQ9vfKUNZdRGahUCxYa2uNuyPRp1zGoAZM1gFidFBX3Mj8Ccql)
 - [คำโปรยสอง](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid0nEWpLYF3URBMAUWStpwPL92KvKxMiyL9ZzPv2g1Be14K6uqJxRDhzRX4Ybxj9bVal)
-
-**คอร์สที่จบไปก่อนหน้านี้**
-
-- รอบที่ 1 (จบไปแล้ว): วันที่ 4-5 กุมภาพันธ์ 2023 เวลา 9.00-16.30
-- รอบที่ 2 (จบไปแล้ว): วันที่ 25-26 มีนาคม 2023 เวลา 9.00-17.00
-- รอบที่ 3 (จบไปแล้ว): วันที่ 27-28 พฤษภาคม 2023 เวลา 9.00-17.00
-- รอบที่ 4 (จบไปแล้ว): วันที่ 7-8 ตุลาคม 2023 เวลา 9.00-17.00
