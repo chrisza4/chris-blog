@@ -1,6 +1,7 @@
 ---
 title: Missing piece of blameless postmortem: Performance management
 date: "2025-10-21T00:00:00.000"
+hidden: true
 ---
 
 As I am lingering on the internet, there are many engineers encourage blameless postmortem.
