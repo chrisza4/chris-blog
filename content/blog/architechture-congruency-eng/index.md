@@ -77,13 +77,17 @@ There is a certain vision of what a steak should be when you are making steak.
 
 Since you are making a steak, there are certain trade-offs that you would not make even if it make the dish more delicious to some person, because at that point it is not a steak anymore.
 
-Now back to the domain of software architecture.
+---
+
+Back to the domain of software architecture.
 
 First thing: What are you really building? Are you having a kind of vision of what good looks like?
 
-If we intentionally want to build a “High-performance web server in Python”.
+Let's say we build a **High-performance web server in Python**
 
-Let’s say we name it PyRush. That vision and identity will gives us a frame.
+Let’s say we name it **PyRush**.
+
+The vision and identity will gives us a frame.
 
 For example:
 
@@ -97,7 +101,13 @@ That kind of frame sets clear boundaries.
 
 Second question: Do we understand that vision?
 
-Because every decision we make should align with that vision, not just flip-flop because someone says, “Hey, contributing to this is hard,” and we decide to switch to a simple, unoptimized algorithm just for the sake of readability.
+Because every decision we make should align with that vision.
+
+If someone say “Hey, contributing to this is hard,” we should not decide to go back to unoptimized algorithm just for the sake of readability.
+
+If soone say that the framework does not come with ORM, I don't think we should add it since adding indirection layer of SQL mapping, translating, usually invovled `SELECT *` to complete to model, does go against the vision.
+
+Those kind of features and improvment might be useful, but it is misalign with what PyRush supposed to be.
 
 And similar to a steak. If someone says, “why don't we make sauce tastier and stronger?”, we can push back that it is not a steak anymore.
 
@@ -109,7 +119,7 @@ We’d just say:
 
 ---
 
-So if you’re running into a situation where every architectural decision seems reasonable on its own—but the system as a whole feels weird, inconsistent, like a mixed bag—
+So if you’re running into a situation where every architectural decision seems reasonable on its own but the system as a whole feels weird, inconsistent, like a mixed bag.
 
 Try checking for congruency.
 
@@ -151,9 +161,9 @@ And this go way beyond hard skill understanding math, distributing system, syste
 
 I have been in so many situation where what I value when I build software for myself is not congruence with the software we build and direction we want to go, and it required totally different way approach.
 
-I really love domain-driven design but I also totally empathize with the software vision that is anti-thesis of domain driven design itself. Like, many business workflow sofware aim to be so global, flexible and applicable to every type of business. But then in order to do that domain need to adopt software language instead.
+I really love domain-driven design. I even host an online paid class in it. But I also totally empathize with the software vision that is anti-thesis of domain driven design itself. Like, many business workflow sofware aim to be so global, flexible and applicable to every type of business. But then in order to do that domain need to adopt software language instead of software adopting domain language.
 
-Since it's aim to be applicable for more than 10 domains, the vision itself is not congruence with domain-driven design that I really love.
+It is anti-thesis of domain-driven design. Can this be good? Yes, it is really up to the vision of the product. The vision is to be applicable for more than 10 domains. And this is clearly not congruence with domain-driven design that I really love.
 
 And as an architect I need to be able to let that go instead of saying "Domain-driven equals good design. Domain-driven design is the best practices!!".
 
