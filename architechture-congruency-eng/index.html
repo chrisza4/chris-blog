@@ -70,23 +70,28 @@
 <p>It’s not enough to be just delicious in anyway possible.</p>
 <p>There is a certain vision of what a steak should be when you are making steak.</p>
 <p>Since you are making a steak, there are certain trade-offs that you would not make even if it make the dish more delicious to some person, because at that point it is not a steak anymore.</p>
-<p>Now back to the domain of software architecture.</p>
+<hr>
+<p>Back to the domain of software architecture.</p>
 <p>First thing: What are you really building? Are you having a kind of vision of what good looks like?</p>
-<p>If we intentionally want to build a “High-performance web server in Python”.</p>
-<p>Let’s say we name it PyRush. That vision and identity will gives us a frame.</p>
+<p>Let’s say we build a <strong>High-performance web server in Python</strong></p>
+<p>Let’s say we name it <strong>PyRush</strong>.</p>
+<p>The vision and identity will gives us a frame.</p>
 <p>For example:</p>
 <p>We’re going to use Python.</p>
 <p>We’ll write things in the fastest way possible and eliminate waste.</p>
 <p>If there’s a technique to make it easier to maintain PyRush but it compromises performance, then that technique better have very very very low impact on performance and very very high gain in maintainability.</p>
 <p>That kind of frame sets clear boundaries.</p>
 <p>Second question: Do we understand that vision?</p>
-<p>Because every decision we make should align with that vision, not just flip-flop because someone says, “Hey, contributing to this is hard,” and we decide to switch to a simple, unoptimized algorithm just for the sake of readability.</p>
+<p>Because every decision we make should align with that vision.</p>
+<p>If someone say “Hey, contributing to this is hard,” we should not decide to go back to unoptimized algorithm just for the sake of readability.</p>
+<p>If soone say that the framework does not come with ORM, I don’t think we should add it since adding indirection layer of SQL mapping, translating, usually invovled <code class="language-text">SELECT *</code> to complete to model, does go against the vision.</p>
+<p>Those kind of features and improvment might be useful, but it is misalign with what PyRush supposed to be.</p>
 <p>And similar to a steak. If someone says, “why don’t we make sauce tastier and stronger?”, we can push back that it is not a steak anymore.</p>
 <p>When people ask why PyRush don’t have this and that, and sometimes it goes out of the vision.</p>
 <p>We’d just say:</p>
 <p>“If that’s what you’re looking for, go use Django.”</p>
 <hr>
-<p>So if you’re running into a situation where every architectural decision seems reasonable on its own—but the system as a whole feels weird, inconsistent, like a mixed bag—</p>
+<p>So if you’re running into a situation where every architectural decision seems reasonable on its own but the system as a whole feels weird, inconsistent, like a mixed bag.</p>
 <p>Try checking for congruency.</p>
 <p>Do you have a vision? And are your decisions aligned with that vision?</p>
 <p>When working in design architecture of big systems, so many times people are vouching for what they know best and care the most.</p>
@@ -139,8 +144,8 @@
 <p>Do you have enough listening skill and empathy to extract that and understand that? Even when the vision they are aiming for is not something you might inherently care about the most?</p>
 <p>And this go way beyond hard skill understanding math, distributing system, system design interview and all that stuff.</p>
 <p>I have been in so many situation where what I value when I build software for myself is not congruence with the software we build and direction we want to go, and it required totally different way approach.</p>
-<p>I really love domain-driven design but I also totally empathize with the software vision that is anti-thesis of domain driven design itself. Like, many business workflow sofware aim to be so global, flexible and applicable to every type of business. But then in order to do that domain need to adopt software language instead.</p>
-<p>Since it’s aim to be applicable for more than 10 domains, the vision itself is not congruence with domain-driven design that I really love.</p>
+<p>I really love domain-driven design. I even host an online paid class in it. But I also totally empathize with the software vision that is anti-thesis of domain driven design itself. Like, many business workflow sofware aim to be so global, flexible and applicable to every type of business. But then in order to do that domain need to adopt software language instead of software adopting domain language.</p>
+<p>It is anti-thesis of domain-driven design. Can this be good? Yes, it is really up to the vision of the product. The vision is to be applicable for more than 10 domains. And this is clearly not congruence with domain-driven design that I really love.</p>
 <p>And as an architect I need to be able to let that go instead of saying “Domain-driven equals good design. Domain-driven design is the best practices!!“.</p>
 <p>And it is not just thinking, it is about empathizing and be into that vision.</p>
 <p>And I think we as a software industry, should acknowledge and be aware of importance of this kind of skill. We should top pretending that architecture is all about knowing good pattern and engineering, finding the “right optimal choice”.</p>
