@@ -70,6 +70,7 @@ Recommend profile:
 - [Review#6](https://sarunyhot.medium.com/%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B6%E0%B8%81%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99-humanistic-architecture-5a47b0b488e5) อันนี้ละเอียดมาก
 - [Review#7](https://naiwaen.debuggingsoft.com/2023/03/%e0%b8%9a%e0%b8%b1%e0%b8%99%e0%b8%97%e0%b8%b6%e0%b8%81-humanistic-software-architecture/?fbclid=IwAR1OdnaqfoM7rbtB7WtTJZpTZTmrJgIvnfgYrdyaYnQLuiPKhPm_EDZnT34)
 - [Review#8](https://www.facebook.com/natechawin.suthison/posts/pfbid02KFuwPWHooJS4fm3T1A8ZPGgXH4y1eUqgtow2dSmBAamVKMiqnZKgYVNQaupz9ctxl)
+- [Review#9](https://www.facebook.com/share/p/1DKr5J4ycU/)
 - [คำโปรยแรก](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid02UETwFp5SptBqWr14EXpVn5yGGsrXQrgFhZr2QhpKH8Bo9us35W8u1NSsy6QwGEkxl?__cft__[0]=AZXS11dgQsmKjc-UOjjJxMAZp9u8LVLqACCAKD2WJlcwNH00-jzor8QJl8abLWObMtQa5GdjxwmMi7MrsTrp_cvuaMnCRLmGuOz4HEpZbUVc3VJKmxq0ZEe3ceJt9z0q_uI&__tn__=%2CO%2CP-R)
 - [Teaser](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid02XWvnJVyVk5AXMB9yQ9vfKUNZdRGahUCxYa2uNuyPRp1zGoAZM1gFidFBX3Mj8Ccql)
 - [คำโปรยสอง](https://www.facebook.com/chakrit.likitkhajorn/posts/pfbid0nEWpLYF3URBMAUWStpwPL92KvKxMiyL9ZzPv2g1Be14K6uqJxRDhzRX4Ybxj9bVal)
