@@ -44,6 +44,7 @@ const menus = [
   { to: "/enneagram", title: "Enneagram" },
   { to: "/course", title: "Humanistic Architecture Course" },
   { to: "/techlead-course", title: "Tech Leadership Course" },
+  { to: "/large-scale-course", title: "Design Large Scale System Course" },
   { to: "/otherCourses", title: "Other Courses" },
   { to: "/talks", title: "Talks" },
 ]
