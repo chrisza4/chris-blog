@@ -9,6 +9,7 @@ import titleImage from "./title-image.png"
 const Course = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
+  const programId = post.frontmatter.programId
 
   return (
     <>
@@ -30,7 +31,7 @@ const Course = ({ data, location }) => {
                 {post.frontmatter.description}
               </h2>
               <a
-                href="https://humanarch.fly.dev/registrations/register"
+                href={`https://humanarch.fly.dev/registrations/program/${programId}`}
                 target="_blank"
                 rel="noreferrer"
                 className={styles.ctaButton}
@@ -70,6 +71,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        programId
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

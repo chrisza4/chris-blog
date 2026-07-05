@@ -1,6 +1,7 @@
 ---
 title: "Tech leadership: Building culture 101"
 description: เข้าใจพื้นฐานของการออกแบบและสร้าง Culture ในทีม ไม่ว่าจะชอบ Culture แบบไหนก็ตาม
+programId: 3
 ---
 
 ## Summarized
