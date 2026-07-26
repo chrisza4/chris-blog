@@ -14,6 +14,14 @@ programId: 4
 
 ## ผู้สอน
 
+Chris Chakrit Riddhagni
+
+- ปัจจุบันทำงานเป็น Lead Consultant ที่ Thoughtworks
+- หนึ่งใน Technology Advisory Board to CTO ในการคัดกรอง Technology ที่น่าสนใจในโลกนี้สำหรับ Thoughtworks Tech Radar
+- Former Vice President of Engineering at Taskworld
+- Former Engineering Lead at Omise
+- เป็นที่ปรึกษาในการปรับปรุงทีมและระบบต่างๆ ทั้งในเมืองไทยและนอกประเทศ
+
 ## Learning goals
 
 - แยกแยะระหว่างระบบเร็ว (Performant) ระบบที่เหมาะสมกับงานขนาดใหญ่ (Scalable) ได้
