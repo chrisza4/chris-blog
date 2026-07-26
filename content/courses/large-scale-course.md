@@ -27,7 +27,7 @@ programId: 4
 
 ## เวลาเรียน
 
-**รอบที่ 9: วันที่ 29-30 สิงหาคม 2026 เวลา 9.00-17.30**
+**รอบที่ 1: วันที่ 29-30 สิงหาคม 2026 เวลา 9.00-17.30**
 
 สถานที่: [Abloom Exclusive Serviced Apartments](https://maps.app.goo.gl/owLr4YMri4Faghry6) ใกล้บริเวณ BTS สนามเป้า
 
