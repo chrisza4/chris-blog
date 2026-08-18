@@ -1,6 +1,7 @@
 ---
 title: On reading code
 date: "2026-08-17T00:00:00.000"
+hidden: true
 ---
 
 I just read an excellent article, [Reading Code Considered Helpful](https://raymyers.org/post/reading-code-considered-helpful/), and that inspire me to write my opinion piece on code reading. I have these thought for quite a while and I spoke or written about it in scattered piece. I think it is a good time to consolidate.
