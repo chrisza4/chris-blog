@@ -1,7 +1,6 @@
 ---
 title: Layers for agentic engineering
 date: "2026-09-06T00:00:00.000"
-hidden: true
 ---
 
 So, I've been working with a lot of code and systems lately. Some of the systems are built using fancy techniques like loop engineering, or a fancy AI framework such as the spec-driven [get-shit-done](https://github.com/open-gsd/gsd-core).
