@@ -18,7 +18,7 @@
     "cheerio": "^1.0.0-rc.5",
     "dayjs": "^1.9.8",
     "framer-motion": "^11.5.4",
-    "gatsby": "^5.0.0",
+    "gatsby": "^5.16.1",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-feed": "^5.7.0",
     "gatsby-plugin-google-gtag": "^5.14.0",

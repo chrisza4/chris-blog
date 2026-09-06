@@ -1,5 +1,6 @@
 .navBar {
-  background-color: green;
+  --navbar-bg: #1E3A8A;
+  background-color: var(--navbar-bg);
   position: relative;
   top: 0px;
   left: 0px;
@@ -38,7 +39,7 @@
 .burgerMenu {
   position: relative;
   margin-top: 60px;
-  background-color: green;
+  background-color: var(--navbar-bg);
 
   opacity: 1;
   z-index: 2;
