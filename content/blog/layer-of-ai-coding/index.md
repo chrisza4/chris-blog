@@ -6,7 +6,7 @@ hidden: true
 
 So, I've been working with a lot of code and systems lately. Some of the systems are built using fancy techniques like loop engineering, or a fancy AI framework such as the spec-driven [get-shit-done](https://github.com/open-gsd/gsd-core).
 
-But I also work with my personal projects, with a minimal framework.
+But I also work with my personal projects, with a minimal AI instruction, only very small AGENTS.md.
 
 I've found that spec-driven or some kind of loop engineering is designed for building big changes. They usually have a sophisticated AGENTS.md, thorough checks, and multi-layer, multi-role agents (code -> qa -> refactor) to validate and verify big changes.
 
@@ -22,4 +22,4 @@ Second, I think the industry is trying to find "what is the one setup to general
 
 Third, from a personal POV, I'm more inclined to put everything into skills rather than generalize the project workflow or rules. Maybe start with `/small-feature`, `/medium-feature`, `/large-feature` or something like that.
 
-That is pondering.
+Well, I can "delegate the thinking to AI" and instruct it to "before doing anything, determine size of feature, then use appropriate skill", but I think it is more cost-efficient and quicker to think about that myself.
