@@ -4,22 +4,22 @@ date: "2026-09-06T00:00:00.000"
 hidden: true
 ---
 
-So, I've been working with a lot of code and systems lately. Some of the systems are built using fancy technique like loop engineering, or fancy AI framework such as spec-driven [get-shit-done](https://github.com/open-gsd/gsd-core).
+So, I've been working with a lot of code and systems lately. Some of the systems are built using fancy techniques like loop engineering, or a fancy AI framework such as the spec-driven [get-shit-done](https://github.com/open-gsd/gsd-core).
 
-But I also work with my personal projects, with minimal framework.
+But I also work with my personal projects, with a minimal framework.
 
-I've found that in spec-driven or some kind of loop engineering, it is design for building big changes. They usually have sophisicated AGENTS.md, throughout check, multi-layer and multi-role agents (code -> qa -> refactor) to validate and verify big changes.
+I've found that spec-driven or some kind of loop engineering is designed for building big changes. They usually have a sophisticated AGENTS.md, thorough checks, and multi-layer, multi-role agents (code -> qa -> refactor) to validate and verify big changes.
 
-So when I started using my coding agents with this codebase and I want to do a very simple changes, such as maybe switch some fields or change some title, I was frustrated that agentic loop for this small changes take like 20-30 minutes. It is obviously become way way too slow to the point that I rather do code by hand. (Or even delete the whole AGENTS.MD and rule files out, but sadly I don't own the whole project).
+So when I started using my coding agents with this codebase and wanted to do a very simple change, such as maybe switching some fields or changing some title, I was frustrated that the agentic loop for these small changes took like 20-30 minutes to run everything (coding agent, QA agent, multiple layers of tests, spawn preview server, etc). It obviously becomes way, way too slow, to the point that I'd rather write the code by hand. (Or even delete the whole AGENTS.md, rule files and agent instructions, but sadly I don't own the codeabse.).
 
-At the same time, when I have a really clear big feature in mind, I can give them a well-defined plan and spec and these loop perform pretty well.
+At the same time, when I have a really clear big feature in mind, I can give them a well-defined plan and spec, and these loops perform pretty well.
 
-When I'm back working with my hobby project, I find it is very easy to do small changes with coding agents. I can change color, font, title, try out new stuff in very short time period. But then again, there is no way I can give a large parallel featureset and wait for agent loop to finish the work.
+When I'm back working with my hobby project, I find it very easy to do small changes with coding agents. I can change color, font, and title, and try out new stuff in a very short time period. But then again, there is no way I can give a large parallel feature set and wait for the agent loop to finish the work.
 
-First thing I realize is that this is a classic lesson from software engineering throughout industry. The optimal working process for "large project, fix set of feature and budget. Define everything upfront" is totally different process for incremental development.
+The first thing I realize is that this is a classic lesson from software engineering throughout the industry. The optimal working process for "large project, fixed set of features and budget, define everything upfront" is a totally different process from incremental development.
 
-Second, I think the industry is trying to find "what is one setup to generalize whole software development process? Is it loop, graph, or which framework"? And I think that might be a wrong question to ask to begin with. I'm start to think that even if hyperscaler or anyone come up with the generic process / framework that is optimal for average case of software engineering, so called "best practices", it would never be able to match the speed and cost-efficiency to someone who can tailor their process based on circumstance.
+Second, I think the industry is trying to find "what is the one setup to generalize the whole software development process? Is it a loop, a graph, or which framework?" And I think that might be the wrong question to ask to begin with. I'm starting to think that even if a hyperscaler or anyone comes up with a generic process / framework that is optimal for average cases of software engineering, so-called "best practices", it would never be able to match the speed and cost-efficiency of someone who can tailor and change their process based on circumstance.
 
-Third, from personal pov, I'm more incline to put everything into skills rather than generalize the project workflow. Maybe start with /small-feature, /medium-feature, /large-feature or something like that.
+Third, from a personal POV, I'm more inclined to put everything into skills rather than generalize the project workflow or rules. Maybe start with `/small-feature`, `/medium-feature`, `/large-feature` or something like that.
 
 That is pondering.
