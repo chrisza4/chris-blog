@@ -46,7 +46,7 @@ programId: 3
 
 สถานที่: [Abloom Exclusive Serviced Apartments](https://maps.app.goo.gl/owLr4YMri4Faghry6) ใกล้บริเวณ BTS สนามเป้า
 
-รับผู้เรียนทั้งหมดจำนวน 20 คน
+รับผู้เรียนทั้งหมดจำนวน 22 คน
 
 ราคา: 10,000 บาท
 
