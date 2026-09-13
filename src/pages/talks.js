@@ -90,6 +90,16 @@ const Talks = ({ location }) => {
         }}
       >
         <EmbeddedTalk
+          title="[EN] Beyond the code: Rediscovering the timeless skills of software engineering in the AI era - XConf APAC 2025"
+          detail="If AI can build software, then what's a software engineer's role? By examining the fundamental similarities and differences between traditional software development by 100% human effort compared to AI-assisted creation, we will notice the timeless principles and identify the timeless skills that will empower software engineers to thrive in an AI-driven future."
+          embeddedLink="https://www.youtube.com/embed/TjBEX9g628I"
+        />
+        <EmbeddedTalk
+          title="[EN] Green software: How can tech contribute to worldwide sustainability effort? - XConf Thailand 2023"
+          detail="Climate change is an urgent global issue impacting every individual. Software development holds immense potential to contribute significantly to the global sustainability endeavor. By reimagining the way we develop software, adopting environmental friendly user experience design, and creating software solutions that aid other industries in managing climate change, we can make a substantial impact."
+          embeddedLink="https://www.youtube.com/embed/o2DG4kS_BRE"
+        />
+        <EmbeddedTalk
           title="[EN] Objective and subjective quality of code and system"
           detail="Developer tends to believe that there are such things as objectively good code and system design. There are things such as best practices that can apply to every system regardless of context. This belief, while not completely false, is not completely true."
           embeddedLink="https://www.youtube.com/embed/TUL3ePI_tJY?si=ghXxlxcyIjhx1Qfi"
@@ -107,7 +117,7 @@ const Talks = ({ location }) => {
           />
         </Talk>
         <EmbeddedTalk
-          title="[TH] XConf - Evolutionary Testing in Evolutionary Architecture"
+          title="[TH] Evolutionary Testing in Evolutionary Architecture - XConf Thailand 2022"
           detail="I gave a talk on how to design unit testing which is not tightly coupled to the class structure, to the point that architectural change is prevented by unit tests. This is a common mistake I found in many codebase and unit testing practitioners."
           embeddedLink="https://www.youtube.com/embed/l2WxQQzvSA4"
         />
