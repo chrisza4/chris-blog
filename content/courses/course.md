@@ -57,7 +57,7 @@ Recommend profile:
 
 ราคา: 8,000 บาท
 
-โอนเงินจองได้ที่ Promptpay 0879337879 นายชาคริต ลิขิตขจร
+โอนเงินจองได้ที่ Promptpay 0879337879 นายชาคริต ฤทธาคนี
 
 แจ้งโอนเงินได้ที่ [เว็บไซต์นี้](https://humanarch.fly.dev/registrations/register)
 
