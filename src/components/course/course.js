@@ -41,6 +41,7 @@ const Course = ({ data, location }) => {
             </div>
           </div>
           <section
+            className={styles.courseContent}
             dangerouslySetInnerHTML={{ __html: post.html }}
             itemProp="articleBody"
           />
