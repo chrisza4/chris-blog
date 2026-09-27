@@ -64,6 +64,7 @@
   text-overflow: ellipsis;
 }
 
+
 @media (min-width: 480px) {
   .heading {
     font-size: 3rem; /* text-5xl */
