@@ -8,6 +8,7 @@ import titleImage from "../components/course/title-image.png"
 import review1 from "../../content/assets/reviews/tl2.png"
 import review2 from "../../content/assets/reviews/tl3.png"
 import review3 from "../../content/assets/reviews/tl1.png"
+import review4 from "../../content/assets/reviews/tl4.png"
 
 const programId = 3
 
@@ -47,6 +48,10 @@ const reviews = [
   {
     image: review3,
     url: "https://www.facebook.com/share/p/1CsjtvVnLp/",
+  },
+  {
+    image: review4,
+    url: "https://www.facebook.com/share/p/1KWYVxUixp/",
   },
 ]
 
@@ -184,7 +189,7 @@ export default function TechLeadCoursePage({ location }) {
             <strong>รอบที่ 7: วันที่ 17-18 ตุลาคม เวลา 9.00-17.00</strong>
           </p>
           <p>
-            สถานที่:{" "}
+            สถานที่:
             <a
               href="https://maps.app.goo.gl/owLr4YMri4Faghry6"
               target="_blank"
@@ -218,7 +223,7 @@ export default function TechLeadCoursePage({ location }) {
             ))}
           </div>
           <p>
-            More reviews:{" "}
+            More reviews:
             {moreReviews.map((review, i) => (
               <React.Fragment key={review.url}>
                 {i > 0 && " · "}
