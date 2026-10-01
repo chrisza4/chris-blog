@@ -30,7 +30,7 @@ const reviews = [
   },
   {
     label: "Review#5",
-    url: "https://knowlats.dev/review-course-humanistic-software-architecture/",
+    url: "https://knowlats.dev/posts/review-course-humanistic-software-architecture",
   },
   {
     label: "Review#6",
