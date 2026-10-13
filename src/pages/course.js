@@ -1,6 +1,7 @@
 import React from "react"
 
 import * as styles from "../components/course/course.module.css"
+import CourseFAQ from "../components/course/course-faq"
 import Layout from "../components/layout/mainLayout"
 import SEO from "../components/seo"
 import titleImage from "../components/course/title-image.png"
@@ -280,6 +281,7 @@ export default function CoursePage({ location }) {
             ))}
           </ul>
         </section>
+        <CourseFAQ />
       </div>
     </Layout>
   )

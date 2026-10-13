@@ -7,10 +7,6 @@ function isBlogContent(markdown) {
   return markdown.fields.contentType === "blog"
 }
 
-function isCourseContent(markdown) {
-  return markdown.fields.contentType === "course"
-}
-
 function getMarkdownContentType(markdownNode) {
   const regExpForCourseFolder = /.*\/courses\/.+/
   return regExpForCourseFolder.test(markdownNode.fileAbsolutePath)
@@ -25,7 +21,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
-  const course = path.resolve("./src/components/course/course.js")
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
@@ -53,9 +48,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const allMarkdowns = result.data.allMarkdownRemark.nodes
-  const coursesMarkdown = allMarkdowns.filter(markdown =>
-    isCourseContent(markdown)
-  )
   const blogsMarkdown = allMarkdowns.filter(markdown => isBlogContent(markdown))
 
   // Create blog posts pages
@@ -75,20 +67,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           id: markdown.id,
           previousPostId,
           nextPostId,
-        },
-      })
-    })
-  }
-
-  if (coursesMarkdown.length > 0) {
-    coursesMarkdown.forEach(markdown => {
-      createPage({
-        path: markdown.fields.slug,
-        component: course,
-        context: {
-          id: markdown.id,
-          previousPostId: null,
-          nextPostId: null,
         },
       })
     })
